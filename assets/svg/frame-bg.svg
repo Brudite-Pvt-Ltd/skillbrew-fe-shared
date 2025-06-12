@@ -1,0 +1,22 @@
+<svg width="719" height="704" viewBox="0 0 719 704" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clipPath="url(#clip0_1653_110)">
+<rect y="22" width="711" height="667" fill="#181818"/>
+<rect y="14.8201" width="237.12" height="377.91" fill="#231B2E"/>
+<rect x="429.781" y="14.8201" width="281.58" height="340.86" fill="#123B45"/>
+<rect y="414.96" width="348.27" height="274.17" fill="#241248"/>
+<rect x="363.09" y="414.96" width="348.27" height="274.17" fill="#0F191C"/>
+<rect x="155.613" y="237.12" width="377.91" height="214.89" fill="url(#paint0_radial_1653_110)"/>
+<rect x="237.121" y="22.23" width="192.66" height="214.89" fill="#2D3125" fill-opacity="0.29"/>
+<foreignObject x="-377.169" y="-377.169" width="1473.11" height="1458.29"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(188.58px);clipPath:url(#bgblur_1_1653_110_clip_path);height:100%;width:100%"></div></foreignObject><rect data-figma-bg-blur-radius="377.169" width="718.77" height="703.95" fill="#292929" fill-opacity="0.06"/>
+</g>
+<defs>
+<clipPath id="bgblur_1_1653_110_clip_path" transform="translate(377.169 377.169)"><rect width="718.77" height="703.95"/>
+</clipPath><radialGradient id="paint0_radial_1653_110" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(344.568 344.565) rotate(90) scale(107.445 188.955)">
+<stop stop-color="#272A31"/>
+<stop offset="1" stop-color="#262335"/>
+</radialGradient>
+<clipPath id="clip0_1653_110">
+<rect width="718.77" height="703.95" fill="white"/>
+</clipPath>
+</defs>
+</svg>
