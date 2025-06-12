@@ -1,5 +1,5 @@
 {
-  "name": "@Brudite-Pvt-Ltd/skb-fe-shared",
+  "name": "@brudite-pvt-ltd/skb-fe-shared",
   "version": "1.0.0",
   "private": false,
   "publishConfig": {
@@ -15,7 +15,7 @@
     },
     "./style.css": "./styles/style.css",
     "./global.css": "./styles/global.css",
-    "./utils/*": "./dist/utils/*.js"
+    "./utils/*": "./dist/*.js"
   },
   "files": [
     "dist/",
