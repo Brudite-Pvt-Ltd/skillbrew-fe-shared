@@ -1,0 +1,19 @@
+{
+  "name": "@ajeetsingh1109/shared",
+  "version": "1.0.0",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "main": "index.js",
+  "types": "index.d.ts",
+  "private": false,
+  "scripts": {
+    "build": "tsc"
+  },
+  "files": [
+    "styles",
+    "utils",
+    "constants"
+  ],
+  "dependencies": {}
+}
