@@ -1,9 +1,13 @@
-name: Publish @skillbrew/shared
+name: Publish @Brudite-Pvt-Ltd/shared
 
 on:
   push:
     branches:
       - main
+
+permissions:
+  contents: read
+  packages: write
 
 jobs:
   publish:
