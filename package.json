@@ -1,19 +1,39 @@
 {
-  "name": "@ajeetsingh1109/shared",
+  "name": "@skillbrew/shared",
   "version": "1.0.0",
+  "private": false,
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
-  "main": "index.js",
-  "types": "index.d.ts",
-  "private": false,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "style": "styles/style.css",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs.js"
+    },
+    "./style.css": "./styles/style.css",
+    "./global.css": "./styles/global.css",
+    "./utils/*": "./dist/utils/*.js"
+  },
+  "files": [
+    "dist/",
+    "styles/global.css",
+    "styles/style.css"
+  ],
   "scripts": {
     "build": "tsc"
   },
-  "files": [
-    "styles",
-    "utils",
-    "constants"
-  ],
-  "dependencies": {}
+  "devDependencies": {
+    "@types/crypto-js": "^4.2.2",
+    "@types/html2canvas": "^0.5.35",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/node": "^24.0.1",
+    "@types/react": "^19.1.8",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "sweetalert2": "^11.22.0"
+  }
 }

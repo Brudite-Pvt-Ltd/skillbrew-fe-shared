@@ -16,7 +16,6 @@ import {
 } from "./Types";
 import html2canvas from "html2canvas";
 import confetti from "canvas-confetti";
-import { AZURE_SPEECH_KEY, AZURE_SPEECH_REGION } from "@/Config/Config";
 import * as sdk from "microsoft-cognitiveservices-speech-sdk";
 
 export const renderFormData = (values: any) => {
@@ -946,7 +945,7 @@ export const drawRect = (
   detections.forEach((prediction) => {
     const [x, y, width, height] = prediction.bbox;
     const text = prediction.class;
-    const crypto: any = window.crypto || window.msCrypto;
+    const crypto: any = window?.crypto;
     let array = new Uint32Array(1);
     crypto.getRandomValues(array);
     const color = Math.floor(crypto * 16777215).toString(16);
@@ -1044,8 +1043,8 @@ export const captureScreenAsBlob = async (): Promise<Blob | null> => {
       useCORS: true,
       allowTaint: true,
       logging: true,
-      windowWidth: document.documentElement.scrollWidth,
-      windowHeight: document.documentElement.scrollHeight,
+      width: document.documentElement.scrollWidth,
+      height: document.documentElement.scrollHeight,
     });
 
     return new Promise((resolve, reject) => {
@@ -1378,7 +1377,12 @@ export const calculatePrice = (
   return parseFloat((originalPrice - discountAmount).toFixed(2));
 };
 
-export async function synthesizeSpeech(text = "", interviewer: string) {
+export async function synthesizeSpeech(
+  text = "",
+  interviewer: string,
+  AZURE_SPEECH_KEY: string,
+  AZURE_SPEECH_REGION: string
+) {
   if (!AZURE_SPEECH_KEY || !AZURE_SPEECH_REGION) {
     throw new Error(
       "Azure Speech Service subscription key and region are required."
@@ -1573,10 +1577,10 @@ export const getAppliedFiltersCount = (
 
     if (isArray) {
       if (isMeaningfulArray) {
-        applied[key as keyof Filters] = value;
+        applied[key] = value as Filters[keyof Filters];
       }
     } else if (!isEmptyString && !isDefaultValue) {
-      applied[key as keyof Filters] = value;
+      applied[key] = value as Filters[keyof Filters];
     }
   });
 
@@ -1658,7 +1662,7 @@ export const getFileIconClass = (fileName: string) => {
   }
 };
 
-export const formatToMinSec = (totalSeconds: any): React.ReactNode => {
+export const formatToMinSec = (totalSeconds: any) => {
   const total = Number(totalSeconds);
   if (isNaN(total) || total < 0) {
     return "00:00";
