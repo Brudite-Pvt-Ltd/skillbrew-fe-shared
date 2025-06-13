@@ -5,6 +5,7 @@
     "lib": ["DOM", "DOM.Iterable", "ES2017", "ES2018", "es2021"],
     "jsx": "react-jsx",
     "outDir": "dist",
+    "allowJs": true,
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
