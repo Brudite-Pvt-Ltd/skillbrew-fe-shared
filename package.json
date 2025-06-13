@@ -13,13 +13,13 @@
       "import": "./dist/index.js",
       "require": "./dist/index.cjs.js"
     },
-    "./styles/*": "./styles/*.css",
+    "./styles/*": "./src/styles/*.css",
     "./utils/*": "./dist/*.js",
     "./assets/*": "./assets/*"
   },
   "files": [
     "dist/",
-    "src/styles",
+    "src/styles/",
     "assets/"
   ],
   "scripts": {
