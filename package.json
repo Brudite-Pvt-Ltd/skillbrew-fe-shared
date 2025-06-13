@@ -7,19 +7,18 @@
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "style": "src/styles/style.css",
+  "style": "assets/styles/style.css",
   "exports": {
     ".": {
       "import": "./dist/index.js",
       "require": "./dist/index.cjs.js"
     },
-    "./styles/*": "./src/styles/*.css",
+    "./styles/*": "./assets/styles/*",
     "./utils/*": "./dist/*.js",
     "./assets/*": "./assets/*"
   },
   "files": [
     "dist/",
-    "src/styles/",
     "assets/"
   ],
   "scripts": {
