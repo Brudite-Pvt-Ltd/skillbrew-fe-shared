@@ -1,6 +1,6 @@
 {
   "name": "@brudite-pvt-ltd/skb-fe-shared",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": false,
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
