@@ -17,7 +17,8 @@
     "./utils/*": "./dist/utils/*"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && npm run copy:css",
+    "copy:css": "cp -R src/assets dist/assets",
     "prepublishOnly": "npm run build"
   },
   "publishConfig": {
