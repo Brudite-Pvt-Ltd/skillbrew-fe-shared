@@ -6,20 +6,19 @@
   "types": "dist/index.d.ts",
   "style": "dist/assets/styles/style.css",
   "files": [
-    "dist/"
+    "dist/",
+    "assets/"
   ],
   "exports": {
     ".": {
       "import": "./dist/index.js",
-      "require": "./dist/index.js"
+      "require": "./dist/index.cjs.js"
     },
-    "./assets/*": "./dist/assets/*",
-    "./utils/*": "./dist/utils/*"
+    "./styles": "./dist/styles/index.js",
+    "./utils/*": "./dist/utils/*.js"
   },
   "scripts": {
-    "build": "tsc && npm run copy:css",
-    "copy:css": "cp -R src/assets dist/assets",
-    "prepublishOnly": "npm run build"
+    "build": "tsc"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"

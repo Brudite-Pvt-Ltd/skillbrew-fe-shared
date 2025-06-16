@@ -1,5 +1,5 @@
-import './assets/styles/global.css';
-import './assets/styles/style.css';
+import './styles/global.css';
+import './styles/style.css';
 
 export * from './utils/Helper';
 export * from './utils/Icons';
