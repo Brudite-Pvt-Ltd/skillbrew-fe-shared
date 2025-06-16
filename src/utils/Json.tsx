@@ -520,11 +520,6 @@ export const EducationModeChoices = [
   { value: "ONLINE", label: "Online" },
 ];
 
-export type LanguageOption = {
-  value: string;
-  label: string;
-};
-
 export const countriesAndCurrencies: any = [
   {
     label: "Afghanistan",

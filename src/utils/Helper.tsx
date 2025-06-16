@@ -941,6 +941,14 @@ export const drawRect = (
 };
 
 // utils/voiceDetection.ts
+// Add type declarations for SpeechRecognition and webkitSpeechRecognition
+declare global {
+  interface Window {
+    SpeechRecognition: any;
+    webkitSpeechRecognition: any;
+  }
+}
+
 export const startVoiceDetection = (
   onVoiceDetected: () => void,
   onRecordingComplete: (audioBlob: Blob) => void
@@ -950,8 +958,9 @@ export const startVoiceDetection = (
     return;
   }
 
-  const recognition = new (window.SpeechRecognition ||
-    (window as any).webkitSpeechRecognition)();
+  const SpeechRecognitionConstructor =
+    window.SpeechRecognition || window.webkitSpeechRecognition;
+  const recognition = new SpeechRecognitionConstructor();
   recognition.continuous = true;
   recognition.interimResults = true;
   recognition.lang = "en-US";

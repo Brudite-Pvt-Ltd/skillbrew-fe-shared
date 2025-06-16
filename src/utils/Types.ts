@@ -1054,7 +1054,7 @@ export interface DriveStageVenue {
   created_org: number;
 }
 
-export interface DriveStage {
+export interface DriveStageType {
   id: number;
   name: string;
   description: string;

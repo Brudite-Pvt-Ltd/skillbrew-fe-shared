@@ -1,28 +1,18 @@
 {
   "name": "@brudite-pvt-ltd/skb-fe-shared",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "private": false,
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "style": "assets/styles/style.css",
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs.js"
-    },
-    "./styles/*": "./assets/styles/*",
-    "./utils/*": "./dist/utils/*.js",
-    "./assets/*": "./assets/*"
-  },
+  "style": "dist/assets/styles/style.css",
   "files": [
-    "dist/",
-    "assets/"
+    "dist/"
   ],
   "scripts": {
     "build": "tsc"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "peerDependencies": {
     "crypto-js": "^4.1.1",
