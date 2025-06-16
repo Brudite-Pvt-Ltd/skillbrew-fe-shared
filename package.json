@@ -4,21 +4,22 @@
   "private": false,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "style": "dist/assets/styles/style.css",
+  "style": "dist/styles/style.css",
   "files": [
     "dist/",
     "assets/"
   ],
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs.js"
+      "import": "./dist/index.js"
     },
-    "./styles": "./dist/styles/index.js",
-    "./utils/*": "./dist/utils/*.js"
+    "./styles": {
+      "import": "./dist/styles/index.js"
+    }
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc && npm run copy:styles",
+    "copy:styles": "mkdir -p dist/styles && cp src/styles/*.css dist/styles/ && cp src/styles/index.ts dist/styles/index.js"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"

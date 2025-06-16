@@ -1,6 +1,3 @@
-import './styles/global.css';
-import './styles/style.css';
-
 export * from './utils/Helper';
 export * from './utils/Icons';
 export * from './utils/Json';
