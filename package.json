@@ -7,7 +7,7 @@
   "style": "dist/styles/style.css",
   "files": [
     "dist/",
-    "assets/"
+    "src/assets/"
   ],
   "exports": {
     ".": {
