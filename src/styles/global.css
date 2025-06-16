@@ -16471,7 +16471,7 @@ gap: 1rem;
   overflow-y: auto;
   align-items: center;
   justify-content: center;
-  background: url("../../assets/images/mascot_background.gif");
+  background: url("/assets/images/mascot_background.gif");
   background-position: center;
   background-size: cover;
 }
@@ -19319,7 +19319,7 @@ gap: 1rem;
   right: 10px;
   top: 25%;
   width: auto;
-  content: url(../../assets/svg/input-calendar.svg);
+  content: url(/assets/svg/input-calendar.svg);
 }
 
 .collborator-modal-permissions-container {
