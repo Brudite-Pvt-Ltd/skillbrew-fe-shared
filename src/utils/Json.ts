@@ -1,4 +1,4 @@
-import Icons from "./Icons";
+import Icons from './Icons';
 
 export const Designation = [
   { label: "Front End Developer", value: "front_end_developer" },
