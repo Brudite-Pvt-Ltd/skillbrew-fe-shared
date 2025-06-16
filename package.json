@@ -8,8 +8,17 @@
   "files": [
     "dist/"
   ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    },
+    "./assets/*": "./dist/assets/*",
+    "./utils/*": "./dist/utils/*"
+  },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
