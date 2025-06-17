@@ -1,4 +1,32 @@
-import Icons from './Icons';
+import {
+  Ajeet,
+  Arpit,
+  Ayush,
+  Companies1,
+  Companies2,
+  Companies3,
+  Companies4,
+  Companies5,
+  Companies6,
+  Dev,
+  Lakshyaveer,
+  Nirvika,
+  OfficeIndia,
+  OfficeUs,
+  Rashid,
+  Rishabh,
+  Ritu,
+  Sanyam,
+  Testimonial1,
+  Testimonial2,
+  Testimonial3,
+  Testimonial4,
+  Testimonial5,
+  Testimonial6,
+  Vipul,
+  Yashasvi,
+} from "../assets";
+import Icons from "./Icons";
 
 export const Designation = [
   { label: "Front End Developer", value: "front_end_developer" },
@@ -2052,7 +2080,7 @@ export const jobDesignations = [
 
 export const testimonialCandidates = [
   {
-    image: "/images/testimonial3.png",
+    image: Testimonial3,
     name: "Navpreet Kaur",
     feedback:
       "My journey to becoming a professional was greatly supported by SkillBrew.ai. The daily contests and carefully curated questions, along with the IDE and code collaboration features, made DSA practice engaging and effective. SkillBrew helped me navigate the learning phase, practice consistently, and ultimately secure my job. I highly recommend it for anyone serious about advancing their tech career.",
@@ -2060,7 +2088,7 @@ export const testimonialCandidates = [
     companyName: "Mandelbulb Technologies",
   },
   {
-    image: "/images/testimonial1.png",
+    image: Testimonial1,
     name: "Faisal Nazir",
     feedback:
       "In my final year of college, I stumbled upon SkillBrew.ai while searching for a solid platform to practice DSA. It turned out to be a game-changer.The coding IDE and the practice questions were exactly what I needed to sharpen my skills and land a job.",
@@ -2068,7 +2096,7 @@ export const testimonialCandidates = [
     companyName: "American Chase",
   },
   {
-    image: "/images/testimonial2.png",
+    image: Testimonial2,
     name: "Janvi Sharma",
     feedback:
       "As a tech enthusiast, I struggled with Data Structures and Algorithms (DSA) until I found SkillBrew. The platform's valuable features like code collaboration. Practising with friends made the experience enjoyable and effective. With SkillBrew's support, I improved my skills and secured a job. Thanks to SkillBrew for helping me bridge the gap between learning and landing a job!",
@@ -2076,7 +2104,7 @@ export const testimonialCandidates = [
     companyName: "Consultadd Services Private Limited",
   },
   {
-    image: "/images/shubhanshu.png",
+    image: Testimonial6,
     name: "Shubhanshu Mishra",
     feedback:
       "While struggling for a job, I was confident in my knowledge of different tech stacks and felt prepared for interviews, but I had difficulty with the coding rounds. I turned to SkillBrew for help and started practicing with the available questions. I involved my friends using the code collaboration feature, creating a competitive environment with quizzes and weekly contests. Slowly, I gained confidence and ultimately sealed the opportunity.",
@@ -2084,7 +2112,7 @@ export const testimonialCandidates = [
     companyName: "Ollosoft Technologies Private Limited",
   },
   {
-    image: "/images/testimonial5.png",
+    image: Testimonial5,
     name: "Vikas Kumar Jain",
     feedback:
       "During my preparation phase for job interviews, Skilbrew proved to be a transformative tool. Its features maintained my enthusiasm, and the daily coding challenges substantially enhanced my Data Structures and Algorithms proficiency",
@@ -2092,7 +2120,7 @@ export const testimonialCandidates = [
     companyName: "Ahead Websoft Technologies",
   },
   {
-    image: "/images/testimonial4.png",
+    image: Testimonial4,
     name: "Prashant Lalwani",
     feedback:
       "I started my coding journey with the SkillBrew IDE, beginning with their practice questions that were tagged by different topics. When I gained confidence, I began participating in the contests, and the daily quizzes helped me get a strong command over DSA topics. This preparation really helped during my interview, and I was able to crack the job.",
@@ -2103,27 +2131,27 @@ export const testimonialCandidates = [
 
 export const companyLogos = [
   {
-    src: "/images/skillbrew-companies/1.png",
+    src: Companies1,
     alt: "Company Logo 1",
   },
   {
-    src: "/images/skillbrew-companies/2.png",
+    src: Companies2,
     alt: "Company Logo 2",
   },
   {
-    src: "/images/skillbrew-companies/3.png",
+    src: Companies3,
     alt: "Company Logo 3",
   },
   {
-    src: "/images/skillbrew-companies/4.png",
+    src: Companies4,
     alt: "Company Logo 4",
   },
   {
-    src: "/images/skillbrew-companies/5.png",
+    src: Companies5,
     alt: "Company Logo 5",
   },
   {
-    src: "/images/skillbrew-companies/6.png",
+    src: Companies6,
     alt: "Company Logo 6",
   },
 ];
@@ -2135,7 +2163,7 @@ export const officeLocationData = [
     email: "info@skillbrew.com",
     phone: "+91-90766 24183",
     location: "https://www.google.com/maps?q=Brudite ",
-    imageUrl: "/images/officeIndia.png",
+    imageUrl: OfficeIndia,
     iconColor: "#FFAA00",
   },
   {
@@ -2145,7 +2173,7 @@ export const officeLocationData = [
     phone: "+1 (551) 998-2691",
     location:
       "https://www.google.com/maps/search/?api=1&query=2090+Dunwoody+Club+Dr%2C+Ste+106+%235132%2C+Atlanta%2C+GA%2C+30350%2C+USA",
-    imageUrl: "./.././images/officeus.png",
+    imageUrl: OfficeUs,
     iconColor: "#33907C",
   },
 ];
@@ -2155,35 +2183,35 @@ export const teamMembers = [
     id: 1,
     name: "Ritu Soni",
     position: "CTO & Co-Founder",
-    imageSrc: "/images/imageRitu.png",
+    imageSrc: Ritu,
     linkedinprofile: "https://www.linkedin.com/in/ritu-soni1",
   },
   {
     id: 2,
     name: "Rishabh Tiwari",
     position: "CEO & Co-Founder",
-    imageSrc: "/images/imageRishabh.png",
+    imageSrc: Rishabh,
     linkedinprofile: "https://www.linkedin.com/in/devcoder/",
   },
   {
     id: 3,
     name: "Nirvika Sharma",
     position: "Lead-Talent & People Operations",
-    imageSrc: "/images/imagenirvika.png",
+    imageSrc: Nirvika,
     linkedinprofile: "https://www.linkedin.com/in/nirvika-sharma-08a755294",
   },
   {
     id: 4,
     name: "Ajeet Singh",
     position: "Lead Software Engineer",
-    imageSrc: "/images/imageajeet.png",
+    imageSrc: Ajeet,
     linkedinprofile: "https://www.linkedin.com/in/ajeet-singh-6372631a1",
   },
   {
     id: 5,
     name: "Vipul Jain",
     position: "Backend Developer",
-    imageSrc: "/images/imageVipul.png",
+    imageSrc: Vipul,
     linkedinprofile: "https://www.linkedin.com/in/vipul-jain-v8441j/",
   },
 
@@ -2191,7 +2219,7 @@ export const teamMembers = [
     id: 6,
     name: "Rashid Ali",
     position: "Frontend Developer",
-    imageSrc: "/images/imageRashid.png",
+    imageSrc: Rashid,
     linkedinprofile: "https://www.linkedin.com/in/myselfrashid/",
   },
 
@@ -2199,35 +2227,35 @@ export const teamMembers = [
     id: 7,
     name: "Dev Aaryan",
     position: "Backend Developer",
-    imageSrc: "/images/imagedev.png",
+    imageSrc: Dev,
     linkedinprofile: "https://www.linkedin.com/in/dev-aaryan/",
   },
   {
     id: 8,
     name: "Sanyam Kumat",
     position: "Backend Developer",
-    imageSrc: "/images/imagesanyam.png",
+    imageSrc: Sanyam,
     linkedinprofile: "https://www.linkedin.com/in/sanyamkumat/",
   },
   {
     id: 9,
     name: "Arpit Pareek",
     position: "UI/UX Designer",
-    imageSrc: "/images/imagearpit.png",
+    imageSrc: Arpit,
     linkedinprofile: "https://www.linkedin.com/in/mr-arpit-pareek/",
   },
   {
     id: 10,
     name: "Ayush Raj",
     position: "UI/UX Designer",
-    imageSrc: "/images/imageayush.png",
+    imageSrc: Ayush,
     linkedinprofile: "https://www.linkedin.com/in/ayushux/",
   },
   {
     id: 11,
     name: "Yashasvi Chaturvedi",
     position: "Digital Media Associate",
-    imageSrc: "/images/imageyashasvi.png",
+    imageSrc: Yashasvi,
     linkedinprofile:
       "https://www.linkedin.com/in/yashasvi-chaturvedi-948771301/",
   },
@@ -2235,7 +2263,7 @@ export const teamMembers = [
     id: 12,
     name: "Lakshyaveer Singh",
     position: "Digital Media Associate",
-    imageSrc: "/images/imagelakshyaveer.png",
+    imageSrc: Lakshyaveer,
     linkedinprofile:
       "https://www.linkedin.com/in/lakshyaveer-singh-khinchi-02ba54211/",
   },
