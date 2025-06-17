@@ -5,7 +5,7 @@ export { default as Confetti } from "./gif/confetti.gif";
 export { default as HandShake } from "./gif/hand-shake.gif";
 export { default as History } from "./gif/history.gif";
 export { default as Loading } from "./gif/loading.gif";
-export { default as MascotBackground } from "./images/mascot-background.gif";
+export { default as MascotBackground } from "./gif/mascot-background.gif";
 export { default as SendAnimation } from "./gif/send-animation.gif";
 
 // Image
