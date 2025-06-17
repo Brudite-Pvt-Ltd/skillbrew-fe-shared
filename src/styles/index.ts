@@ -1,5 +1,4 @@
 import "./bootstrap.min.css";
-import "../scripts/bootstrap.bundle.min.js";
 import "./fontawesome.min.css";
 import "./all.min.css";
 import "./global.css";

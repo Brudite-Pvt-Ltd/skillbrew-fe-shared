@@ -20,12 +20,16 @@
     "./assets": {
       "import": "./dist/assets/index.js",
       "types": "./dist/assets/index.d.ts"
-    }
+    },
+    "./scripts": {
+    "import": "./dist/scripts/index.js"
+  }
   },
   "scripts": {
     "build": "tsc && npm run copy:styles && npm run copy:assets",
     "copy:styles": "mkdir -p dist/styles && cp src/styles/*.css dist/styles/ && cp src/styles/index.ts dist/styles/index.ts",
-    "copy:assets": "mkdir -p dist/assets && cp -R src/assets/* dist/assets/ && cp src/assets/index.ts dist/assets/index.ts"
+    "copy:assets": "mkdir -p dist/assets && cp -R src/assets/* dist/assets/ && cp src/assets/index.ts dist/assets/index.ts",
+    "copy:scripts": "mkdir -p dist/scripts && cp -R src/scripts/* dist/scripts/"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
