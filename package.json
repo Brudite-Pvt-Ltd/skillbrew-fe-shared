@@ -15,6 +15,9 @@
     },
     "./styles": {
       "import": "./dist/styles/index.js"
+    },
+    "./assets": {
+      "import": "./dist/assets/index.js"
     }
   },
   "scripts": {
