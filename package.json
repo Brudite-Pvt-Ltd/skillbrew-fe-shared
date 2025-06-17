@@ -1,6 +1,6 @@
 {
   "name": "@brudite-pvt-ltd/skb-fe-shared",
-  "version": "1.0.34",
+  "version": "1.0.35",
   "private": false,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -22,8 +22,8 @@
       "types": "./dist/assets/index.d.ts"
     },
     "./scripts": {
-    "import": "./dist/scripts/index.js"
-  }
+      "import": "./dist/scripts/index.js"
+    }
   },
   "scripts": {
     "build": "tsc && npm run copy:styles && npm run copy:assets",
