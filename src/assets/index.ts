@@ -118,6 +118,7 @@ export { default as LandingContactUs } from "./svg/landing-contact-us.svg";
 export { default as LandingFeature1 } from "./svg/landing-feature1.svg";
 export { default as LandingFeature2 } from "./svg/landing-feature2.svg";
 export { default as LandingFeature3 } from "./svg/landing-feature3.svg";
+export { default as LandingHero } from "./svg/landing-hero.svg";
 export { default as LandingPath1 } from "./svg/landing-path1.svg";
 export { default as LandingPath2 } from "./svg/landing-path2.svg";
 export { default as LandingQuats } from "./svg/landing-quats.svg";

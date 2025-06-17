@@ -5884,7 +5884,7 @@ div:where(.swal2-container) {
 
 /* Hero section styles */
 .hero {
-  background-image: url("/svg/LandingHero.svg");
+  background-image: url("../assets/svg/landing-hero.svg");
   background-repeat: no-repeat;
   display: flex;
   padding: 6rem 4rem;
@@ -6215,7 +6215,7 @@ div:where(.swal2-container) {
   height: 400px;
   flex-shrink: 0;
   border-radius: 15px;
-  background: url("/images/aiupcoming.jpg") lightgray 50% / cover no-repeat;
+  background: url("../assets/images/ai-upcoming.jpg") lightgray 50% / cover no-repeat;
   background-position: center;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.02);
   display: flex;
@@ -8768,7 +8768,7 @@ div:where(.swal2-container) {
   width: 100vw;
   height: 100dvh;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("/svg/interview-room.svg") repeat;
+    url("../assets/svg/interview-room.svg") repeat;
 
   background-color: #212020;
 }
@@ -16171,7 +16171,7 @@ gap: 1rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: url("/svg/blankquestion.svg") no-repeat center;
+  background: url("../assets/svg/blank-question.svg") no-repeat center;
 }
 
 .blank-data-card-heading {
@@ -16238,7 +16238,7 @@ gap: 1rem;
 }
 
 .greeting-modal-container {
-  background-image: url("/assets/images/coins_bg.png");
+  background-image: url("../assets/images/coins-bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -16392,7 +16392,7 @@ gap: 1rem;
 
 .progress-bar-background {
   position: absolute;
-  background-image: url("/assets/svg/frame-bg.svg");
+  background-image: url("../assets/svg/frame-bg.svg");
   height: 100%;
   width: 100%;
   backdrop-filter: blur(177px);
@@ -16468,7 +16468,7 @@ gap: 1rem;
   overflow-y: auto;
   align-items: center;
   justify-content: center;
-  background: url("/assets/images/mascot_background.gif");
+  background: url("../assets/gif/mascot-background.gif");
   background-position: center;
   background-size: cover;
 }
@@ -16572,14 +16572,14 @@ gap: 1rem;
 .demo-ai-room-container {
   height: 100dvh;
   width: 100%;
-  background-image: url("/svg/demoaiconsole.svg");
+  background-image: url("../assets/svg/demo-ai-console.svg");
 }
 
 .demo-ai-container {
   height: 100dvh;
   width: 100%;
   display: flex;
-  background-image: url("/svg/demoaiconsole.svg");
+  background-image: url("../assets/svg/demo-ai-console.svg");
   padding: 2rem 2rem 0rem 2rem;
 }
 
@@ -16711,7 +16711,7 @@ gap: 1rem;
 .demo-ai-room-container {
   height: 100dvh;
   width: 100%;
-  background-image: url(/svg/demoaiconsole.svg);
+  background-image: url('../assets/svg/demo-ai-console.svg');
 }
 
 .typing-effect-blinking-circle {
@@ -19316,7 +19316,7 @@ gap: 1rem;
   right: 10px;
   top: 25%;
   width: auto;
-  content: url(/assets/svg/input-calendar.svg);
+  content: url('../assets/svg/input-calendar.svg');
 }
 
 .collborator-modal-permissions-container {
