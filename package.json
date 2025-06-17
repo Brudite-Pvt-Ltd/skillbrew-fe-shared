@@ -20,12 +20,16 @@
     "./assets": {
       "import": "./dist/assets/index.js",
       "types": "./dist/assets/index.d.ts"
+    },
+    "./webfonts": {
+      "import": "./dist/webfonts/"
     }
   },
   "scripts": {
-    "build": "tsc && npm run copy:styles && npm run copy:assets",
+    "build": "tsc && npm run copy:styles && npm run copy:assets && npm run copy:webfonts",
     "copy:styles": "mkdir -p dist/styles && cp src/styles/*.css dist/styles/ && cp src/styles/index.ts dist/styles/index.ts",
-    "copy:assets": "mkdir -p dist/assets && cp -R src/assets/* dist/assets/ && cp src/assets/index.ts dist/assets/index.ts"
+    "copy:assets": "mkdir -p dist/assets && cp -R src/assets/* dist/assets/ && cp src/assets/index.ts dist/assets/index.ts",
+    "copy:webfonts": "mkdir -p dist/webfonts && cp -R src/webfonts/* dist/webfonts/"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
