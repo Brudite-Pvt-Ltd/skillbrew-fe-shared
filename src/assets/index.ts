@@ -54,7 +54,7 @@ export { default as Logo2 } from "./images/logo2.png";
 export { default as MockInterviewForm } from "./images/mock-interview-form.png";
 export { default as MockInterviewRoom } from "./images/mock-interview-room.png";
 export { default as ModistechLogo } from "./images/modistech-logo.png";
-export { default as OfficeIndia } from "./images/office-india.png";
+export { default as OfficeIndia } from "./images/office-India.png";
 export { default as OfficeUs } from "./images/office-us.png";
 export { default as SendLetter } from "./images/send-letter.png";
 export { default as TechnmanLogo } from "./images/technman-logo.png";
