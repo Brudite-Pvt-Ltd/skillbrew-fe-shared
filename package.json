@@ -4,25 +4,28 @@
   "private": false,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "style": "dist/styles/style.css",
+  "style": "dist/styles/global.css",
   "files": [
-    "dist/",
-    "src/assets/"
+    "dist/"
   ],
   "exports": {
     ".": {
-      "import": "./dist/index.js"
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
     },
     "./styles": {
-      "import": "./dist/styles/index.js"
+      "import": "./dist/styles/index.js",
+      "types": "./dist/styles/index.d.ts"
     },
     "./assets": {
-      "import": "./dist/assets/index.js"
+      "import": "./dist/assets/index.js",
+      "types": "./dist/assets/index.d.ts"
     }
   },
   "scripts": {
-    "build": "tsc && npm run copy:styles",
-    "copy:styles": "mkdir -p dist/styles && cp src/styles/*.css dist/styles/ && cp src/styles/index.ts dist/styles/index.js"
+    "build": "tsc && npm run copy:styles && npm run copy:assets",
+    "copy:styles": "mkdir -p dist/styles && cp src/styles/*.css dist/styles/ && cp src/styles/index.ts dist/styles/index.ts",
+    "copy:assets": "mkdir -p dist/assets && cp -R src/assets/* dist/assets/ && cp src/assets/index.ts dist/assets/index.ts"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
