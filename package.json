@@ -26,10 +26,10 @@
     }
   },
   "scripts": {
-    "build": "tsc && npm run copy:styles && npm run copy:assets",
+    "build": "tsc && npm run copy:styles && npm run copy:assets && npm run copy:scripts",
     "copy:styles": "mkdir -p dist/styles && cp src/styles/*.css dist/styles/ && cp src/styles/index.ts dist/styles/index.ts",
     "copy:assets": "mkdir -p dist/assets && cp -R src/assets/* dist/assets/ && cp src/assets/index.ts dist/assets/index.ts",
-    "copy:scripts": "mkdir -p dist/scripts && cp -R src/scripts/* dist/scripts/"
+    "copy:scripts": "mkdir -p dist/scripts && cp src/scripts/*.js dist/scripts/ && cp src/scripts/index.ts dist/scripts/index.ts"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
