@@ -1,14 +1,18 @@
 import {
+  Accountable,
   Ajeet,
   Arpit,
   Ayush,
+  Commitment,
   Companies1,
   Companies2,
   Companies3,
   Companies4,
   Companies5,
   Companies6,
+  Delivery,
   Dev,
+  Hint,
   Lakshyaveer,
   Nirvika,
   OfficeIndia,
@@ -2272,28 +2276,28 @@ export const teamMembers = [
 export const valueCardsData = [
   {
     id: 0,
-    icon: "/svg/Setting.svg",
+    icon: Hint,
     title: "Innovation",
     weAllAboutText:
       "We’re all about pushing boundaries at Skillbrew. By using AI, we make learning tech easier and more impactful for everyone.",
   },
   {
     id: 1,
-    icon: "/images/Accountability.png",
+    icon: Accountable,
     title: "Accountability",
     weAllAboutText:
       "We stand by everything we create. Our team ensures that every feature in Skillbrew is reliable and meets the high standards you expect.",
   },
   {
     id: 2,
-    icon: "/images/commitment.png",
+    icon: Commitment,
     title: "Commitment",
     weAllAboutText:
       "We’re committed to your success. With our comprehensive training programs, we’re here to help you grow and thrive in your tech career.",
   },
   {
     id: 3,
-    icon: "/images/delivery.png",
+    icon: Delivery,
     title: "Delivery",
     weAllAboutText:
       "We focus on delivering top-notch experiences, so you can trust Skillbrew to provide the skills and confidence you need to succeed.",

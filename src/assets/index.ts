@@ -49,6 +49,7 @@ export { default as EmptyDataError } from "./images/empty-data-error.png";
 export { default as Error403 } from "./images/error403.png";
 export { default as Feature1 } from "./images/feature1.png";
 export { default as Feature2 } from "./images/feature2.png";
+export { default as Hero } from "./images/hero.png";
 export { default as Logo1 } from "./images/logo1.png";
 export { default as Logo2 } from "./images/logo2.png";
 export { default as MockInterviewForm } from "./images/mock-interview-form.png";
