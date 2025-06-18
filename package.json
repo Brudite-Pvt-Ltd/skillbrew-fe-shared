@@ -22,7 +22,8 @@
       "types": "./dist/assets/index.d.ts"
     },
     "./scripts": {
-      "import": "./dist/scripts/index.js"
+      "import": "./dist/scripts/index.js",
+      "types": "./dist/scripts/index.d.ts"
     }
   },
   "scripts": {
