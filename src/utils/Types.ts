@@ -1664,3 +1664,21 @@ export interface ForumParticipant {
   joined_at: string;
   forum: number;
 }
+
+export interface PayloadParams1 {
+  params?: string;
+  payload?: any;
+  toast_status?: boolean;
+}
+
+export interface PayloadParams2 {
+  params?: string;
+  toast_status?: boolean;
+}
+
+export interface ReduxState {
+  status: boolean;
+  loading: boolean;
+  data: any;
+  error: string | null;
+}
