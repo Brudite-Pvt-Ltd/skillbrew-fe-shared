@@ -1,3 +1,5 @@
+import { ReduxState } from "../utils/Types";
+
 export const CODE = {
   OK_CODE: 200,
   CREATED: 201,
@@ -13,6 +15,7 @@ export const CODE = {
   TIMEOUT: 408,
   UNPROCESSABLE_CONTENT: 422,
 };
+
 export const VALIDATION_MESSAGE = {
   CATCH_ERROR: "Something went wrong. Please try again.",
   NO_SPACE_ALLOWED: "No space allowed.",
@@ -263,3 +266,10 @@ export const VALIDATION_MESSAGE = {
 };
 
 export const isUserLoginToken = "isUserLoginToken";
+
+export const initialState: ReduxState = {
+  status: false,
+  loading: false,
+  data: null,
+  error: null,
+};
