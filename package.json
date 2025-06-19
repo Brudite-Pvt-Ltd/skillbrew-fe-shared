@@ -1,6 +1,6 @@
 {
   "name": "@brudite-pvt-ltd/skb-fe-shared",
-  "version": "1.0.42",
+  "version": "1.0.43",
   "private": false,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
