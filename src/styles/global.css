@@ -386,6 +386,7 @@ header {
   -o-transition: all linear 0.3s;
   transition: all linear 0.3s;
   padding-top: 10px;
+  background-color: var(--background-color);
 }
 
 .navbar .links {

@@ -1676,9 +1676,9 @@ export interface PayloadParams2 {
   toast_status?: boolean;
 }
 
-export interface ReduxState {
+export interface ReduxState<T = any> {
   status: boolean;
   loading: boolean;
-  data: any;
+  data: T | null;
   error: string | null;
 }
