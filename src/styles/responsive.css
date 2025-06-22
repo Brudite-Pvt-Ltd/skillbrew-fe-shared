@@ -4747,10 +4747,6 @@
     padding: 0;
   }
 
-  .book-demo-background-container {
-    height: 100%;
-  }
-
   .book-demo-group-img {
     object-fit: cover;
     height: 100%;

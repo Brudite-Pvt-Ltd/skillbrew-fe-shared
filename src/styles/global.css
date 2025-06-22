@@ -9504,6 +9504,10 @@ div:where(.swal2-container) {
   flex: 1;
 }
 
+.book-demo-background-container{
+  height: 100%;
+}
+
 .book-demo-group-img {
   position: relative;
   width: 100%;
