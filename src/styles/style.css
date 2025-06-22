@@ -2376,7 +2376,7 @@ h6 span {
   margin-top: 50px;
   gap: 1rem;
   text-align: center;
-  background: url("/gif_images/confetti.gif") no-repeat center top;
+  background: url("/assets/gif/confetti.gif") no-repeat center top;
 }
 
 .report-heading {
