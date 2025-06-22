@@ -7570,7 +7570,7 @@ div:where(.swal2-container) {
 
 .ai-hiring-card-side-sub-header {
   align-self: stretch;
-  text-align: start;
+  text-align: flex-start;
   color: #eff1f4;
   font-size: var(--font-5);
   font-style: normal;
@@ -7635,7 +7635,7 @@ div:where(.swal2-container) {
 
 .next-interview-with-ai-card-header {
   color: var(--grey-color);
-  text-align: start;
+  text-align: flex-start;
   line-height: var(--line-height-5);
   font-size: 20px;
   font-weight: 600;
@@ -8388,7 +8388,7 @@ div:where(.swal2-container) {
 .cheating-analytics-card-count {
   font-size: var(--font-5);
   font-weight: 400;
-  text-align: start;
+  text-align: flex-start;
 }
 
 .cheating-analytics-card-title {
@@ -9922,7 +9922,7 @@ div:where(.swal2-container) {
 .schedule-demo-skeleton-submit-btn-container {
   width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .schedule-demo-skeleton-submit-btn {
@@ -10661,7 +10661,7 @@ div:where(.swal2-container) {
 
 .create-org-button-container {
   margin-top: 2rem;
-  text-align: end;
+  text-align: flex-end;
 }
 
 .create-org-button {
@@ -11025,7 +11025,7 @@ div:where(.swal2-container) {
 
 .test-webcam-container {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   gap: 1rem;
   flex-wrap: wrap;
 }
@@ -11579,7 +11579,7 @@ div:where(.swal2-container) {
   overflow: hidden;
   border-radius: 0.5rem;
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
@@ -16238,7 +16238,7 @@ gap: 1rem;
 
 .redeem-coupon-btn-container {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -18076,7 +18076,7 @@ gap: 1rem;
 
 .discussion-forum-input-container {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   justify-content: space-between;
   width: 100%;
   margin-top: 1rem;
@@ -19253,7 +19253,7 @@ gap: 1rem;
 }
 
 .drive-details-more-details .public-job-stage-details {
-  justify-content: start;
+  justify-content: flex-start;
   gap: 1rem;
 }
 
@@ -19563,7 +19563,7 @@ gap: 1rem;
   overflow: hidden;
   border-radius: 0.5rem;
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   justify-content: space-between;
   color: var(--grey-color, #222);
   font-size: var(--font-9);
