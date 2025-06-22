@@ -2135,7 +2135,7 @@ export const testimonialCandidates = [
 
 export const companyLogos = [
   {
-    src: Companies1,
+    src: "../assets/images/companies/1.png",
     alt: "Company Logo 1",
   },
   {
