@@ -4194,7 +4194,7 @@ h6 span {
 }
 
 .lb-table > table > thead > tr > th,
-.lb-table > table > tr > td {
+.lb-table > table > tbody > tr > td {
   padding: 8px;
   text-align: center;
   font-size: 14px;
@@ -4234,7 +4234,7 @@ h6 span {
   align-items: center;
 }
 
-.lb-table > table > tr > td:nth-child(2),
+.lb-table > table > tbody > tr > td:nth-child(2),
 .lb-table > table > thead > tr > th:nth-child(2) {
   width: fit-content;
 }
@@ -4469,7 +4469,7 @@ h6 span {
 
 .feedback-top-container-para {
   width: 90%;
-  color:var(--grey-color-shade-6);
+  color: var(--grey-color-shade-6);
   text-align: center;
   font-size: var(--font-6);
   font-weight: 400;
