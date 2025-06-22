@@ -1,15 +1,15 @@
-// import {
+import {
 //   Accountable,
 //   Ajeet,
 //   Arpit,
 //   Ayush,
 //   Commitment,
-//   Companies1,
-//   Companies2,
-//   Companies3,
-//   Companies4,
-//   Companies5,
-//   Companies6,
+  Companies1,
+  Companies2,
+  Companies3,
+  Companies4,
+  Companies5,
+  Companies6,
 //   Delivery,
 //   Dev,
 //   Hint,
@@ -29,7 +29,7 @@
 //   Testimonial6,
 //   Vipul,
 //   Yashasvi,
-// } from "../assets";
+} from "../assets";
 import Icons from "./Icons";
 
 export const Designation = [
@@ -2135,27 +2135,27 @@ export const testimonialCandidates = [
 
 export const companyLogos = [
   {
-    src: "Companies1",
+    src: Companies1,
     alt: "Company Logo 1",
   },
   {
-    src: "Companies2",
+    src: Companies2,
     alt: "Company Logo 2",
   },
   {
-    src: "Companies3",
+    src: Companies3,
     alt: "Company Logo 3",
   },
   {
-    src: "Companies4",
+    src: Companies4,
     alt: "Company Logo 4",
   },
   {
-    src: "Companies5",
+    src: Companies5,
     alt: "Company Logo 5",
   },
   {
-    src: "Companies6",
+    src: Companies6,
     alt: "Company Logo 6",
   },
 ];
