@@ -36,10 +36,6 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "peerDependencies": {
-    "crypto-js": "^4.1.1",
-    "html2canvas": "^1.4.1",
-    "jsonwebtoken": "^9.0.2",
-    "canvas-confetti": "^1.9.3",
     "@uiw/codemirror-theme-bespin": "^4.21.20",
     "@uiw/codemirror-theme-dracula": "^4.21.20",
     "@uiw/codemirror-theme-duotone": "^4.21.20",
@@ -47,14 +43,18 @@
     "@uiw/codemirror-theme-okaidia": "^4.21.20",
     "@uiw/codemirror-theme-vscode": "^4.21.20",
     "@uiw/codemirror-theme-xcode": "^4.21.20",
-    "microsoft-cognitiveservices-speech-sdk": "^1.41.0",
-    "@uiw/react-codemirror": "^4.21.21"
+    "@uiw/react-codemirror": "^4.21.21",
+    "canvas-confetti": "^1.9.3",
+    "crypto-js": "^4.1.1",
+    "html2canvas": "^1.4.1",
+    "jsonwebtoken": "^9.0.2",
+    "microsoft-cognitiveservices-speech-sdk": "^1.41.0"
   },
   "devDependencies": {
+    "@types/canvas-confetti": "^1.9.0",
     "@types/crypto-js": "^4.1.3",
     "@types/html2canvas": "^0.5.35",
     "@types/jsonwebtoken": "^9.0.6",
-    "typescript": "^5",
     "@uiw/codemirror-theme-bespin": "^4.21.20",
     "@uiw/codemirror-theme-dracula": "^4.21.20",
     "@uiw/codemirror-theme-duotone": "^4.21.20",
@@ -64,6 +64,13 @@
     "@uiw/codemirror-theme-xcode": "^4.21.20",
     "@uiw/react-codemirror": "^4.21.21",
     "microsoft-cognitiveservices-speech-sdk": "^1.41.0",
-    "@types/canvas-confetti": "^1.9.0"
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@codemirror/lang-cpp": "^6.0.3",
+    "@codemirror/lang-go": "^6.0.1",
+    "@codemirror/lang-java": "^6.0.2",
+    "@codemirror/lang-javascript": "^6.2.4",
+    "@codemirror/lang-python": "^6.2.1"
   }
 }

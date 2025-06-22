@@ -154,7 +154,13 @@ export interface IDEFileData {
   in: number;
   title: string;
   file: string;
-  language: string;
+  language: {
+    id: number;
+    name: string;
+    extension: string;
+    language: any;
+    defaultCode: string;
+  };
 }
 
 export interface ClientDetails {
