@@ -741,7 +741,7 @@ navbar-collapse .navbar-dark .navbar-brand {
   height: 10px !important;
   width: 140px;
   background-color: rgb(55, 55, 57);
-  color: white;
+  color: var(--background-color);
   border: none;
 }
 
@@ -753,7 +753,7 @@ navbar-collapse .navbar-dark .navbar-brand {
   height: 10px !important;
   width: 150px;
   background-color: #3a464d;
-  color: white;
+  color: var(--background-color);
   border: none;
 }
 
@@ -776,7 +776,7 @@ navbar-collapse .navbar-dark .navbar-brand {
   height: 24px !important;
   margin: 0px 10px;
   background-color: #3a464d;
-  color: white;
+  color: var(--background-color);
   border: none;
   cursor: pointer;
 }
@@ -788,7 +788,7 @@ navbar-collapse .navbar-dark .navbar-brand {
 .cust-ide-select .css-t3ipsp-control {
   margin: 0px 10px;
   background-color: #3a464d;
-  color: white;
+  color: var(--background-color);
   border: none;
   cursor: pointer;
 }
@@ -886,7 +886,7 @@ navbar-collapse .navbar-dark .navbar-brand {
   align-items: center;
   gap: 10px;
   background-color: #3a464d;
-  color: white;
+  color: var(--background-color);
   cursor: pointer;
   font-size: 11px;
   border-radius: 3.62px;
@@ -895,9 +895,12 @@ navbar-collapse .navbar-dark .navbar-brand {
   margin-right: 4px;
 }
 
+.ide-file button {
+  color: var(--background-color);
+}
 .ide-opened-file {
   background-color: var(--primary-color) !important;
-  color: white;
+  color: var(--background-color);
   overflow: hidden;
 }
 
@@ -1010,7 +1013,7 @@ navbar-collapse .navbar-dark .navbar-brand {
 #loader_icon {
   font-size: 18px;
   margin: 15px 8px;
-  color: white;
+  color: var(--background-color);
 }
 
 .loading_blink {
@@ -1818,7 +1821,7 @@ footer {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
+  background-color: var(--background-color);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -1842,7 +1845,7 @@ footer {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
+  background-color: var(--background-color);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -4666,7 +4669,7 @@ html {
   height: 33px;
   padding: 8px 12px;
   border-radius: 5px;
-  color: white;
+  color: var(--background-color);
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   cursor: pointer;
@@ -5095,7 +5098,7 @@ html {
   align-items: center;
   gap: 10px;
   background-color: #c1c1c1;
-  color: white;
+  color: var(--background-color);
   cursor: pointer;
   font-size: 11px;
   border-radius: 3.62px;
@@ -5106,7 +5109,7 @@ html {
 
 .batch-file-ide-tab-active {
   background-color: #8d8d8d !important;
-  color: white;
+  color: var(--background-color);
   overflow: hidden;
   padding-inline: 5px;
 }
@@ -10499,7 +10502,7 @@ div:where(.swal2-container) {
   gap: 10px;
   margin-bottom: 1rem;
   .star-filled > svg {
-    stroke: white;
+    stroke: var(--background-color);
   }
 }
 
@@ -14851,7 +14854,7 @@ gap: 1rem;
 
 .my-orders-filter-select-menu {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--background-color);
   padding: 0.5rem 0.25rem;
   border-radius: 0.25rem;
   font-size: var(--font-8);
@@ -16580,7 +16583,7 @@ gap: 1rem;
 
 .demo-webcam-container {
   height: 150px;
-  border: 2px solid white;
+  border: 2px solid var(--background-color);
   border-radius: 0.5rem;
 }
 
@@ -19040,7 +19043,7 @@ gap: 1rem;
 
 .drive-detail-stage-card {
   border: 1px solid var(--grey-color-shade-2);
-  background-color: white;
+  background-color: var(--background-color);
   border-radius: 0.5rem;
   margin-bottom: 0.5rem;
   position: relative;
