@@ -1555,7 +1555,7 @@
 
   .user-details .img-wrapper .svg .bg {
     fill: none;
-    strokewidth: 2px;
+    stroke-width: 2px;
   }
 
   .user-details .img-wrapper .svg > path {
@@ -1566,8 +1566,8 @@
     stroke-dasharray: 360;
     stroke-dashoffset: 360;
     fill: none;
-    strokewidth: 3px;
-    strokelinecap: square;
+    stroke-width: 3px;
+    stroke-linecap: square;
   }
 
   .user-details .img-wrapper .user-img {
