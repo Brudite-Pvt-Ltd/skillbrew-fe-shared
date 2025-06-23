@@ -762,6 +762,14 @@
   .progress-tab-label {
     font-size: var(--font-8);
   }
+
+  .book-demo-bottom-sub-container-1 {
+    display: none;
+  }
+
+  .book-demo-bottom-sub-container-2 {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2939,11 +2947,6 @@
     flex-direction: column;
   }
 
-  .book-demo-bottom-container {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
   .book-demo-bottom-sub-container-wrapper {
     background-color: var(--primary-color);
     width: 100%;
@@ -3841,11 +3844,6 @@
     flex-direction: column;
   }
 
-  .book-demo-bottom-container {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
   .book-demo-bottom-sub-container-wrapper {
     background-color: var(--primary-color);
     width: 100%;
@@ -4380,11 +4378,6 @@
 
   .schedule-demo-inputs-wrapper {
     flex-direction: column;
-  }
-
-  .book-demo-bottom-container {
-    display: flex;
-    flex-direction: column-reverse;
   }
 
   .book-demo-bottom-sub-container-wrapper {
