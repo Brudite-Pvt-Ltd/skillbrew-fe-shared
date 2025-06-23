@@ -9608,9 +9608,11 @@ div:where(.swal2-container) {
 }
 
 .book-demo-bottom-sub-container-1 {
-  background: url("/assets/svg/book-demo-group.svg");
+  background-image: url("/assets/svg/book-demo-group.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   border-radius: 10px;
-  object-fit: cover;
 }
 
 .book-demo-bottom-sub-container-2 {
