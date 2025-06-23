@@ -9517,10 +9517,6 @@ div:where(.swal2-container) {
   flex: 1;
 }
 
-.book-demo-background-container {
-  height: 100%;
-}
-
 .book-demo-group-img {
   position: relative;
   width: 100%;
@@ -9558,20 +9554,14 @@ div:where(.swal2-container) {
 }
 
 .book-demo-bottom-sub-container-wrapper {
-  position: absolute;
   padding: 2rem;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  top: 0;
   width: 47%;
   height: 100%;
-}
-
-.book-demo-bottom-sub-container-wrapper > img {
-  width: 100%;
 }
 
 .book-demo-image-carousel-container {
@@ -9618,6 +9608,10 @@ div:where(.swal2-container) {
   border-radius: 16px;
   position: relative;
   padding: 20px 0px 0px 0px;
+}
+
+.book-demo-bottom-sub-container-1 {
+  background: url("/assets/svg/book-demo-group.svg");
 }
 
 .book-demo-bottom-sub-container-2 {
