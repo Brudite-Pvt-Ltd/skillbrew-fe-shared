@@ -78,14 +78,14 @@ export const languageOptions = [
     id: 1,
     extension: "py",
     name: "Python",
-    language: python,
+    language: python(),
     defaultCode: `print("Hello World!")`,
   },
   {
     id: 2,
     extension: "java",
     name: "Java",
-    language: java,
+    language: java(),
     defaultCode: `public class Main {
       public static void main(String[] args) {
         System.out.println("Hello World!");
@@ -96,7 +96,7 @@ export const languageOptions = [
     id: 3,
     extension: "cpp",
     name: "C++",
-    language: cpp,
+    language: cpp(),
     defaultCode:
       "#include <iostream>\n" +
       "using namespace std;\n\n" +
@@ -109,14 +109,14 @@ export const languageOptions = [
     id: 4,
     extension: "js",
     name: "JavaScript",
-    language: javascript,
+    language: javascript(),
     defaultCode: `console.log("Hello World!");`,
   },
   {
     id: 5,
     extension: "c",
     name: "C",
-    language: cpp,
+    language: cpp(),
     defaultCode:
       "#include <stdio.h>\n\n" +
       "int main() {\n" +
@@ -128,7 +128,7 @@ export const languageOptions = [
     id: 6,
     extension: "go",
     name: "Go",
-    language: go,
+    language: go(),
     defaultCode: `package main\n\nimport "fmt"\n\nfunc main() {\n\tfmt.Println("Hello World!")\n}`,
   },
 ];
