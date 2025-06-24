@@ -380,7 +380,7 @@ header {
   position: relative;
   width: 100%;
   height: 60px;
-  z-index: 9999;
+  z-index: 2;
   -weebkit-transition: all linear 0.3s;
   -webkit-transition: all linear 0.3s;
   -o-transition: all linear 0.3s;
@@ -2948,7 +2948,7 @@ input:checked + .slider:before {
   position: absolute;
   overflow: hidden;
   z-index: 1;
-  height: calc(100dvh - 75px);
+  height: calc(100dvh - 62px);
   width: 100%;
 }
 
@@ -15431,7 +15431,7 @@ gap: 1rem;
 
 .org-dashboard-question-chart-assessment-stats-container
   > .available-plan-container {
-  max-width: 340px;
+  min-width: 340px;
 }
 
 .available-plan-subcontainer-1 {
@@ -17308,18 +17308,13 @@ gap: 1rem;
 }
 
 .user-result-question-btn:disabled,
-.test-card:disabled .test-title {
+.test-title:disabled {
   color: var(--grey-color) !important;
   text-decoration: none;
 }
 
 .test-card.disabled {
   cursor: default !important;
-}
-
-.test-card.disabled .test-title {
-  color: var(--grey-color) !important;
-  text-decoration: none;
 }
 
 .user-result-open-question-container {

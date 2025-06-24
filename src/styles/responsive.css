@@ -4290,15 +4290,6 @@
     padding: 25px;
   }
 
-  .org-dashboard-question-chart-container-is-expand {
-    width: 100% !important;
-    padding-inline: 35px;
-    border-radius: 10px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    margin-bottom: 20px;
-  }
-
   .org-dashboard-question-assessment-stats-container {
     padding: 25px;
     border-radius: 10px;
@@ -5292,6 +5283,30 @@
   .csv-popup {
     right: 5%;
     transform: translateY(25%);
+  }
+
+  .org-dashboard-chart {
+    margin-bottom: 0;
+  }
+
+  .org-dashboard-question-chart-assessment-stats-container{
+    background-color: transparent;
+    flex-direction: column;
+  }
+
+  .org-dashboard-question-assessment-stats-container{
+    background-color: var(--background-color);
+    width: 100%;
+  }
+
+   .org-dashboard-question-chart-container {
+    width: 100% !important;
+    padding-inline: 35px;
+    border-radius: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+    background-color: var(--background-color);
   }
 }
 
