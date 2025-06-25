@@ -16793,7 +16793,7 @@ gap: 1rem;
 }
 
 .organization-child-container {
-  margin: 16px 24px 50px;
+  margin: 16px 24px 16px;
 }
 
 .organization-child-container > nav {
@@ -16813,7 +16813,7 @@ gap: 1rem;
 
 .test-result-details {
   width: 25%;
-  height: 77.5dvh;
+  height: 78dvh;
   overflow-y: auto;
 }
 
