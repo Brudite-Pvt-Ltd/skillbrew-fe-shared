@@ -17049,7 +17049,7 @@ gap: 1rem;
   cursor: pointer;
 }
 
-.table-filter-dropdown-data:hover {
+.table-filter-dropdown-data:hover, .table-filter-dropdown-data:hover button {
   color: var(--primary-color);
 }
 

@@ -2782,7 +2782,7 @@ const Icons = {
       viewBox="0 0 16 16"
       fill="none"
     >
-      <rect width="16" height="16" rx="8" fill="#CD2929" fill-opacity="0.3" />
+      <rect width="16" height="16" rx="8" fill="#CD2929" fillOpacity="0.3" />
       <circle cx="8" cy="8" r="3" fill="#CD2929" />
     </svg>
   ),
