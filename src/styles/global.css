@@ -2096,7 +2096,7 @@ input:checked + .slider:before {
 .containe {
   background-color: var(--grey-color-shade-1);
   width: 100%;
-  max-height: calc(100dvh - 86px);
+  max-height: calc(100dvh - 75px);
   overflow: auto;
 }
 

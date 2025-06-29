@@ -149,18 +149,20 @@ export interface FileData {
   updated_at: string;
 }
 
+export interface LanguageOption {
+  id: number;
+  name: string;
+  extension: string;
+  language: any;
+  defaultCode: string;
+}
+
 export interface IDEFileData {
   id: number;
   in: number;
   title: string;
   file: string;
-  language: {
-    id: number;
-    name: string;
-    extension: string;
-    language: any;
-    defaultCode: string;
-  };
+  language: LanguageOption;
 }
 
 export interface ClientDetails {
