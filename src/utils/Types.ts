@@ -149,7 +149,7 @@ export interface FileData {
   updated_at: string;
 }
 
-export interface LanguageOption {
+export interface LanguageOptionType {
   id: number;
   name: string;
   extension: string;
@@ -162,7 +162,7 @@ export interface IDEFileData {
   in: number;
   title: string;
   file: string;
-  language: LanguageOption;
+  language: LanguageOptionType;
 }
 
 export interface ClientDetails {
