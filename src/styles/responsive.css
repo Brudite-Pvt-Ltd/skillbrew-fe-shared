@@ -929,6 +929,74 @@
     right: 5%;
     transform: translateY(20%);
   }
+
+  .user-my-assesment-container {
+    padding: 2rem 0.65rem;
+  }
+
+  .my-assesment-analytics-graph {
+    width: 100%;
+    height: 330px;
+    padding: var(--20, 20px);
+  }
+
+  .my-assesment-analytics-container {
+    flex-direction: column;
+  }
+
+  .test-performance-graph-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .performace-graph-row {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .my-assesment-numeric-analytics {
+    justify-content: space-between;
+    width: 100%;
+    .my-assesment-numeric-analytics-box {
+      width: 48% !important;
+      span {
+        font-size: 31px !important;
+      }
+    }
+  }
+
+  .user-my-assesment-card {
+    position: relative;
+    padding: 1rem 1.25rem;
+  }
+
+  .my-assesment-card-details .test-second-row {
+    column-gap: 10px;
+    margin-bottom: 0px;
+    justify-content: start;
+    .test-second-row-data {
+      width: 130px;
+    }
+  }
+
+  .my-assesment-test-code {
+    width: fit-content;
+    .assesment-actual-code {
+      display: none;
+    }
+  }
+
+  .my-assesment-card-action-btn {
+    position: absolute;
+    right: 1.4rem;
+    bottom: 1rem;
+    button {
+      width: 116px;
+    }
+    .assesment-card-btn-text {
+      display: none;
+    }
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -3513,6 +3581,104 @@
     width: 60px;
     height: 60px;
   }
+
+  .drive-detail-main-container {
+    padding: 12px !important;
+    .drive-detail-stage-stats {
+      flex-wrap: wrap;
+      row-gap: 4px;
+      font-size: 13px;
+      margin-bottom: 0.25rem;
+      width: 90%;
+    }
+    .drive-detail-stage-toggle-btn-collapsed {
+      bottom: 0.5rem;
+      right: 0.75rem;
+    }
+  }
+
+  .drive-detail-card {
+    padding: 16px;
+    position: relative;
+    .drive-details-header-btns {
+      display: none !important;
+    }
+    .drive-detials-header-left {
+      width: 300px;
+      column-gap: 4px;
+    }
+    .drive-detail-date {
+      font-size: 12px;
+    }
+    .drive-details-header-ellipses {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+  }
+
+  .drive-details-option-select {
+    .job-details-nav-container {
+      display: none !important;
+    }
+  }
+
+  .drive-details-responsive {
+    display: initial;
+  }
+
+  .drive-more-detail-data {
+    padding: 0px;
+    margin-top: 0.5rem;
+    .discussion-forum-container {
+      height: 90%;
+    }
+  }
+
+  .phases-stepper-wrapper {
+    margin: 1rem 0rem 0rem 1rem;
+    padding-right: 0.5rem;
+  }
+
+  .collab-modal-modal-btn button {
+    padding: 0.5rem 1.75rem !important;
+  }
+
+  .info-panel-container {
+    width: 308px;
+  }
+
+  .drive-detail-title {
+    width: 80%;
+  }
+
+  .user-profile-logo-skeleton-container {
+    height: 110px;
+    width: 110px;
+  }
+
+  .discussion-forum-body-container-org-with-reply {
+    height: calc(100% - 130px);
+    border-radius: 5px;
+    border: 1px solid var(--grey-color-shade-2, #e7e7e7);
+    background: var(--grey-color-shade-1, #f6f6f6);
+  }
+
+  .discussion-forum-body-container-with-reply {
+    height: calc(100% - 159px);
+  }
+
+  .discussion-forum-reply-text-container {
+    width: calc(100% - 20px);
+  }
+
+  .discussion-forum-body-container {
+    height: calc(100% - 130px);
+  }
+
+  .job-details-sub-container {
+    height: 100vh;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -3613,6 +3779,23 @@
     height: 115px;
     width: 250px;
   }
+
+  .drive-detials-header-pill {
+    order: 2;
+  }
+
+  .drive-detials-header-left {
+    width: 200px !important;
+    column-gap: 4px;
+  }
+
+  .my-assesment-card-action-btn {
+    right: 0.2rem;
+    bottom: 0.5rem;
+    button {
+      padding: 0.25rem 0.5rem !important;
+    }
+  }
 }
 
 @media (min-width: 480px) and (max-width: 575px) {
@@ -3646,6 +3829,10 @@
 
   .competitions {
     margin-left: 0.5rem !important;
+  }
+
+  .info-panel-container {
+    width: 292px;
   }
 }
 
@@ -3885,6 +4072,35 @@
 
   .invitation-page-container {
     flex-direction: column;
+  }
+
+  .drive-detials-header-left {
+    width: 180px;
+  }
+
+  .user-my-assesment-container {
+    padding: 2rem 1.5rem;
+  }
+
+  .my-assesment-analytics-graph {
+    width: 100%;
+    height: 330px;
+    padding: var(--20, 20px);
+  }
+
+  .my-assesment-analytics-container {
+    flex-direction: column;
+  }
+
+  .my-assesment-numeric-analytics {
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .my-assesment-card-details .test-second-row {
+    column-gap: 50px;
+    margin-bottom: 0px;
+    justify-content: start;
   }
 }
 
@@ -4563,6 +4779,58 @@
     width: 60px;
     height: 60px;
   }
+
+  .drive-detials-header-left {
+    width: 265px;
+  }
+
+  .drive-details-modal {
+    height: fit-content !important;
+  }
+
+  .drive-detail-stage-stats {
+    width: 90%;
+  }
+
+  .user-my-assesment-container {
+    padding: 2rem 1.5rem;
+  }
+
+  .my-assesment-analytics-graph {
+    width: 100%;
+    height: 330px;
+    padding: var(--20, 20px);
+  }
+
+  .my-assesment-analytics-container {
+    flex-direction: column;
+  }
+
+  .my-assesment-numeric-analytics {
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .my-assesment-card-details .test-second-row {
+    column-gap: 50px;
+    margin-bottom: 0px;
+    justify-content: start;
+  }
+
+  .discussion-forum-body-container-with-reply {
+    height: calc(100% - 140px);
+  }
+
+  .discussion-forum-reply-text-container {
+    width: calc(100% - 20px);
+  }
+
+  .discussion-forum-body-container-org-with-reply {
+    height: calc(100% - 130px);
+    border-radius: 5px;
+    border: 1px solid var(--grey-color-shade-2, #e7e7e7);
+    background: var(--grey-color-shade-1, #f6f6f6);
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -4771,6 +5039,31 @@
 
   .test-result-table {
     width: 100%;
+  }
+
+  .user-my-assesment-container {
+    padding: 2rem 1.5rem;
+  }
+
+  .my-assesment-analytics-graph {
+    width: 100%;
+    height: 330px;
+    padding: var(--20, 20px);
+  }
+
+  .my-assesment-analytics-container {
+    flex-direction: column;
+  }
+
+  .my-assesment-numeric-analytics {
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .my-assesment-card-details .test-second-row {
+    column-gap: 50px;
+    margin-bottom: 0px;
+    justify-content: start;
   }
 }
 
@@ -5258,6 +5551,21 @@
   .number-is-the {
     text-align: center;
   }
+
+  .my-assesment-analytics-container {
+    flex-direction: column;
+    .my-assesment-analytics-graph {
+      width: 100%;
+    }
+  }
+
+  .my-assesment-numeric-analytics {
+    flex-wrap: nowrap;
+    width: 100%;
+    .my-assesment-numeric-analytics-box {
+      width: 25%;
+    }
+  }
 }
 
 @media screen and (max-width: 1224px) {
@@ -5289,17 +5597,17 @@
     margin-bottom: 0;
   }
 
-  .org-dashboard-question-chart-assessment-stats-container{
+  .org-dashboard-question-chart-assessment-stats-container {
     background-color: transparent;
     flex-direction: column;
   }
 
-  .org-dashboard-question-assessment-stats-container{
+  .org-dashboard-question-assessment-stats-container {
     background-color: var(--background-color);
     width: 100%;
   }
 
-   .org-dashboard-question-chart-container {
+  .org-dashboard-question-chart-container {
     width: 100% !important;
     padding-inline: 35px;
     border-radius: 10px;
@@ -5349,5 +5657,9 @@
 
   .csv-popup {
     right: -30%;
+  }
+
+  .my-assesment-analytics-graph {
+    width: 64%;
   }
 }

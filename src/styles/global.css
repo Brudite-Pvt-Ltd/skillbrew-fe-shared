@@ -4518,7 +4518,7 @@ html {
   box-shadow: 0px 1px 2.5px 0.5px #ccc;
   border-radius: 14px 14px 14px 14px;
   margin-block: 0.5rem;
-  height: calc(100dvh - 220px);
+  height: calc(100dvh - 234px);
   overflow: auto;
   width: 90%;
 }
@@ -11073,6 +11073,7 @@ div:where(.swal2-container) {
 
 .org-list-container {
   min-height: calc(100dvh - 60px);
+  width: 100%;
   padding: 1rem;
   padding-top: 5rem;
   display: flex;
@@ -15961,54 +15962,6 @@ gap: 1rem;
   }
 }
 
-.user-dashboard-metrics-dropdown {
-  border-radius: 50rem;
-  border: 1px solid var(--grey-color-shade-2);
-  padding: 0.1rem 0.8rem;
-  display: inline-flex;
-  align-items: center;
-  width: 132px;
-  font-size: var(--font-9) !important;
-  color: var(--grey-color-shade-5) !important;
-}
-
-.user-dashboard-metrics-dropdown:active {
-  border: 1px solid var(--grey-color);
-}
-
-.user-dashboard-metrics-dropdown-option {
-  font-size: var(--font-9);
-  font-weight: 400;
-}
-
-.user-metrics-dropdown .MuiInputBase-root {
-  font-size: var(--font-8);
-}
-
-.user-metrics-dropdown .MuiInputBase-input:focus {
-  background-color: transparent;
-}
-
-.user-metrics-dropdown .MuiInputBase-root::before {
-  border-bottom: none !important;
-}
-
-.user-metrics-dropdown .MuiInputBase-root::after {
-  border-bottom: none;
-}
-
-.user-metrics-dropdown .MuiInputBase-root:hover:before {
-  border-bottom: none;
-}
-
-.user-metrics-dropdown .MuiInputBase-root:hover:after {
-  border-bottom: none;
-}
-
-.user-metrics-dropdown .MuiInputBase-root:hover::before {
-  border-bottom: none;
-}
-
 .question-search-input > form > input {
   border: 0;
   border-radius: 50rem;
@@ -19648,18 +19601,266 @@ gap: 1rem;
   line-height: 160%;
 }
 
+/* =========================== */
 /* Hiring Board Filter */
+/* =========================== */
 
 .info-panel-details-container > .table-search-container {
   width: 100%;
 }
 
-button {
-  border: none;
-  background-color: transparent;
+.ck-powered-by-balloon {
+  display: none !important;
 }
 
-.image {
-  width: 100%;
-  height: auto;
+.review-form-heading-btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: var(--font-9);
+}
+
+.review-form-delete-criteria-component {
+  color: var(--danger-color);
+  font-weight: 400;
+}
+
+.review-form-note {
+  padding: 0;
+  font-size: var(--font-10);
+  color: var(--grey-color-shade-4);
+  span {
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  font-weight: 400;
+}
+
+/* =========================== */
+/* User My Assesments */
+/* =========================== */
+
+.user-my-assesment-container {
+  padding: 2rem 3.75rem;
+  background-color: var(--grey-color-shade-1);
+  min-height: calc(100dvh - 60px);
+}
+
+.my-assesment-analytics-container {
+  display: flex;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+.my-assesment-analytics-graph {
+  display: flex;
+  flex: 2 1 0;
+  min-width: 0;
+  height: 330px;
+  padding: var(--24, 24px);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--16, 16px);
+  border-radius: 8px;
+  border: 1px solid var(--grey-color-shade-2);
+  background: var(--background-color);
+}
+
+.performance-graph-canvas-wrapper {
+  flex: 1 1 0;
+  min-width: 0;
+  position: relative;
+}
+
+.my-assesment-numeric-analytics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  width: 40%;
+  .my-assesment-numeric-analytics-box {
+    background-color: var(--background-color);
+    padding: 0.75rem 0.83rem;
+    height: fit-content;
+    border-radius: 0.5rem;
+    border: 1px solid var(--grey-color-shade-2);
+    width: 49%;
+    height: 160px;
+    position: relative;
+    .my-assesment-numeric-analytics-title {
+      color: var(--grey-color-shade-6);
+      font-weight: 600;
+    }
+    span {
+      color: var(--grey-color-shade-9);
+      font-size: var(--font-4);
+      font-weight: 600;
+    }
+    svg {
+      position: absolute;
+      bottom: 0rem;
+      right: 0.5rem;
+    }
+  }
+  .my-assesment-numeric-analytics-box:last-child {
+    svg {
+      bottom: -0.25rem;
+    }
+  }
+}
+
+.my-assesment-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.my-assesments-title {
+  color: var(--grey-color);
+  font-size: var(--font-5);
+  font-weight: 600;
+}
+
+.user-my-assesment-card {
+  background-color: var(--background-color);
+  padding: 1rem 1.25rem 1.3125rem 1.25rem;
+  border: 1px solid var(--grey-color-shade-2);
+  border-radius: 0.5rem;
+}
+
+.my-assesment-test-code {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background-color: var(--grey-color-shade-1);
+  width: 278px;
+  border-radius: 66.103px;
+  font-weight: 600;
+  color: var(--grey-color-shade-6);
+  letter-spacing: 3.125px;
+  font-size: var(--font-9);
+}
+
+.my-assesment-card-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  h4 {
+    font-size: var(--font-6);
+    font-weight: 600;
+    color: var(--grey-color);
+  }
+  .assesment-created-by-org-name {
+    color: var(--grey-color-shade-6);
+    font-size: var(--font-9);
+    font-weight: 600;
+  }
+}
+
+.my-assesment-card-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.my-assesment-card-details .test-second-row {
+  column-gap: 70px;
+  .test-second-row-data {
+    width: 200px;
+  }
+  .test-second-row-data:last-child {
+    width: 100px;
+  }
+}
+
+.my-assesment-card-action-btn {
+  button {
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    padding: 0.5rem 1rem !important;
+    width: 215px;
+    font-weight: 600 !important;
+    font-size: var(--font-8) !important;
+  }
+  button:disabled {
+    background-color: var(--grey-color-shade-1) !important;
+    color: var(--grey-color-shade-4) !important;
+    border: 1px solid var(--grey-color-shade-1) !important;
+  }
+}
+
+.my-assesment-no-data-title {
+  font-size: var(--font-6);
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+
+.my-assesment-no-data-text {
+  font-weight: 400;
+  font-size: var(--font-8);
+}
+
+.my-assesment-no-data-link-text {
+  font-weight: 600;
+  color: var(--primary-color);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.test-performance-graph-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  flex-shrink: 0;
+  h3 {
+    color: var(--grey-color);
+    font-size: var(--font-7);
+    font-weight: 600;
+  }
+  .graph-legend-text {
+    font-weight: 400;
+    color: var(--grey-color);
+    font-size: var(--font-9);
+  }
+}
+
+.performace-graph-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.ck.ck-dropdown .ck-dropdown__arrow {
+  z-index: 0 !important;
+}
+
+.user-profile-logo-skeleton-container {
+  height: 150px;
+  width: 150px;
+}
+
+.user-profile-loading-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  background-color: var(--background-color);
+}
+
+.user-profile-loading-sub-container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.user-profile-social-skeleton-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 0rem;
+  border-radius: 0.5rem;
+  background-color: var(--background-color);
 }

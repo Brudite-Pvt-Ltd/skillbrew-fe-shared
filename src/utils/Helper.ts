@@ -1610,3 +1610,47 @@ export const formatToLac = (num: number) => {
   });
   return `${formatted} Lac`;
 };
+
+export const handleAmountInput =
+  (fieldName: string, setValue: any) => (e: any) => {
+    const raw = e.target.value?.replace(/,/g, "").replace(/\D/g, "");
+    if (!raw) {
+      setValue(fieldName, "");
+      e.target.value = "";
+      return;
+    }
+    const formatted = Number(raw)?.toLocaleString("en-IN");
+    e.target.value = formatted;
+    setValue(fieldName, raw);
+  };
+
+export const getLabelFromOptions = (
+  value: string,
+  options: { label: string; value: string }[]
+) => {
+  return options?.find((option) => option?.value === value)?.label || "";
+};
+
+export const getISOWeekNumber = (date: Date): number => {
+  const d = new Date(
+    Date.UTC(date.getFullYear(), date.getMonth(), date.getDate())
+  );
+  const dayNum = d.getUTCDay() || 7;
+  d.setUTCDate(d.getUTCDate() + 4 - dayNum);
+  const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
+  const weekNo = Math.ceil(
+    ((d.getTime() - yearStart.getTime()) / 86400000 + 1) / 7
+  );
+  return weekNo;
+};
+
+export const truncateFileName = (filename: string, maxLength = 30) => {
+  if (filename.length <= maxLength) return filename;
+  const ext = filename.split(".").pop();
+  if (ext) {
+    const nameWithoutExt = filename?.slice(0, filename.length - ext?.length - 1);
+    const start = nameWithoutExt.slice(0, 10);
+    const end = nameWithoutExt.slice(-10);
+    return `${start}...${end}.${ext}`;
+  }
+};
