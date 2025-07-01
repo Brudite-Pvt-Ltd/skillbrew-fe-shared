@@ -493,6 +493,7 @@ export interface TestDetails {
   test_duration: string;
   start_at: string;
   expired_at: string;
+  enroll_status: string;
   mark_del: boolean;
 }
 
@@ -512,6 +513,7 @@ export interface TestStatusCounts {
   status_based_completed_test: number;
   total_enroll_test_count: number;
   completed_test_count: number;
+  invited_tests_count: number;
   upcoming_test_count: number;
   ongoing_test_count: number;
   passed_test_count: number;
