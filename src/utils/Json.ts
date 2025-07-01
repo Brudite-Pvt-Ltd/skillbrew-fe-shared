@@ -2448,3 +2448,22 @@ export const ResultFilterOption = [
   { value: "PASSED", label: "Passed" },
   { value: "FAILED", label: "Failed" },
 ];
+
+export const sortOldNewData = [
+  {
+    level: "Newest First",
+    sort_by: "start_at",
+    sort_order: "desc",
+  },
+  {
+    level: "Oldest First",
+    sort_by: "start_at",
+    sort_order: "asc",
+  },
+];
+
+export const sortYearMonthWeekData = [
+  { label: "This Year", value: "year" },
+  { label: "This Month", value: "month" },
+  { label: "This Week", value: "week" },
+];
