@@ -3231,7 +3231,6 @@
   .public-job-list-container-expanded {
     div > .job-list-container {
       flex: 1;
-      padding: 0;
     }
 
     div > .public-job-details-container {
@@ -3413,6 +3412,11 @@
     width: 80%;
   }
 
+  .user-profile-form-container input[type="checkbox"] {
+    width: 12px !important;
+    height: 12px !important;
+  }
+
   .redeem-coupon-modal {
     width: 328px;
   }
@@ -3503,6 +3507,7 @@
 
   .public-job-filter-wrapper {
     padding: 0.5rem;
+    flex-wrap: wrap;
   }
 
   .public-job-filter-wrapper {
@@ -3511,18 +3516,12 @@
     }
   }
 
-  .public-job-filter > div,
-  .public-job-filter > svg:nth-last-child(1) {
-    display: none;
-  }
-
   .public-job-filter > i:nth-child(1) {
     display: none;
   }
 
   .filter-btn {
-    border-radius: 50% !important;
-    padding: 1rem !important;
+    padding: 0.75rem 1rem !important;
   }
 
   .public-job-page-view {
@@ -3566,11 +3565,6 @@
 
   .discussion-forum-chat-without-parent-bubble-container {
     width: 75% !important;
-  }
-
-  .discussion-forum-reply-text-container {
-    top: -29%;
-    width: 93%;
   }
 
   .scroll-to-bottom-button {
@@ -4506,6 +4500,15 @@
     padding: 25px;
   }
 
+  .org-dashboard-question-chart-container-is-expand {
+    width: 100% !important;
+    padding-inline: 35px;
+    border-radius: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+  }
+
   .org-dashboard-question-assessment-stats-container {
     padding: 25px;
     border-radius: 10px;
@@ -4703,6 +4706,15 @@
 
   .user-profile-modal {
     width: 70%;
+    max-height: 600px;
+    form {
+      height: auto;
+    }
+  }
+
+  .user-profile-form-container input[type="checkbox"] {
+    width: 16px !important;
+    height: 16px !important;
   }
 
   .job-details-main-container {
@@ -4767,14 +4779,11 @@
     height: 96%;
   }
 
-  .discussion-forum-reply-text-container {
-    top: -29%;
-    width: 97%;
-  }
   .job-list-container.isDetails {
     flex: 0;
     padding-inline: 0;
   }
+
   .about-company-basic-details-container img {
     width: 60px;
     height: 60px;
@@ -5507,6 +5516,13 @@
   .job-profile-content {
     margin-top: 1rem;
     margin-left: 0;
+  }
+
+  .discussion-forum-body-container-org-with-reply {
+    height: calc(100% - 130px);
+    border-radius: 5px;
+    border: 1px solid var(--grey-color-shade-2, #e7e7e7);
+    background: var(--grey-color-shade-1, #f6f6f6);
   }
 }
 

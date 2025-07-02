@@ -2383,28 +2383,24 @@ export const driveCollaboratorPermissions = [
     code_name: "view_driveprofile",
   },
   {
-    name: "Manage Drive Profile",
-    code_name: "manage_driveprofile",
-  },
-  {
-    name: "Manage Drive Collaborator",
-    code_name: "manage_drivecollaborator",
-  },
-  {
     name: "Update Drive Profile",
     code_name: "update_driveprofile",
   },
   {
-    name: "Delete Drive Collaborator",
-    code_name: "delete_drive_collaborator",
+    name: "Manage Drive Profile",
+    code_name: "manage_driveprofile",
   },
   {
     name: "View Drive Collaborator",
     code_name: "view_drivecollaborator",
   },
   {
-    name: "Create Drive Collaborator",
-    code_name: "create_drive_collaborator",
+    name: "Manage Drive Collaborator",
+    code_name: "manage_drivecollaborator",
+  },
+  {
+    name: "Delete Drive Collaborator",
+    code_name: "delete_drivecollaborator",
   },
 ];
 

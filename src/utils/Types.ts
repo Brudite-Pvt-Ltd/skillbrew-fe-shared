@@ -775,6 +775,7 @@ export interface InterviewQuestionAnswer {
 
 export interface InterviewFeedback {
   id: number;
+  hi_id?: number;
   average_accuracy_score: number;
   average_confidence_score: number;
   AOI: string;
@@ -796,6 +797,7 @@ export interface InterviewFeedback {
 
 export interface UserDetail {
   id: number;
+  user_id: number;
   email: string;
   fullname: string;
   logo: string;
@@ -1124,6 +1126,7 @@ export interface DriveData {
   apply_from: string | null;
   total_stages: number;
   total_employment_phases: number;
+  permissions: string[];
 }
 
 export interface OrgList {
@@ -1184,6 +1187,7 @@ export interface JobListing {
   apply_from: any; // ISO Date String
   apply_to: any; // ISO Date String
   applied_on: string;
+  applied_status: string | null;
   total_applicants: number;
   is_applied: boolean;
   is_bookmarked: boolean;
@@ -1495,6 +1499,16 @@ export interface ReportOptions {
   created_at: string;
 }
 
+export interface UserStageLink {
+  id: number | null;
+  drive_stage_applicant: number | null;
+  link: string;
+  start_at: string | null;
+  duration: number | null;
+  object_id: number | null;
+  is_completed: boolean;
+}
+
 export interface StageDetails {
   duration: number | null;
   id: number;
@@ -1507,6 +1521,7 @@ export interface StageDetails {
   venue: string | null;
   venue_type: string | null;
   description: string;
+  user_link: UserStageLink;
 }
 
 export interface Message {
@@ -1657,9 +1672,10 @@ export interface ResumeDetails {
 
 export interface Criteria {
   id: number;
-  name: string;
+  name: string | undefined;
   value: string;
   type: string;
+  can_edit: boolean;
 }
 
 export interface ForumParticipant {
@@ -1673,6 +1689,11 @@ export interface ForumParticipant {
   invited_at: string;
   joined_at: string;
   forum: number;
+}
+
+export interface State {
+  name: string;
+  state_code: string;
 }
 
 export interface PayloadParams1 {

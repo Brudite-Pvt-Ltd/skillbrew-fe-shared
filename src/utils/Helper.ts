@@ -225,6 +225,22 @@ export const getCurrentDateTime = () => {
   return currentDate;
 };
 
+export const getLocalCurrentDateTime = () => {
+  const currentDate = new Date();
+
+  // Get current year, month, day, hours, and minutes
+  const year = currentDate.getFullYear();
+  const month = String(currentDate.getMonth() + 1).padStart(2, "0"); // Months are zero-indexed, so +1
+  const day = String(currentDate.getDate()).padStart(2, "0");
+  const hours = String(currentDate.getHours()).padStart(2, "0");
+  const minutes = String(currentDate.getMinutes()).padStart(2, "0");
+
+  // Combine everything in the desired format
+  const formattedDate = `${year}-${month}-${day}T${hours}:${minutes}`;
+
+  return formattedDate;
+};
+
 export const getCurrentDate = () => {
   let currentDate = new Date().toJSON().slice(0, 10);
   return currentDate;
@@ -394,7 +410,7 @@ export const findDifferenceData = (arr1: Skill[], arr2: Skill[]): Skill[] => {
 
 export const searchNumber = (arr: number[], target: number) => {
   if (arr) {
-    return arr.includes(target);
+    return arr?.includes(target);
   } else {
     return false;
   }
@@ -402,14 +418,14 @@ export const searchNumber = (arr: number[], target: number) => {
 
 export const searchValue = (arr: any, target: any) => {
   if (arr) {
-    return arr.includes(target);
+    return arr?.includes(target);
   } else {
     return false;
   }
 };
 
 export const extractIds = (arr: any, idKey = "id") => {
-  return arr.map((obj: any) => obj[idKey]);
+  return arr?.map((obj: any) => obj[idKey]);
 };
 
 export const allHaveAccessTypeEditor = (
@@ -417,7 +433,7 @@ export const allHaveAccessTypeEditor = (
   key = "accesstype",
   value = "EDITOR"
 ) => {
-  return arr.every((obj: any) => obj[key] === value);
+  return arr?.every((obj: any) => obj[key] === value);
 };
 
 export const updateValuesById = (
@@ -428,7 +444,7 @@ export const updateValuesById = (
   idKey: "id"
 ) => {
   return arr.map((obj: any) => {
-    if (idList.includes(obj[idKey])) {
+    if (idList?.includes(obj[idKey])) {
       return { ...obj, [key]: newValue };
     }
     return obj;
@@ -436,7 +452,7 @@ export const updateValuesById = (
 };
 
 export const getCapitalizeFirstLetter = (str: string) => {
-  return str.charAt(0).toUpperCase();
+  return str?.charAt(0)?.toUpperCase();
 };
 
 export const capitalizeFirstLetter = (string: string) => {
@@ -737,16 +753,16 @@ export const calculateProfileCompleteness = (
     user_data?.state,
     user_data?.country,
     skills?.length > 0 && skills[0]?.name,
-    projectData.length > 0,
-    education.length > 0,
-    experience.length > 0,
-    social.some((acc) => acc?.url),
+    projectData?.length > 0,
+    education?.length > 0,
+    experience?.length > 0,
+    social?.some((acc) => acc?.url),
   ];
 
-  filledFields = fieldsToCheck.filter(Boolean).length;
-  const totalFields = fieldsToCheck.length;
+  filledFields = fieldsToCheck?.filter(Boolean)?.length;
+  const totalFields = fieldsToCheck?.length;
 
-  return Math.min(Math.round((filledFields / totalFields) * 100), 100);
+  return Math?.min(Math?.round((filledFields / totalFields) * 100), 100);
 };
 
 export const getStrokeValue = (percentage: number): number => {
@@ -760,24 +776,24 @@ export const calculateTotalPages = (
   rowsPerPage: number
 ): number => {
   if (rowsPerPage) {
-    return Math.ceil(totalRows / rowsPerPage);
+    return Math?.ceil(totalRows / rowsPerPage);
   } else {
     return 0;
   }
 };
 
 export const getFirstWord = (input: string): string => {
-  const words: string[] = input.trim().split(" ");
+  const words: string[] = input?.trim().split(" ");
   return words[0];
 };
 
 export const encodeURL = (title: string) => {
-  let result = title.replace(/ /g, "-");
+  let result = title?.replace(/ /g, "-");
   return encodeURIComponent(result);
 };
 
 export const encodeURLWithHyphen = (title: string) => {
-  let result = title.replace(/ /g, "-").toLowerCase();
+  let result = title?.replace(/ /g, "-")?.toLowerCase();
   return encodeURIComponent(result);
 };
 
@@ -803,9 +819,9 @@ export function careerFormatDate(dateString: any) {
     "Dec",
   ];
 
-  const day = String(date.getUTCDate()).padStart(2, "0");
-  const month = months[date.getUTCMonth()];
-  const year = date.getUTCFullYear();
+  const day = String(date?.getUTCDate())?.padStart(2, "0");
+  const month = months[date?.getUTCMonth()];
+  const year = date?.getUTCFullYear();
 
   return `${day}/${month}/${year}`; //output format: regional/local (e.g.: 16/07/2024)
 }
@@ -925,7 +941,7 @@ export const drawRect = (
   detections.forEach((prediction) => {
     const [x, y, width, height] = prediction.bbox;
     const text = prediction.class;
-    const crypto: any = window?.crypto;
+    const crypto: any = window?.crypto || (window as any).msCrypto;
     let array = new Uint32Array(1);
     crypto.getRandomValues(array);
     const color = Math.floor(crypto * 16777215).toString(16);
@@ -1032,8 +1048,8 @@ export const captureScreenAsBlob = async (): Promise<Blob | null> => {
       useCORS: true,
       allowTaint: true,
       logging: true,
-      width: document.documentElement.scrollWidth,
-      height: document.documentElement.scrollHeight,
+      windowWidth: document.documentElement.scrollWidth,
+      windowHeight: document.documentElement.scrollHeight,
     });
 
     return new Promise((resolve, reject) => {
@@ -1465,7 +1481,7 @@ export const getAppliedFiltersCount = (
   filters: Filters,
   initial: Filters
 ): Partial<Filters> => {
-  const applied: Partial<Filters> = {};
+  const applied: Partial<Record<keyof Filters, any>> = {};
 
   Object.entries(filters).forEach(([key, value]) => {
     if (key === "sort_by" || key === "page_view") return;
@@ -1477,17 +1493,17 @@ export const getAppliedFiltersCount = (
     const isDefaultValue = value === defaultValue;
 
     if (
-      (key === "gender" && value === "all") ||
+      (key === "gender" && value === "EVERYONE") ||
       (key === "jobs_posted_by" && value === "all")
     )
       return;
 
     if (isArray) {
       if (isMeaningfulArray) {
-        applied[key] = value as Filters[keyof Filters];
+        applied[key as keyof Filters] = value;
       }
     } else if (!isEmptyString && !isDefaultValue) {
-      applied[key] = value as Filters[keyof Filters];
+      applied[key as keyof Filters] = value;
     }
   });
 
@@ -1648,7 +1664,10 @@ export const truncateFileName = (filename: string, maxLength = 30) => {
   if (filename.length <= maxLength) return filename;
   const ext = filename.split(".").pop();
   if (ext) {
-    const nameWithoutExt = filename?.slice(0, filename.length - ext?.length - 1);
+    const nameWithoutExt = filename?.slice(
+      0,
+      filename.length - ext?.length - 1
+    );
     const start = nameWithoutExt.slice(0, 10);
     const end = nameWithoutExt.slice(-10);
     return `${start}...${end}.${ext}`;
