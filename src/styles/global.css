@@ -17696,7 +17696,7 @@ gap: 1rem;
   display: flex;
   align-items: center;
   gap: 10px;
-  :first-child(1) {
+  ::first-child(1) {
     margin: 4px;
     display: flex;
     align-items: center;
@@ -17719,7 +17719,7 @@ gap: 1rem;
 }
 
 .drive-stage-details-description {
-  :first-child {
+  ::first-child {
     display: unset;
     margin: 0px;
   }
