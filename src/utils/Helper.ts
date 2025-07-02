@@ -1224,22 +1224,16 @@ export const uploadToS3 = async (
   try {
     const formData = new FormData();
 
-    for (const [key, value] of Object.entries(fields)) {
+    for (const [key, value] of Object?.entries(fields)) {
       formData.append(key, value);
     }
 
-    formData.append("file", files);
+    formData?.append("file", files);
 
     const response = await fetch(s3URL, {
       method: "POST",
       body: formData,
     });
-    // if (response.ok) {
-    //   return true;
-    // } else {
-    //   console.error(`Upload failed with status: ${response?.status}`);
-    //   return false;
-    // }
     return response.ok;
   } catch (error) {
     console.error("Error uploading to S3:", error);

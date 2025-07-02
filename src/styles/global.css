@@ -15444,7 +15444,7 @@ gap: 1rem;
   font-size: var(--font-8);
   font-weight: 400;
   color: var(--grey-color);
-  border: 1px solid var(--grey-color-shade-3);
+  border: 1px solid var(--grey-color-shade-3) !important;
   border-radius: 0.5rem;
   padding: 0.4rem 0.8rem;
 }
@@ -15477,12 +15477,12 @@ gap: 1rem;
 
 .user-profile-modal-input .MuiInputBase-formControl::before,
 .MuiInputBase-formControl::after {
-  border-bottom: 0;
+  border-bottom: 0 !important;
 }
 
 .user-profile-modal-input .MuiInputBase-formControl:hover::before,
 .MuiInputBase-formControl:hover::after {
-  border-bottom: 0;
+  border-bottom: 0 !important;
 }
 
 .user-profile-modal-input::placeholder {
