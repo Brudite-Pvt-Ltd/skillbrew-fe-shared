@@ -9362,6 +9362,7 @@ div:where(.swal2-container) {
 }
 
 .interview-room-report-issue-btn-cancel {
+  color: var(--text-light-color);
   display: inline-flex;
   padding: 6px 1rem;
   align-items: center;

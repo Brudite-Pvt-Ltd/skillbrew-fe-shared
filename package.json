@@ -35,7 +35,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
-  "peerDependencies": {
+  "dependencies": {
     "@uiw/codemirror-theme-bespin": "^4.21.20",
     "@uiw/codemirror-theme-dracula": "^4.21.20",
     "@uiw/codemirror-theme-duotone": "^4.21.20",

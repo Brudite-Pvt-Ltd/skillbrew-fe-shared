@@ -2367,13 +2367,12 @@ h6 span {
 }
 
 .interview-complete-wrapper {
-  height: 100dvh;
+  height: calc(100dvh - 75px);
   width: 100%;
   padding: 2rem 1.3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
   gap: 1rem;
   text-align: center;
   background: url("/assets/gif/confetti.gif") no-repeat center top;
