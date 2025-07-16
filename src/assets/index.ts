@@ -95,6 +95,7 @@ export { default as ContactUsPana } from "./svg/contact-us-pana.svg";
 export { default as CreateOrgHiEmoji } from "./svg/create-org-hi-emoji.svg";
 export { default as CreateOrg } from "./svg/create-org.svg";
 export { default as Credit } from "./svg/credit.svg";
+export { default as CreditV2 } from "./svg/creditv2.svg";
 export { default as Cross } from "./svg/cross.svg";
 export { default as DemoAiConsole } from "./svg/demo-ai-console.svg";
 export { default as Download } from "./svg/download.svg";

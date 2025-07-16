@@ -5282,11 +5282,11 @@ html {
 }
 
 .org-sidebar-navigation.isCollapse {
-  width: 250px;
+  width: 216px;
 }
 
 .org-sidebar-navigation ul {
-  padding: 10px 10px 0px 10px;
+  padding: 12px 12px 0px 12px;
   color: #596780 !important;
   text-align: center;
 }
@@ -5301,13 +5301,12 @@ html {
   position: relative;
   display: flex;
   align-items: center;
-  column-gap: 15px;
   width: 100%;
   text-decoration: none;
-  color: #596780;
+  color: var(--grey-color-shade-6);
   white-space: nowrap;
-  font-size: var(--font-7);
-  font-weight: 500;
+  font-size: var(--font-8);
+  font-weight: 400;
 }
 
 .org-sidebar-navigation ul li a .sidenav-icon {
@@ -5341,11 +5340,11 @@ html {
   display: block;
   width: 100%;
   background-color: var(--primary-color);
-  font-weight: 600;
 }
 
 .org-sidebar-navigation ul li.active a {
   color: var(--text-light-color);
+  font-weight: 600;
 }
 
 .toggle {
@@ -8413,6 +8412,10 @@ div:where(.swal2-container) {
 .app-pages-greeting {
   font-size: var(--font-7);
   font-weight: 600;
+}
+
+.app-pages-greeting > b{
+  color: var(--primary-color, #0555c8);
 }
 
 .org-header-logo {

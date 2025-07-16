@@ -2548,10 +2548,6 @@
     width: 230px;
   }
 
-  .org-sidebar-navigation ul li a {
-    column-gap: 4px;
-  }
-
   .org-sidebar-navigation {
     padding-top: 0;
     width: 54px;
