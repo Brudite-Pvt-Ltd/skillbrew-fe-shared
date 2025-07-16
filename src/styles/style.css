@@ -5005,7 +5005,7 @@ h6 span {
 }
 
 .skb-dashboard-sidebar.expended {
-  width: 170px;
+  width: 210px;
 }
 
 .skb-dashboard-sidebar-header {
@@ -5074,5 +5074,5 @@ h6 span {
 }
 
 .skb-dashboard-container.expended {
-  width: calc(100% - 170px);
+  width: calc(100% - 210px);
 }
