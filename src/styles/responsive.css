@@ -770,6 +770,18 @@
   .book-demo-bottom-sub-container-2 {
     width: 100%;
   }
+
+  .user-my-assesment-container {
+    padding: 0.75rem;
+  }
+
+  .user-dashboard-parent {
+    padding: 0.5rem;
+  }
+
+  .skb-dropdown-explore {
+    width: 500px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -793,6 +805,14 @@
 
   .editor-content {
     margin-left: 0.625rem;
+  }
+
+  .skb-header-container {
+    padding: 0 1rem;
+  }
+
+  .skb-explore-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -928,10 +948,6 @@
   .csv-popup {
     right: 5%;
     transform: translateY(20%);
-  }
-
-  .user-my-assesment-container {
-    padding: 2rem 0.65rem;
   }
 
   .my-assesment-analytics-graph {
@@ -3385,7 +3401,7 @@
   }
 
   .user-dashboard-parent {
-    padding: 1rem 0.7rem;
+    padding: 0.5rem;
   }
 
   .user-questions-chart {
@@ -3668,6 +3684,30 @@
 
   .job-details-sub-container {
     height: 100vh;
+  }
+
+  .user-my-assesment-container {
+    padding: 0.5rem;
+  }
+
+  .skb-dropdown-explore {
+    width: 300px;
+  }
+
+  .skb-dashboard-sidebar {
+    position: sticky;
+    z-index: 3;
+  }
+
+  .skb-dashboard-container {
+    width: 100%;
+    position: absolute;
+  }
+
+  .skb-dashboard-container.expended {
+    width: 100%;
+    position: absolute;
+    filter: blur(4px);
   }
 }
 
@@ -4066,10 +4106,6 @@
 
   .drive-detials-header-left {
     width: 180px;
-  }
-
-  .user-my-assesment-container {
-    padding: 2rem 1.5rem;
   }
 
   .my-assesment-analytics-graph {
@@ -4797,10 +4833,6 @@
     width: 90%;
   }
 
-  .user-my-assesment-container {
-    padding: 2rem 1.5rem;
-  }
-
   .my-assesment-analytics-graph {
     width: 100%;
     height: 330px;
@@ -5044,10 +5076,6 @@
 
   .test-result-table {
     width: 100%;
-  }
-
-  .user-my-assesment-container {
-    padding: 2rem 1.5rem;
   }
 
   .my-assesment-analytics-graph {
