@@ -5013,6 +5013,7 @@ h6 span {
   padding: 0.5rem;
   display: flex;
   align-items: center;
+  justify-self: space-between;
   gap: 1rem;
   border-bottom: 1px solid var(--grey-color-shade-2);
 }
@@ -5075,4 +5076,14 @@ h6 span {
 
 .skb-dashboard-container.expended {
   width: calc(100% - 210px);
+}
+
+.blur-container {
+  width: 100%;
+  height: 100%;
+  background: #161616d9;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
 }
