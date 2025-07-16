@@ -4700,7 +4700,7 @@ h6 span {
 .skb-header {
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 3;
   background: var(--background-color);
   border-bottom: 1px solid var(--grey-color-shade-2);
 }
