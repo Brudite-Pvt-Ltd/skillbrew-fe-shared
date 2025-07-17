@@ -5027,7 +5027,7 @@ h6 span {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-bottom: 50px;
+  padding-bottom: 1rem;
 }
 
 .skb-dashboard-sidebar-top {
@@ -5087,7 +5087,7 @@ h6 span {
   height: 100%;
   background: #161616d9;
   position: fixed;
-  z-index: 2;
+  z-index: 4;
   top: 0;
   left: 0;
 }
