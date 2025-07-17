@@ -5225,9 +5225,11 @@ h6 span {
   margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  background: url("/assets/images/public-header-dropdown-menu.png") lightgray 0%
-      0% / 36.71875px 36.71875px repeat,
-    rgba(255, 255, 255, 0.75);
+  background-image: url(/assets/images/public-header-dropdown-menu.png),
+    linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75));
+  background-position: 0px 0px, 0px 0px;
+  background-size: 36.7188px 36.7188px, auto;
+  background-repeat: repeat, no-repeat;
   backdrop-filter: blur(12px);
   padding: 0.2rem;
   border-radius: 0.5rem;
