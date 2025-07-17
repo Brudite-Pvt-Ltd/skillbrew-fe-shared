@@ -4737,6 +4737,10 @@ h6 span {
   height: 32px;
 }
 
+.skb-logo b{
+  color: var(--primary-color);
+}
+
 .skb-header-right {
   display: flex;
   align-items: center;
