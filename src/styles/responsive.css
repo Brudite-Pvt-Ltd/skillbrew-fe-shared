@@ -500,7 +500,7 @@
   }
 
   .ai-interview-insight-container {
-    padding: 34px 5px;
+    padding: 1rem;
   }
 
   .interview-insight-card-bottom-container {
@@ -2986,15 +2986,6 @@
     width: fit-content;
   }
 
-  .ai-interview-insight-wrapper {
-    padding: 0px 5px;
-  }
-
-  .brew-interview {
-    width: 128px;
-    height: 27px;
-  }
-
   .star-mob-view {
     width: 25px;
     height: 25px;
@@ -3707,7 +3698,10 @@
   .skb-dashboard-container.expended {
     width: 100%;
     position: absolute;
-    filter: blur(4px);
+  }
+
+  .ai-interview-insight-container {
+    padding: 1rem;
   }
 }
 

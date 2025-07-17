@@ -8648,20 +8648,12 @@ div:where(.swal2-container) {
 /* ===========Interview Insight============ */
 
 .ai-interview-insight-container {
-  display: flex;
   width: 100%;
-  min-height: calc(100dvh - 60px);
-  padding: 34px 100px;
+  min-height: calc(100dvh - 75px);
+  padding: 1.5rem;
+  display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.ai-interview-insight-wrapper {
-  width: 100%;
-  padding: 15px 34px;
-  border-radius: 25.671px;
-  background: var(--background-color);
-  box-shadow: 0px 19.961px 87.328px 0px rgba(32, 36, 138, 0.06);
 }
 
 .ai-interview-insight-header {
@@ -8684,20 +8676,16 @@ div:where(.swal2-container) {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 175px;
-  height: 34px;
-  background: #0c66e4;
-  border-radius: 10px;
-  box-shadow: 0px 5px 4px #c0bbbb;
+padding: 2px 16px;
+  background: var(--primary-color);
+  border-radius: 50em;
 }
 
 .brew-interview > div {
   color: var(--text-light-color);
   text-align: center;
   font-size: var(--font-8);
-  font-style: normal;
   font-weight: 600;
-  line-height: var(--line-height-4);
 }
 
 .ai-interview-insight-card-container {
@@ -8717,11 +8705,10 @@ div:where(.swal2-container) {
 .interview-insight-card {
   width: 100%;
   flex-shrink: 0;
-  border-radius: 10px;
-  border: 0.5px solid #b1afaf;
+  border-radius: 8px;
+  border: 0.5px solid var(--grey-color-shade-2);
   background: var(--background-color);
-  box-shadow: 0px 3px 2px rgb(133 130 130 / 50%);
-  padding: 20px 16px;
+  padding: 1rem;
 }
 
 .interview-insight-card-top-container {
@@ -8771,20 +8758,16 @@ div:where(.swal2-container) {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 151px;
-  height: 36.155px;
-  background: #0c66e4;
-  border-radius: 10px;
-  box-shadow: 4px 5px 4px #c0bbbb;
+  padding: 2px 1rem;
+  background: var(--primary-color);
+  border-radius: 50em;
 }
 
 .view-report > div {
   color: var(--text-light-color);
   text-align: center;
-  font-size: var(--font-7);
-  font-style: normal;
+  font-size: var(--font-8);
   font-weight: 600;
-  line-height: var(--line-height-3);
 }
 
 .interview-insight-card-bottom-container {
