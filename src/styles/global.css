@@ -8777,27 +8777,27 @@ div:where(.swal2-container) {
 }
 
 .attempted-at div:nth-child(1) {
-  color: var(--grey-color-shade-6);
+  color: var(--grey-color-shade-4);
   font-size: var(--font-9);
   font-style: normal;
   font-weight: 600;
 }
 
 .attempted-at div:nth-child(2) {
-  color: var(--grey-color-shade-8);
+  color: var(--grey-color-shade-6);
   font-size: var(--font-9);
   font-weight: 400;
 }
 
 .interview-total-score div:nth-child(1) {
-  color: var(--grey-color-shade-6);
+  color: var(--grey-color-shade-4);
   font-size: var(--font-9);
   font-style: normal;
   font-weight: 600;
 }
 
 .interview-total-score div:nth-child(2) {
-  color: var(--grey-color-shade-8);
+  color: var(--grey-color-shade-6);
   font-size: var(--font-9);
   font-weight: 400;
 }
@@ -8815,7 +8815,7 @@ div:where(.swal2-container) {
 }
 
 .interview-total-question {
-  color: var(--grey-color-shade-8);
+  color: var(--grey-color-shade-6);
   font-size: var(--font-9);
   font-weight: 600;
 }
