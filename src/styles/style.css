@@ -5225,8 +5225,8 @@ h6 span {
   margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  background: url("https://www.transparenttextures.com/patterns/asfalt-dark.png")
-      lightgray 0% 0% / 36.71875px 36.71875px repeat,
+  background: url("/assets/images/public-header-dropdown-menu.png") lightgray 0%
+      0% / 36.71875px 36.71875px repeat,
     rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(12px);
   padding: 0.2rem;
