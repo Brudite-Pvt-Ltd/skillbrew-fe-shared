@@ -5087,3 +5087,226 @@ h6 span {
   top: 0;
   left: 0;
 }
+
+/* ===================== */
+/* Public Header */
+/* ===================== */
+
+.skb-public-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skb-public-header-v1-main-container {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 11.5px;
+  padding-bottom: 12px;
+  padding-inline: 4.75rem;
+  border-bottom: 1px solid var(--grey-color-shade-2);
+  background-color: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  transition: all 150ms ease;
+}
+
+.skb-public-header-v2-navbar-main-container {
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 11.5px;
+  padding-bottom: 12px;
+  padding-inline: 4.75rem;
+  border-bottom: 1px solid var(--grey-color-shade-2);
+  background-color: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+}
+
+.skb-public-header-main-container-scrolled {
+  width: 92.78%;
+  top: 10px;
+  border-radius: 1rem;
+  padding-inline: 1.5rem;
+  border: 1px solid var(--grey-color-shade-2);
+  transition: all 300ms ease;
+}
+
+.skb-public-header-brand-logo-text-container {
+  display: flex;
+  align-items: center;
+}
+
+.skb-public-header-brand-logo {
+  height: 35px;
+  width: 35px;
+}
+
+.skb-public-header-brand-logo-text {
+  color: var(--dark-color);
+  font-size: 26px;
+  font-weight: 600;
+} /* Older */
+
+.skb-public-header-nav-button-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.skb-public-header-nav-button {
+  padding: 0.625rem 1rem;
+  border-radius: 0.5rem;
+  color: var(--dark-color);
+  font-size: var(--font-9);
+  font-weight: 400;
+}
+
+.skb-public-header-nav-button:hover {
+  background-color: rgba(128, 128, 128, 0.08);
+  color: var(--dark-color);
+}
+
+.skb-public-header-nav-button.isActive {
+  background-color: rgba(128, 128, 128, 0.08);
+  color: var(--dark-color);
+}
+
+.skb-public-header-nav-button:active {
+  background-color: rgba(128, 128, 128, 0.1);
+  color: var(--dark-color);
+}
+
+.skb-public-header-nav-button:visited {
+  background-color: rgba(128, 128, 128, 0.1);
+  color: var(--dark-color);
+}
+
+.skb-public-header-signin-button {
+  color: var(--primary-color);
+  font-size: var(--font-8);
+}
+
+.skb-public-header-signup-button {
+  padding: 0.625rem 1.5rem;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border-radius: 50rem;
+}
+
+.skb-public-header-signup-button:hover {
+  color: var(--background-color);
+}
+
+.skb-public-header-navbar-auth-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2rem;
+  font-weight: 600;
+  font-size: var(--font-9);
+  min-width: 200px;
+}
+
+.skb-public-header-dropdown-menu-container {
+  width: 50%;
+  position: fixed;
+  top: 75px;
+  z-index: 16;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: url("https://www.transparenttextures.com/patterns/asfalt-dark.png")
+      lightgray 0% 0% / 36.71875px 36.71875px repeat,
+    rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--grey-color-shade-2);
+}
+
+.skb-public-header-dropdown-menu-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1rem;
+}
+
+.skb-public-header-dropdown-menu-content:hover {
+  border-radius: 4px;
+  background: linear-gradient(
+    274deg,
+    rgba(128, 128, 128, 0.08) 0.44%,
+    rgba(128, 128, 128, 0.08) 99.61%
+  );
+}
+
+.skb-public-header-dropdown-right-arrow {
+  visibility: hidden;
+}
+
+.skb-public-header-dropdown-menu-content:hover
+  .skb-public-header-dropdown-right-arrow {
+  visibility: visible;
+}
+
+.skb-public-header-dropdown-icon-heading-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.skb-public-header-dropdown-heading {
+  font-size: var(--font-9);
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+.skb-public-header-coming-soon-button {
+  padding: 0.125rem 0.25rem;
+  color: var(--secondary-color-shade-6);
+  font-weight: 400;
+  font-size: var(--font-10);
+  background-color: var(--secondary-color-shade-1);
+  border-radius: 0.25rem;
+  text-wrap: nowrap;
+}
+
+.skb-public-header-dropdown-text {
+  font-size: var(--font-9);
+  font-weight: 400;
+  color: var(--grey-color-shade-6);
+}
+
+.skb-public-header-skb-navbar-toggler-container {
+  display: none;
+}
+
+.skb-public-header-skb-mobile-username {
+  padding: 0.75rem 1.25rem;
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+}
+.skb-public-header-user-profile-pic {
+  height: 36px;
+  width: 36px;
+  aspect-ratio: 1/1;
+  border-radius: 50rem;
+}
+.skb-public-header-user-name {
+  max-width: 100px;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+  overflow: hidden;
+}

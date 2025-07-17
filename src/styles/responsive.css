@@ -782,6 +782,23 @@
   .skb-dropdown-explore {
     width: 500px;
   }
+
+  .skb-public-header-v1-main-container {
+    padding-inline: 2.75rem;
+  }
+
+  .skb-public-header-v2-navbar-main-container {
+    padding-inline: 2.75rem;
+  }
+
+  .skb-public-header-dropdown-menu-container {
+    width: 75%;
+    gap: 0rem 1rem;
+  }
+
+  .skb-public-header-navbar-auth-button-container {
+    min-width: 150px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -3702,6 +3719,155 @@
 
   .ai-interview-insight-container {
     padding: 1rem;
+  }
+
+  .skb-public-header-v1-main-container {
+    padding: 1.3rem 1rem;
+  }
+
+  .skb-public-header-v2-navbar-main-container {
+    padding: 1.3rem 1rem;
+  }
+
+  .skb-public-header-brand-logo {
+    width: 28px;
+    height: 28px;
+  }
+
+  .skb-public-header-brand-logo-text {
+    font-size: 19px;
+  }
+
+  .skb-public-header-skb-navbar-toggler-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 0.25rem;
+    width: 10%;
+  }
+
+  .skb-public-header-skb-navbar-line {
+    height: 2px;
+    width: 100%;
+    background-color: var(--dark-color);
+    border-radius: 2px;
+  }
+
+  .skb-public-header-mobile-menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+  }
+
+  .skb-public-header-mobile-menu-line {
+    fill: none;
+    stroke: black;
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 5px;
+  }
+
+  .skb-public-header-mobile-menu-line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+
+  .skb-public-header-mobile-menu-line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+  }
+
+  .skb-public-header-mobile-menu-line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+
+  .skb-public-header-mobile-menu-opened .skb-public-header-mobile-menu-line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+
+  .skb-public-header-mobile-menu-opened .skb-public-header-mobile-menu-line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+  }
+
+  .skb-public-header-mobile-menu-opened .skb-public-header-mobile-menu-line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+
+  .skb-public-header-mobile-menu-container {
+    height: 100dvh;
+    width: 100%;
+    position: fixed;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+
+  .skb-public-header-skb-mobile-menu {
+    position: fixed;
+    top: 75px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: url("https://www.transparenttextures.com/patterns/asfalt-dark.png")
+        lightgray 0% 0% / 36.71875px 36.71875px repeat,
+      rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(6px);
+  }
+
+  .skb-public-header-skb-mobile-menu-item-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem 0rem;
+    padding: 0.75rem 1.25rem;
+    border-bottom: 1px solid var(--grey-color-shade-2);
+  }
+
+  .skb-public-header-skb-mobile-menu-item {
+    font-size: var(--font-8);
+    font-weight: 400;
+    color: var(--dark-color);
+  }
+
+  .skb-public-header-skb-mobile-menu-subitem-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--grey-color-shade-2);
+  }
+
+  .skb-public-header-skb-mobile-menu-subitem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-inline: 1.25rem;
+  }
+
+  .skb-public-header-mobile-menu-subitem-link {
+    font-size: var(--font-9);
+    font-weight: 600;
+    color: var(--dark-color);
+  }
+
+  #skb-public-header-skb-mobile-signup-button {
+    background-color: var(--primary-color);
+    padding: 0.75rem 1.25rem;
+    a {
+      color: var(--background-color);
+    }
+    svg > path {
+      fill: var(--background-color);
+    }
   }
 }
 
