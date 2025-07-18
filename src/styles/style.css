@@ -5243,6 +5243,10 @@ h6 span {
   padding: 1rem;
 }
 
+button.skb-public-header-dropdown-menu-content {
+  text-align: left;
+}
+
 .skb-public-header-dropdown-menu-content:hover {
   border-radius: 4px;
   background: linear-gradient(
