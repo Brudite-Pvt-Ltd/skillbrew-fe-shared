@@ -192,6 +192,8 @@ export interface UserAuthInfo {
   fullname: string;
   org_id: number | null;
   logo: string | null;
+  credits: number;
+  subscription:string;
 }
 
 export interface Attachment {
