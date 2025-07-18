@@ -4737,7 +4737,7 @@ h6 span {
   height: 32px;
 }
 
-.skb-logo b{
+.skb-logo b {
   color: var(--primary-color);
 }
 
@@ -5266,9 +5266,8 @@ h6 span {
   ) {
   border-radius: 4px;
   background: transparent;
-  pointer-events: none;
   .skb-public-header-dropdown-right-arrow {
-    display: none;
+    visibility: hidden;
   }
 }
 
