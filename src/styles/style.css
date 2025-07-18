@@ -4844,6 +4844,7 @@ h6 span {
   font-size: var(--font-8, 16px);
   font-weight: 600;
   color: var(--grey-color);
+  white-space: nowrap;
 }
 
 .skb-explore-item-comming-soon {
@@ -4856,6 +4857,7 @@ h6 span {
   color: var(--secondary-color-shade-6, #e5792a);
   font-size: var(--font-8);
   font-weight: 400;
+  white-space: nowrap;
 }
 
 .skb-explore-item-description {

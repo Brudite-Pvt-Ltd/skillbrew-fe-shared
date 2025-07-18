@@ -2463,3 +2463,29 @@ export const sortYearMonthWeekData = [
   { label: "This Month", value: "month" },
   { label: "This Week", value: "week" },
 ];
+
+export const lightToolTipTheme = {
+  tooltip: {
+    sx: {
+      backgroundColor: "#fff",
+      color: "#454545",
+      border: "1px solid #e7e7e7",
+      boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.1)",
+      fontSize: "13px",
+      fontWeight: 400,
+    },
+  },
+};
+
+export const darkToolTipTheme = {
+  tooltip: {
+    sx: {
+      backgroundColor: "#333",
+      color: "#fff",
+      border: "1px solid #444",
+      boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.2)",
+      fontSize: "13px",
+      fontWeight: 400,
+    },
+  },
+};
