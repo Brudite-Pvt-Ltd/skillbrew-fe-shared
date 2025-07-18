@@ -4769,13 +4769,13 @@ h6 span {
 }
 
 .skb-user-btn {
-  border: 2px solid var(--grey-color-shade-6);
+  border: 2px solid var(--grey-color-shade-2);
   border-radius: 50%;
 }
 
 .skb-user-btn:hover,
 .skb-user-btn.show {
-  border: 2px solid var(--grey-color-shade-9);
+  border: 2px solid var(--grey-color-shade-4);
 }
 
 .skb-dropdown-explore {
