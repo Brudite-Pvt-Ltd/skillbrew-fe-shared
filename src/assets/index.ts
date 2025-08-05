@@ -67,7 +67,7 @@ export { default as Sanya } from "./images/sanya.png";
 export { default as Saurabh } from "./images/saurabh.png";
 export { default as Resume } from "./images/resume.png";
 export { default as CssPythonHtml } from "./images/css-python-html.png";
-export { default as GreatCompanies } from "./images/great_companies.png";
+export { default as GreatCompanies } from "./images/great-companies.png";
 export { default as Python } from "./images/python.png";
 
 // SVG
