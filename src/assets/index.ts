@@ -59,6 +59,16 @@ export { default as OfficeIndia } from "./images/office-India.png";
 export { default as OfficeUs } from "./images/office-us.png";
 export { default as SendLetter } from "./images/send-letter.png";
 export { default as TechnmanLogo } from "./images/technman-logo.png";
+export { default as Divya } from "./images/Divya.png";
+export { default as Kritika } from "./images/Kritika.png";
+export { default as Mehul } from "./images/Mehul.png";
+export { default as Radhika } from "./images/Radhika.png";
+export { default as Sanya } from "./images/Sanya.png";
+export { default as Saurabh } from "./images/saurabh.png";
+export { default as Resume } from "./images/Resume.png";
+export { default as CssPythonHtml } from "./images/Css-python-html.png";
+export { default as GreatCompanies } from "./images/great_companies.png";
+export { default as Python } from "./images/python.png";
 
 // SVG
 export { default as AboutUs } from "./svg/about-us.svg";
