@@ -10,17 +10,27 @@ import {
   Companies4,
   Companies5,
   Companies6,
+  CssPythonHtml,
   Delivery,
   Dev,
+  Divya,
+  GreatCompanies,
   Hint,
+  Kritika,
   Lakshyaveer,
+  Mehul,
   Nirvika,
   OfficeIndia,
   OfficeUs,
+  Python,
+  Radhika,
   Rashid,
+  Resume,
   Rishabh,
   Ritu,
+  Sanya,
   Sanyam,
+  Saurabh,
   Testimonial1,
   Testimonial2,
   Testimonial3,
@@ -2489,3 +2499,136 @@ export const darkToolTipTheme = {
     },
   },
 };
+
+export const userFeedbackDataV2 = [
+  {
+    name: "Radhika Mehta",
+    designation: "Tech Recruiter",
+    description:
+      "AI Interviews helps us reducing the hiring timeline by 30% and team can focus on the best talent as skillbrew handles rest of the filtering.",
+    img: Radhika,
+  },
+  {
+    name: "Divya Mehta",
+    designation: "Human Resources",
+    description:
+      "Skillbrew cut our screening time by half. Now we only meet candidates who actually match the role and expectations.",
+    rating: 5,
+    img: Divya,
+  },
+  {
+    name: "Saurabh Jain",
+    designation: "Head of Talent",
+    description:
+      "It felt like we had an extra team member handling the grunt work. Super helpful during campus drives and bulk hiring",
+    rating: 5,
+    img: Saurabh,
+  },
+  {
+    name: "Kritika Deshmukh",
+    designation: "People Ops Manager",
+    description:
+      "We used to spend days filtering applications. Now, in just hours, we have top candidates who truly fit the role and save us time.",
+    rating: 5,
+    img: Kritika,
+  },
+  {
+    name: "Mehul Shah",
+    designation: "Technical Hiring Lead",
+    description:
+      "Skillbrew made it easier to align hiring managers. Everyone sees the same data, so decisions are way faster now.",
+    rating: 5,
+    img: Mehul,
+  },
+  {
+    name: "Sanya Kapoor",
+    designation: "Recruiter at a Startup",
+    description:
+      "Even for niche roles, Skillbrew gave us strong profiles upfront. It felt like we were never starting from scratch.",
+    rating: 5,
+    img: Sanya,
+  },
+];
+
+export const userSignupData = [
+  {
+    title: "Get started with SkillBrew.AI",
+    subtitle: "Your AI-powered job prep and placement platform",
+    img: null,
+  },
+  {
+    title: "Learn by Doing",
+    subtitle:
+      "Practice with real coding challenges, assessments, and instant feedback to level up your skills.",
+    img: CssPythonHtml,
+  },
+  {
+    title: "Your Skills, Not Just Your Resume",
+    subtitle:
+      "We help connect talented individuals with companies that hire for potential not just qualifications.",
+    img: Resume,
+  },
+  {
+    title: "Progress You Can See",
+    subtitle:
+      "Earn coins, track your skill matrix, and unlock badges as you grow.",
+    img: Python,
+  },
+  {
+    title: "Work With Great Companies",
+    subtitle:
+      "Get discovered by recruiters and access handpicked job opportunities tailored to your strengths.",
+    img: GreatCompanies,
+  },
+];
+
+export const cardData = [
+  {
+    id: 0,
+    icon: Icons?.briefcaseV2,
+    cardTitle: "Land real jobs from verified recruiters",
+    cardDescription:
+      "Apply on relevant job openings from verified recruiters across top companies.",
+  },
+  {
+    id: 1,
+    icon: Icons?.desktopV2,
+    cardTitle: "Practice with AI Interviews",
+    cardDescription:
+      "Sharpen your skills with mock interviews and real-world tasks tailored to your goals.",
+  },
+  {
+    id: 2,
+    icon: Icons?.peace,
+    cardTitle: "Showcase Your Strengths",
+    cardDescription:
+      "Craft a profile that highlights your skills, badges & resume make recruiters notice you.",
+  },
+];
+
+export const passwordRules = [
+  {
+    label: "Minimum 8 characters",
+    test: (pw: string) => pw.length >= 8,
+  },
+  {
+    label: "At least 1 uppercase letter",
+    subLabel: "(A–Z)",
+    test: (pw: string) => /[A-Z]/.test(pw),
+  },
+  {
+    label: "At least 1 number",
+    subLabel: "(0-9)",
+    test: (pw: string) => /\d/.test(pw),
+  },
+  {
+    label: "At least 1 lowercase letter",
+    subLabel: "(a-z)",
+    test: (pw: string) => /[a-z]/.test(pw),
+  },
+  {
+    label: "At least 1 special character",
+    subLabel: "(!@#$%^&*)",
+    test: (pw: string) => /[^A-Za-z0-9]/.test(pw),
+  },
+];
