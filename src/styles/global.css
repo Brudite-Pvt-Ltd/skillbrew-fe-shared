@@ -19871,3 +19871,479 @@ button {
   border-radius: 0.5rem;
   background-color: var(--background-color);
 }
+
+.login-page-parent-container {
+  height: 100vh;
+  display: flex;
+}
+
+.login-page-left-container {
+  width: 50%;
+  background: grey;
+  .gradient-left-panel {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    background: #f9f9fb;
+  }
+  .gradient-ellipse {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(0);
+  }
+  .ellipse21 {
+    bottom: -150px;
+    right: 0px;
+    width: 402px;
+    height: 447px;
+    background: linear-gradient(
+      180deg,
+      rgba(77, 67, 190, 0.32) 0%,
+      rgba(45, 91, 255, 0.32) 52.62%,
+      rgba(150, 45, 255, 0.32) 100%
+    );
+    filter: blur(150px);
+  }
+  .ellipse83 {
+    top: 70px;
+    right: 40px;
+    width: 212px;
+    height: 143px;
+    background: #008cff;
+    filter: blur(73px);
+  }
+  .ellipse84 {
+    transform: rotate(-25deg);
+    top: 150px;
+    left: 80px;
+    width: 220px;
+    height: 149px;
+    background: #ffa06d;
+    filter: blur(75px);
+  }
+  .gradient-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(80px);
+  }
+  .login-testimonial-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    max-width: 550px;
+    width: 100%;
+    border-radius: 16px;
+    border: 1px solid rgba(254, 254, 254, 0.48);
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(41.95000076293945px);
+    padding: 2rem;
+    overflow: visible;
+    .login-testimonial-text {
+      color: var(--grey-color-shade-8);
+      font-size: var(--font-6);
+      font-weight: 400;
+      margin-bottom: 1rem;
+    }
+    .login-testimonial-author {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+      font-size: var(--font-8);
+      font-weight: 600;
+      line-height: normal;
+      color: var(--grey-color-shade-8);
+      .login-testimonial-author-role {
+        font-weight: 100;
+        color: var(--grey-color-shade-6);
+      }
+    }
+  }
+
+  .login-testimonial-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    transform: translate(8px, 8px);
+    z-index: -1;
+    pointer-events: none;
+  }
+}
+
+.login-page-right-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  padding: 1.75rem 4.75rem 3rem 4.75rem;
+}
+
+.login-page-signup-section {
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+  gap: 0.75rem;
+  color: var(--grey-color-shade-9);
+  font-size: var(--font-8);
+  button {
+    padding: 0.25rem 0.75rem;
+    border-radius: 8px;
+    border: 1px solid var(--grey-color-shade-2);
+    color: var(--grey-color-shade-9);
+    font-weight: 600;
+  }
+}
+
+.login-page-form-container {
+  width: 461px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .login-form-heading {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .login-form-subheading {
+    color: var(--grey-color-shade-6);
+    font-size: 20px;
+    margin-bottom: 40px;
+    min-width: 320px;
+    text-align: center;
+  }
+
+  .login-form-input-container span {
+    color: var(--grey-color-shade-9);
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .login-form-input-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    span {
+      color: var(--grey-color-shade-9);
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .login-form-input-field {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.25rem 0.625rem;
+      border: 1px solid var(--grey-color-shade-3);
+      border-radius: 8px;
+      input {
+        width: 442px;
+        border: none;
+        font-size: 16px !important;
+        background-clip: text;
+        -webkit-background-clip: text;
+      }
+      input::placeholder {
+        color: var(--grey-color-shade-5) !important;
+      }
+      i {
+        color: var(--grey-color-shade-4);
+      }
+    }
+  }
+
+  .login-form-input-field:has(input:focus) {
+    border: 1px solid var(--primary-color);
+  }
+
+  .login-form-continue-btn {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0.75rem 2.75rem;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .login-form-back-btn {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.75rem 0rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .login-form-back-btn:hover {
+    border-radius: 8px;
+    background: var(--grey-color-shade-1);
+  }
+
+  .login-page-forgot-pwd-btn {
+    margin-top: 0.5rem;
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration-line: underline;
+    color: var(--grey-color-shade-9);
+  }
+
+  .login-form-password-field {
+    margin-bottom: 1rem;
+  }
+
+  .password-rules-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem 0rem;
+  }
+}
+
+.login-form-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.login-page-copyright-bar {
+  align-self: center;
+  color: var(--grey-color-shade-6);
+  font-size: var(--font-9);
+  font-weight: 400;
+}
+
+.otp-input-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.otp-input {
+  aspect-ratio: 1 / 0.75;
+  width: 100%;
+  text-align: center;
+  font-size: var(--font-8);
+  color: var(--grey-color);
+  border: 1px solid var(--grey-color-shade-3);
+  border-radius: 8px;
+}
+
+.otp-input::placeholder {
+  font-size: var(--font-8);
+  color: var(--grey-color-shade-6);
+}
+
+.otp-input:focus {
+  border: 1px solid var(--primary-color);
+  transition: border 200ms ease-in-out;
+}
+
+.login-form-validation-text {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--grey-color-shade-8);
+  padding: 0;
+  text-wrap: nowrap;
+}
+
+.login-form-validation-subtext {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--grey-color-shade-4);
+  padding: 0;
+  text-wrap: nowrap;
+}
+
+.login-form-no-style-btn {
+  color: var(--primary-color);
+  font-size: 13px;
+}
+
+.login-form-no-style-btn:disabled {
+  color: var(--grey-color-shade-5);
+}
+
+.login-form-subtext {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--grey-color-shade-6);
+  text-align: right;
+  button {
+    color: var(--primary-color);
+  }
+}
+
+.signup-account-type-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem 4.75rem;
+  background: var(--grey-color-shade-1);
+  background-size: contain;
+  background-position: center;
+}
+
+.signup-account-type-container-bg-org {
+  background: url("/assets/svg/org.svg") var(--grey-color-shade-1) no-repeat
+    left bottom;
+  background-size: 30%;
+}
+
+.signup-account-type-container-bg-student {
+  background: url("/assets/svg/student.svg") var(--grey-color-shade-1) no-repeat
+    left bottom;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 30%;
+}
+
+.signup-account-type-heading {
+  font-size: 31px;
+  font-weight: 700;
+  color: var(--grey-color-shade-9);
+  margin-bottom: 0.5rem;
+}
+
+.signup-account-type-subheading {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--grey-color-shade-6);
+}
+
+.signup-account-type-cards-container {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 4.5rem;
+}
+
+.signup-account-type-card {
+  width: 339px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  background-color: var(--background-color);
+  border: 1px solid var(--grey-color-shade-2);
+  border-radius: 8px;
+  svg {
+    text-align: right;
+  }
+  transition: all 0.5s;
+}
+
+.signup-account-type-card-heading-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.signup-account-type-card-heading {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--grey-color-shade-9);
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+.signup-account-type-card:hover {
+  border-color: var(--primary-color-shade-7);
+  .signup-account-type-card-heading {
+    color: var(--primary-color-shade-7);
+  }
+  .signup-account-type-card-arrow path {
+    fill: #0382ff;
+  }
+}
+
+.signup-account-type-card-subheading {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--grey-color-shade-7);
+  text-align: left;
+  padding: 0;
+}
+
+.sign-up-user-data-left-panel-heading {
+  font-size: var(--font-4);
+  font-weight: 600;
+  color: var(--grey-color-shade-8);
+  margin-bottom: 0.75rem;
+}
+
+.sign-up-user-data-left-panel-subheading {
+  font-size: var(--font-8);
+  font-weight: 400;
+  color: var(--grey-color-shade-6);
+  margin-bottom: 1.75rem;
+  text-align: center;
+}
+
+.signup-user-data-card-container {
+  min-width: 80%;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sign-up-user-data-card {
+  width: 313px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(0.5px);
+}
+
+.sign-up-user-data-card-title {
+  color: var(--secondary-color);
+  font-size: var(--font-9);
+  font-weight: 600;
+  white-space: nowrap;
+  padding: 0;
+}
+
+.sign-up-user-data-card-desc {
+  color: var(--grey-color-shade-6);
+  font-size: var(--font-9);
+  font-weight: 400;
+  padding: 0;
+}
+
+.sign-up-terms-condition-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  margin-top: 1.75rem;
+  color: var(--grey-color-shade-6);
+  font-size: 13px;
+  font-weight: 400;
+}

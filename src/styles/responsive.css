@@ -3867,6 +3867,89 @@
       fill: var(--background-color);
     }
   }
+  .login-page-left-container {
+    width: 0%;
+  }
+
+  .login-page-right-container {
+    width: 100%;
+    padding: 27px 33px;
+  }
+
+  .login-page-form-container {
+    width: 100%;
+  }
+
+  .signup-account-type-container {
+    padding: 28px;
+  }
+
+  .login-form-heading {
+    font-size: 20px !important;
+  }
+
+  .login-form-subheading {
+    font-size: 16px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .login-form-continue-btn {
+    margin-top: 1.5rem !important;
+  }
+
+  .password-rules-container {
+    justify-content: flex-start !important;
+    flex-wrap: wrap !important;
+    gap: 0.25rem 0rem !important;
+    > div {
+      width: 100% !important;
+    }
+  }
+
+  .otp-input {
+    aspect-ratio: 1 / 1;
+  }
+
+  .signup-account-type-heading {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .signup-account-type-subheading {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .signup-account-type-cards-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .signup-account-type-card {
+    flex-direction: row;
+    padding: 1rem;
+  }
+
+  .signup-account-type-card-heading-container {
+    flex-direction: column;
+  }
+
+  .signup-account-type-card-heading {
+    font-size: 20px;
+  }
+
+  .signup-account-type-card-subheading {
+    font-size: 13px;
+  }
+
+  .login-form-password-field {
+    margin-bottom: 0rem !important;
+  }
+
+  .sign-up-terms-condition-container {
+    margin-top: 0.5rem;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -5441,6 +5524,23 @@
 
   .quick-apply-modal {
     width: 50%;
+  }
+
+  .login-page-left-container {
+    width: 0%;
+  }
+
+  .login-page-right-container {
+    width: 100%;
+    padding: 27px 33px;
+  }
+
+  .login-page-form-container {
+    width: 442px;
+  }
+
+  .signup-account-type-container {
+    padding: 28px;
   }
 }
 
