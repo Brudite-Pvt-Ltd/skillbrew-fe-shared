@@ -3869,6 +3869,7 @@
   }
   .login-page-left-container {
     width: 0%;
+    display: none;
   }
 
   .login-page-right-container {
@@ -3949,6 +3950,30 @@
 
   .sign-up-terms-condition-container {
     margin-top: 0.5rem;
+  }
+
+  .login-page-form-container .login-form-input-section .MuiTypography-root {
+    font-size: 13px;
+  }
+
+  .login-form-continue-btn {
+    font-size: 13px !important;
+  }
+
+  .skill-pill-v2 > .skill-pill-v2-title {
+    font-size: 13px;
+  }
+
+  .login-page-form-container .login-form-input-section input {
+    font-size: 13px !important;
+  }
+
+  .login-page-form-container .login-form-input-section p {
+    font-size: 13px !important;
+  }
+
+  .onboarding-skip-button {
+    font-size: 13px !important;
   }
 }
 
@@ -5528,6 +5553,7 @@
 
   .login-page-left-container {
     width: 0%;
+    display: none;
   }
 
   .login-page-right-container {
