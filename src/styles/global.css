@@ -19987,7 +19987,7 @@ button {
   flex-direction: column;
   gap: 1rem;
   width: 50%;
-  padding: 1.75rem 4.75rem 3rem 4.75rem;
+  padding: 1.75rem 1.75rem 3rem 4.75rem;
 }
 
 .login-page-signup-section {
@@ -20059,7 +20059,7 @@ button {
         -webkit-background-clip: text;
       }
       input::placeholder {
-        color: var(--grey-color-shade-4) !important;
+        color: var(--grey-color-shade-3) !important;
       }
       i {
         color: var(--grey-color-shade-4);
@@ -20306,7 +20306,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
+  padding: 2rem 1rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -20503,6 +20503,7 @@ button {
   display: flex !important;
   align-items: center;
   gap: 0.25rem !important;
+  padding: 0.5rem 0.75rem;
   border-radius: 50rem !important;
   border: 1px solid var(--grey-color-shade-3) !important;
   font-size: 16px !important;
@@ -20523,6 +20524,7 @@ button {
   border: 1px solid var(--primary-color) !important;
   background: var(--primary-color-shade-1, #ecf9ff) !important;
   transition: background 0.3s ease-in;
+  color: var(--primary-color-shade-7);
 }
 
 .suggestions-dropdown-menu {
@@ -20587,7 +20589,7 @@ button {
 
 .onboarding-skip-button {
   display: inline-flex;
-  padding: 8px 16px;
+  padding: 4px 16px;
   justify-content: center;
   align-items: center;
   gap: 10px;
