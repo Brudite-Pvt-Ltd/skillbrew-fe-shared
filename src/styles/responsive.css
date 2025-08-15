@@ -3886,7 +3886,7 @@
   }
 
   .login-form-heading {
-    font-size: 20px !important;
+    font-size: 19px !important;
   }
 
   .login-form-subheading {
@@ -3974,6 +3974,10 @@
 
   .onboarding-skip-button {
     font-size: 13px !important;
+  }
+
+  .login-page-form-container .login-form-input-section span {
+    font-size: 13px;
   }
 }
 
