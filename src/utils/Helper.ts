@@ -1667,3 +1667,82 @@ export const truncateFileName = (filename: string, maxLength = 30) => {
     return `${start}...${end}.${ext}`;
   }
 };
+
+export const selectStyles = {
+  borderRadius: "8px",
+  color: "#222222",
+
+  "& .MuiOutlinedInput-root": {
+    borderRadius: "8px",
+  },
+
+  "& .MuiOutlinedInput-input": {
+    padding: "12px 12px 9px 12px",
+  },
+
+  "& .MuiOutlinedInput-notchedOutline": {
+    borderColor: "#D1D1D1",
+  },
+
+  "&:hover .MuiOutlinedInput-notchedOutline": {
+    borderColor: "#D1D1D1 !important",
+  },
+
+  "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+    borderColor: "#D1D1D1",
+  },
+
+  "& .MuiSelect-icon": {
+    position: "relative",
+    right: "20px",
+    color: "#B0B0B0",
+  },
+
+  "& .MuiSelect-icon > svg": {
+    position: "absolute",
+    transform: "translate(-50%, -50%)",
+    top: "50%",
+    left: "50%",
+    right: "10px",
+  },
+};
+
+export const autocompleteStyles = {
+  borderRadius: "8px",
+  color: "#222222",
+
+  "& .MuiOutlinedInput-root": {
+    borderRadius: "8px",
+  },
+
+  "& .MuiOutlinedInput-root.MuiInputBase-sizeSmall .MuiAutocomplete-input": {
+    padding: "5.5px 4px 3.5px 8px",
+  },
+
+  "& .MuiOutlinedInput-notchedOutline": {
+    borderColor: "#D1D1D1",
+  },
+
+  "&:hover .MuiOutlinedInput-notchedOutline": {
+    borderColor: "#D1D1D1 !important",
+  },
+
+  "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+    borderColor: "#D1D1D1",
+  },
+};
+
+export const splitBySearch = (
+  text: string,
+  query: string
+): { part: string; match: boolean }[] => {
+  if (!query) return [{ part: text, match: false }];
+
+  const regex = new RegExp(`(${query})`, "ig"); // global, case-insensitive
+  const parts = text.split(regex);
+
+  return parts.filter(Boolean).map((part) => ({
+    part,
+    match: part.toLowerCase() === query.toLowerCase(),
+  }));
+};

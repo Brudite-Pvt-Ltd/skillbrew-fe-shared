@@ -19997,13 +19997,14 @@ button {
   gap: 0.75rem;
   color: var(--grey-color-shade-9);
   font-size: var(--font-8);
-  button {
-    padding: 0.25rem 0.75rem;
-    border-radius: 8px;
-    border: 1px solid var(--grey-color-shade-2);
-    color: var(--grey-color-shade-9);
-    font-weight: 600;
-  }
+}
+
+.login-page-signup-section-button {
+  padding: 0.25rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--grey-color-shade-2);
+  color: var(--grey-color-shade-9);
+  font-weight: 600;
 }
 
 .login-page-form-container {
