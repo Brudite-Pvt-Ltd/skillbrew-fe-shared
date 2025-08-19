@@ -69,6 +69,7 @@ export { default as Resume } from "./images/resume.png";
 export { default as CssPythonHtml } from "./images/css-python-html.png";
 export { default as GreatCompanies } from "./images/great-companies.png";
 export { default as Python } from "./images/python.png";
+export { default as ShiningCup } from "./images/shining-cup.png";
 
 // SVG
 export { default as AboutUs } from "./svg/about-us.svg";
