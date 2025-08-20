@@ -1278,6 +1278,30 @@ export const launchConfetti = () => {
   })();
 };
 
+export const launchConfettiOnBoard = () => {
+  const duration = 0.01 * 1000;
+  const end = Date.now() + duration;
+
+  (function frame() {
+    confetti({
+      particleCount: 100,
+      spread: 100,
+      angle: 70,
+      origin: { x: 0, y: 0.6 },
+    });
+    confetti({
+      particleCount: 100,
+      spread: 100,
+      angle: 110,
+      origin: { x: 1, y: 0.6 },
+    });
+
+    if (Date.now() < end) {
+      requestAnimationFrame(frame);
+    }
+  })();
+};
+
 export const captureImageFromWebcam = async (): Promise<File | null> => {
   const stream = await navigator.mediaDevices.getUserMedia({ video: true });
   const video = document.createElement("video");
