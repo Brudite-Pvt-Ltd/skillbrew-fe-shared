@@ -1278,29 +1278,34 @@ export const launchConfetti = () => {
   })();
 };
 
-export const launchConfettiOnBoard = () => {
-  const duration = 0.01 * 1000;
-  const end = Date.now() + duration;
+export function launchConfettiOnBoard(target: HTMLDivElement, duration = 3000) {
+  const canvas = document.createElement("canvas");
+  canvas.style.position = "absolute";
+  canvas.style.top = "0";
+  canvas.style.left = "0";
+  canvas.style.width = "100%";
+  canvas.style.height = "100%";
+  canvas.style.pointerEvents = "none";
 
-  (function frame() {
-    confetti({
-      particleCount: 100,
-      spread: 100,
-      angle: 70,
-      origin: { x: 0, y: 0.6 },
-    });
-    confetti({
-      particleCount: 100,
-      spread: 100,
-      angle: 110,
-      origin: { x: 1, y: 0.6 },
-    });
+  if (target) {
+    target.style.position = "relative";
+    target.appendChild(canvas);
+  } else {
+    document.body.appendChild(canvas);
+  }
 
-    if (Date.now() < end) {
-      requestAnimationFrame(frame);
-    }
-  })();
-};
+  const myConfetti = confetti.create(canvas, { resize: true, useWorker: true });
+
+  myConfetti({
+    particleCount: 150,
+    spread: 70,
+    origin: { y: 0.6 },
+  });
+
+  setTimeout(() => {
+    canvas.remove();
+  }, duration);
+}
 
 export const captureImageFromWebcam = async (): Promise<File | null> => {
   const stream = await navigator.mediaDevices.getUserMedia({ video: true });
