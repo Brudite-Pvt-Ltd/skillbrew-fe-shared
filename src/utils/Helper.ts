@@ -1299,7 +1299,13 @@ export function launchConfettiOnBoard(target: HTMLDivElement, duration = 3000) {
   myConfetti({
     particleCount: 150,
     spread: 70,
-    origin: { y: 0.6 },
+    origin: { x: 0, y: 0.6 },
+  });
+
+  myConfetti({
+    particleCount: 150,
+    spread: 70,
+    origin: { x: 1, y: 0.6 },
   });
 
   setTimeout(() => {
