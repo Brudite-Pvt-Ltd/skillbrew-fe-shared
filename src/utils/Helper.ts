@@ -1751,7 +1751,7 @@ export const autocompleteStyles = {
   },
 
   "& .MuiOutlinedInput-root.MuiInputBase-sizeSmall .MuiAutocomplete-input": {
-    padding: "5.5px 4px 3.5px 8px",
+    padding: "5.5px 4px 3.5px 5px",
   },
 
   "& .MuiOutlinedInput-notchedOutline": {

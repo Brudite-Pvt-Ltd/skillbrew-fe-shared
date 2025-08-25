@@ -14367,11 +14367,12 @@ gap: 1rem;
 }
 
 .checkout-details-container {
+  height: fit-content;
   flex: 0.25;
   background-color: var(--background-color);
-  height: fit-content;
   border-radius: 0.5rem;
   padding: 1rem 0rem;
+  border: 1px solid var(--grey-color-shade-2);
 }
 
 .checkout-details-container .MuiInputBase-root {
@@ -14387,7 +14388,7 @@ gap: 1rem;
 
 .checkout-details-plan-description {
   color: var(--grey-color-shade-9);
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .checkout-form-main-container {
@@ -14403,6 +14404,7 @@ gap: 1rem;
   width: 100%;
   overflow: auto;
   padding: 1rem 0.4rem;
+  border: 1px solid var(--grey-color-shade-2);
 }
 
 .checkout-form-container > form {
@@ -14416,7 +14418,7 @@ gap: 1rem;
 }
 
 .checkout-btn {
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 1.125rem;
   font-size: var(--font-9);
   font-weight: 500;
   color: var(--background-color);
@@ -14425,7 +14427,7 @@ gap: 1rem;
 
 .apply-discount-btn {
   font-size: var(--font-10);
-  font-weight: 500;
+  font-weight: 600;
   color: var(--primary-color);
 }
 
@@ -14472,6 +14474,17 @@ gap: 1rem;
   padding: 0.25rem 1rem;
 }
 
+.checkout-page-modal-danger-button {
+  border: 1px solid var(--danger-color);
+  color: var(--danger-color);
+  background-color: var(--background-color);
+}
+
+.checkout-page-modal-primary-button {
+  color: var(--text-light-color);
+  background-color: var(--primary-color);
+}
+
 .checkout-page-modal-confirm-button {
   border: 1px solid var(--danger-color);
   color: var(--danger-color);
@@ -14492,7 +14505,8 @@ gap: 1rem;
 }
 
 .payment-status-container {
-  height: calc(100dvh - 130px);
+  height: 100lvh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19873,7 +19887,7 @@ button {
 }
 
 .login-page-parent-container {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
 }
 
@@ -19987,7 +20001,7 @@ button {
   flex-direction: column;
   gap: 1rem;
   width: 50%;
-  padding: 1.75rem 1.75rem 3rem 4.75rem;
+  padding: 1.6875rem 4.75rem;
 }
 
 .login-page-signup-section {
@@ -20043,6 +20057,7 @@ button {
     }
     .MuiTypography-root {
       font-size: 16px;
+      padding: 0;
     }
     .login-form-input-field {
       display: flex;
