@@ -3040,9 +3040,9 @@ const Icons = {
           y2="25.8286"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#2368C4" />
-          <stop offset="0.5" stop-color="#1A5DBE" />
-          <stop offset="1" stop-color="#1146AC" />
+          <stop stopColor="#2368C4" />
+          <stop offset="0.5" stopColor="#1A5DBE" />
+          <stop offset="1" stopColor="#1146AC" />
         </linearGradient>
         <clipPath id="clip0_231_1156">
           <rect width="34" height="32" fill="white" />
