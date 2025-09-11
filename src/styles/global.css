@@ -20012,7 +20012,7 @@ gap: 1rem;
   right: 10px;
   top: 25%;
   width: auto;
-  content: url(../../public/svg/input-calendar.svg);
+  content: url("../assets/svg/input-calendar.svg");
 }
 
 .collborator-modal-permissions-container {
