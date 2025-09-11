@@ -112,6 +112,7 @@ export { default as DemoAiConsole } from "./svg/demo-ai-console.svg";
 export { default as Download } from "./svg/download.svg";
 export { default as EmptyAnimation1 } from "./svg/empty-animate1.svg";
 export { default as EmptyAnimation2 } from "./svg/empty-animate2.svg";
+export { default as EmptyDataV2 } from "./svg/empty-data-v2.svg";
 export { default as EnragedFaceNoto } from "./svg/enraged-face-noto.svg";
 export { default as Error400 } from "./svg/error400.svg";
 export { default as Error500 } from "./svg/error500.svg";
