@@ -193,7 +193,7 @@ export interface UserAuthInfo {
   org_id: number | null;
   logo: string | null;
   credits: number;
-  subscription:string;
+  subscription: string;
 }
 
 export interface Attachment {
@@ -417,6 +417,7 @@ export interface TestData {
 
 export interface TestEnroll {
   id: number;
+  enroll_status: string;
 }
 
 export interface TestDataType {
@@ -495,7 +496,7 @@ export interface TestDetails {
   test_duration: string;
   start_at: string;
   expired_at: string;
-  enroll_status: string;
+  enroll_status?: string;
   mark_del: boolean;
 }
 
@@ -541,7 +542,7 @@ export interface CheatingAnalyticsData {
     CELLPHONE: number;
     FACENOTVISIBLE: number;
     ANOTHERPERSON: number;
-    OTHER: number;
+    SESSIONMONITORING: number;
   };
   total: number;
 }
@@ -559,7 +560,7 @@ export interface InterviewCheatingAnalyticsData {
     CELLPHONE: number;
     FACENOTVISIBLE: number;
     ANOTHERPERSON: number;
-    OTHER: number;
+    SESSIONMONITORING: number;
   };
   total: number;
 }
@@ -777,9 +778,10 @@ export interface InterviewQuestionAnswer {
 
 export interface InterviewFeedback {
   id: number;
-  hi_id?: number;
+  hi_id: { id: number; title: string };
   average_accuracy_score: number;
   average_confidence_score: number;
+  average_english_proficiency_score: number;
   AOI: string;
   highlights: string;
   created_at: string;
@@ -795,6 +797,47 @@ export interface InterviewFeedback {
   cheating_count: number;
   question_count: number;
   status: string;
+  resume: string;
+  matching_skills: { skill: string; present: boolean }[];
+  technical_skills_grading: {
+    skill: string;
+    rating: number;
+  }[];
+  compatibility_score: number;
+}
+
+export interface InterviewResult {
+  id: number;
+  hi_id: { id: number; title: string };
+  interview_id: number;
+  user_detail: UserDetail;
+  start_at: string;
+  time_taken: number;
+  cheating_count: number;
+  question_count: number;
+  status: string;
+  scores: {
+    grade: number;
+    accuracy: number;
+    confidence: number;
+    clarity: number;
+    english_proficiency: number;
+    resume_compatibility: number;
+  };
+  matching_skills: { skill: string; is_present: boolean }[];
+  skills_grading: {
+    skill: string;
+    rating: number;
+  }[];
+  summary: {
+    aoi: string;
+    highlights: string;
+    session_summary: string;
+    aoe: string;
+    soi: string;
+    resume_summary: string;
+  };
+  resume: string;
 }
 
 export interface UserDetail {
@@ -813,19 +856,34 @@ export interface UserDetail {
   job_title: string | null;
 }
 
-export interface OverAllInterviewData {
-  average_accuracy_score: number;
+export interface InterviewReport {
   id: number;
-  average_confidence_score: number;
-  AOI: string;
-  highlights: string;
-  created_at: string;
-  average_grade: number;
   interview_id: number;
-  average_clarity_score: number;
-  session_summary: string;
-  AOE: string;
-  SOI: string;
+  job_role: string;
+  joined_at: string;
+  question_count: number;
+  time_taken: number;
+  scores: {
+    grade: number;
+    accuracy: number;
+    confidence: number;
+    clarity: number;
+    english_proficiency: number;
+    resume_compatibility: number;
+  };
+  matching_skills: { skill: string; is_present: boolean }[];
+  skills_grading: {
+    skill: string;
+    rating: number;
+  }[];
+  summary: {
+    aoi: string;
+    highlights: string;
+    session_summary: string;
+    aoe: string;
+    soi: string;
+  };
+  resume: string;
 }
 
 export interface LeaderboardEntry {
@@ -1356,24 +1414,19 @@ export interface ForumListMessages {
   };
 }
 
-export type Filters = {
-  jobs_posted_by: string;
-  location: string;
-  university_id: number;
-  gender: string;
-  min_date: string;
-  max_date: string;
-  job_type: string;
+export type JobFilters = {
+  gender: string[];
+  posted_within: string;
   skill: any;
-  name: string;
   sort_by: string;
   page_view: string;
-  work_mode: any;
-  apply_status: boolean;
+  work_mode: string[];
   experience_min: number;
-  experience_max: number;
   salary_min: number;
   salary_max: number;
+  name: string;
+  location: string;
+  page: number;
 };
 
 export interface RazorpayPaymentResponse {
@@ -1555,7 +1608,7 @@ interface ParentMessage {
 
 export interface DiscussionMessage {
   id: number;
-  attachments: any[]; // You might want to create a more specific interface for attachments
+  attachments: any[];
   sender: Sender;
   content: string;
   created_at: string;
@@ -1588,9 +1641,13 @@ export interface InterviewAnswer {
   summary: string;
   submitted_at: string;
   start_at: string;
-  accuracy: number;
-  quality: number;
-  delivery_clarity: number;
+  tags_with_rating: { skill: string; rating: number }[];
+  scores: {
+    grade: number;
+    accuracy: number;
+    confidence: number;
+    delivery_clarity: number;
+  };
 }
 
 export interface QuestionOption {

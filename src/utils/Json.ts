@@ -102,10 +102,30 @@ export const Designation = [
 ];
 
 export const Difficulty = [
-  { label: "Fresher", value: "FRESHER" },
-  { label: "Easy", value: "EASY" },
-  { label: "Medium", value: "MEDIUM" },
-  { label: "Hard", value: "HARD" },
+  {
+    label: "Fresher",
+    value: "FRESHER",
+    description:
+      "Best suited for entry-level candidates or fresh graduates with little to no professional experience. Questions are basic and focus on fundamentals.",
+  },
+  {
+    label: "Easy",
+    value: "EASY",
+    description:
+      "Covers simple concepts and beginner-friendly questions. Suitable for candidates with a basic understanding of the subject.",
+  },
+  {
+    label: "Medium",
+    value: "MEDIUM",
+    description:
+      "Includes moderately challenging questions, testing both theoretical knowledge and problem-solving skills.",
+  },
+  {
+    label: "Hard",
+    value: "HARD",
+    description:
+      "Focused on complex and advanced-level questions. Designed to challenge experienced professionals with strong technical and analytical skills.",
+  },
 ];
 
 export const QuestionDifficultyCoins: { [key: string]: number[] } = {
@@ -115,26 +135,123 @@ export const QuestionDifficultyCoins: { [key: string]: number[] } = {
 };
 
 export const ProctorOptions = [
-  { id: "TAB", name: "Tab Switch" },
-  { id: "COPY", name: "Copy" },
-  { id: "PASTE", name: "Paste" },
-  { id: "CELLPHONE", name: "Cell Phone" },
-  { id: "PROHIBITEDOBJECT", name: "Prohibited Object" },
-  { id: "FACENOTVISIBLE", name: "Face Visibility" },
-  { id: "ANOTHERPERSON", name: "Multiple Face" },
-  { id: "LOOKINGAWAY", name: "Looking Away" },
+  {
+    id: "TAB",
+    name: "Tab Switch",
+    description:
+      "The candidate switched browser tabs or minimized the test window during the session.",
+  },
+  {
+    id: "COPY",
+    name: "Copy",
+    description:
+      "The candidate attempted to copy content from the test, which may indicate intent to store or share questions.",
+  },
+  {
+    id: "PASTE",
+    name: "Paste",
+    description:
+      "Text was pasted into the test window, which may suggest the use of external material or pre-written answers.",
+  },
+  {
+    id: "CELLPHONE",
+    name: "Cell Phone",
+    description:
+      "The system detected mobile phone usage, which could indicate searching answers or external communication.",
+  },
+  {
+    id: "PROHIBITEDOBJECT",
+    name: "Prohibited Object",
+    description:
+      "An unauthorized object such as notes, books, or an extra screen was detected during the session.",
+  },
+  {
+    id: "FACENOTVISIBLE",
+    name: "Face Visibility",
+    description:
+      "The candidate’s face was not clearly visible for a significant part of the test, which may affect monitoring.",
+  },
+  {
+    id: "ANOTHERPERSON",
+    name: "Multiple Face",
+    description:
+      "More than one face was detected on the screen, suggesting possible external help or collaboration.",
+  },
+  {
+    id: "LOOKINGAWAY",
+    name: "Eyes Off Screen",
+    description:
+      "The candidate frequently looked away from the screen. This isn’t counted as cheating, but may be reviewed for context.",
+  },
+  {
+    id: "SESSIONMONITORING",
+    name: "Session Monitoring",
+    description:
+      "Screenshots are automatically captured every 30 seconds to monitor test activity. No violations are flagged under this unless reviewed manually.",
+  },
 ];
 
 export const ProctorTestOptions = [
-  { id: "TAB", name: "Tab Switch" },
-  { id: "COPY", name: "Copy" },
-  { id: "PASTE", name: "Paste" },
-  { id: "AUDIO", name: "Audio" },
-  { id: "CELLPHONE", name: "Cell Phone" },
-  { id: "PROHIBITEDOBJECT", name: "Prohibited Object" },
-  { id: "FACENOTVISIBLE", name: "Face Visibility" },
-  { id: "ANOTHERPERSON", name: "Multiple Face" },
-  { id: "LOOKINGAWAY", name: "Looking Away" },
+  {
+    id: "TAB",
+    name: "Tab Switch",
+    description:
+      "The candidate switched browser tabs or minimized the test window during the session.",
+  },
+  {
+    id: "COPY",
+    name: "Copy",
+    description:
+      "The candidate attempted to copy content from the test, which may indicate intent to store or share questions.",
+  },
+  {
+    id: "PASTE",
+    name: "Paste",
+    description:
+      "Text was pasted into the test window, which may suggest the use of external material or pre-written answers.",
+  },
+  {
+    id: "AUDIO",
+    name: "Noise",
+    description:
+      "A human voice was detected in the background. A short audio clip has been recorded for manual review.",
+  },
+  {
+    id: "CELLPHONE",
+    name: "Cell Phone",
+    description:
+      "The system detected mobile phone usage, which could indicate searching answers or external communication.",
+  },
+  {
+    id: "PROHIBITEDOBJECT",
+    name: "Prohibited Object",
+    description:
+      "An unauthorized object such as notes, books, or an extra screen was detected during the session.",
+  },
+  {
+    id: "FACENOTVISIBLE",
+    name: "Face Visibility",
+    description:
+      "The candidate’s face was not clearly visible for a significant part of the test, which may affect monitoring.",
+  },
+  {
+    id: "ANOTHERPERSON",
+    name: "Multiple Face",
+    description:
+      "More than one face was detected on the screen, suggesting possible external help or collaboration.",
+  },
+  {
+    id: "LOOKINGAWAY",
+    name: "Eyes Off Screen",
+    description:
+      "The candidate frequently looked away from the screen. This isn’t counted as cheating, but may be reviewed for context.",
+  },
+  {
+    id: "SESSIONMONITORING",
+    name: "Session Monitoring",
+    description:
+      "Screenshots are automatically captured every 30 seconds to monitor test activity. No violations are flagged under this unless reviewed manually.",
+  },
 ];
 
 export const OrganizationType = [
@@ -143,14 +260,54 @@ export const OrganizationType = [
 ];
 
 export const JobType = [
-  { value: "FULLTIME", label: "Full-Time" },
-  { value: "PARTTIME", label: "Part-Time" },
-  { value: "INTERNSHIP", label: "Internship" },
-  { value: "CONTRACT", label: "Contract" },
-  { value: "FREELANCE", label: "Freelance" },
-  { value: "VOLUNTEER", label: "Volunteer" },
-  { value: "TRAINING", label: "Training" },
-  { value: "OTHER", label: "Other" },
+  {
+    value: "FULLTIME",
+    label: "Full-Time",
+    description:
+      "Permanent role with full working hours, offering long-term employment and benefits.",
+  },
+  {
+    value: "INTERNSHIP",
+    label: "Internship",
+    description:
+      "Short-term learning opportunity, usually for students or freshers to gain industry experience, may be paid or unpaid.",
+  },
+  {
+    value: "TRAINING",
+    label: "Training",
+    description:
+      "Role focused on skill-building and learning, often involving structured training programs or workshops.",
+  },
+  {
+    value: "PARTTIME",
+    label: "Part-Time",
+    description:
+      "Work for fewer hours than a full-time role, flexible schedule, usually less than 30 hours per week.",
+  },
+  {
+    value: "CONTRACT",
+    label: "Contract",
+    description:
+      "Temporary role for a fixed duration or project-based work, defined by a contract agreement.",
+  },
+  {
+    value: "FREELANCE",
+    label: "Freelance",
+    description:
+      "Independent work for one or more clients, often project-based, with flexible schedules and no long-term commitment.",
+  },
+  {
+    value: "VOLUNTEER",
+    label: "Volunteer",
+    description:
+      "Unpaid role focused on contributing skills or services for social good, non-profit organizations, or community projects.",
+  },
+  {
+    value: "OTHER",
+    label: "Other",
+    description:
+      "Any job type that does not fit into the above categories can be customized or defined by the recruiter.",
+  },
 ];
 
 export const DriveStatus = [
@@ -161,21 +318,66 @@ export const DriveStatus = [
 ];
 
 export const DriveType = [
-  { label: "Public", value: "PUBLIC" },
-  { label: "Private", value: "PRIVATE" },
-  { label: "Pool", value: "POOL" },
+  {
+    label: "Public",
+    value: "PUBLIC",
+    description:
+      "Public job will appear in the main Job section. Anyone can view and apply. Collaborators can also invite applicants if needed.",
+  },
+  {
+    label: "Private",
+    value: "PRIVATE",
+    description:
+      "Private job will be visible only in the ‘My University’ section to selected candidates. Only invited applicants can apply. One university and one organization can be added as collaborators.",
+  },
+  {
+    label: "Pool",
+    value: "POOL",
+    description:
+      "Pool job will be visible only in the ‘My University’ section to selected candidates and you can add multiple universities as collaborators to widen your reach. Only invited candidates from these universities can see and apply.",
+  },
 ];
 
 export const JobLocationType = [
-  { label: "Remote", value: "REMOTE" },
-  { label: "Onsite", value: "ONSITE" },
-  { label: "Hybrid", value: "HYBRID" },
+  {
+    label: "Remote",
+    value: "REMOTE",
+    description:
+      "The employee works entirely from a location of their choice, without the need to be present at a physical office.",
+  },
+  {
+    label: "Onsite",
+    value: "ONSITE",
+    description:
+      "The employee is required to work from a fixed physical location such as an office, factory, or client site.",
+  },
+  {
+    label: "Hybrid",
+    value: "HYBRID",
+    description:
+      "A combination of remote and onsite work, allowing employees to split their time between the office and another location.",
+  },
 ];
 
 export const VenueType = [
-  { label: "SkillBrew", value: "SKILLBREW" },
-  { label: "Online", value: "ONLINE" },
-  { label: "Offline", value: "OFFLINE" },
+  {
+    label: "SkillBrew",
+    value: "SKILLBREW",
+    description:
+      "The stage will be conducted online on the SkillBrew platform. The recruiter must create and assign tasks to the applicant from the hiring board. Results will be automatically tracked and provided by SkillBrew.",
+  },
+  {
+    label: "Online",
+    value: "ONLINE",
+    description:
+      "The stage will be conducted online but outside of SkillBrew. The recruiter must provide an external platform link for the stage to the applicant through the hiring board.",
+  },
+  {
+    label: "Offline",
+    value: "OFFLINE",
+    description:
+      "The stage will be conducted at a physical location. You must share the venue address details in this stage.",
+  },
 ];
 
 export const RoleType = [
@@ -338,10 +540,30 @@ export const MinimumQualificationType = [
 ];
 
 export const GenderForType = [
-  { value: "EVERYONE", label: "Everyone" },
-  { value: "MALE", label: "Male" },
-  { value: "FEMALE", label: "Female" },
-  { value: "OTHER", label: "Other" },
+  {
+    value: "EVERYONE",
+    label: "Everyone",
+    description:
+      "No gender preference. The opportunity is open to all eligible applicants regardless of gender.",
+  },
+  {
+    value: "MALE",
+    label: "Male",
+    description:
+      "The opportunity is specifically open to applicants identifying as male.",
+  },
+  {
+    value: "FEMALE",
+    label: "Female",
+    description:
+      "The opportunity is specifically open to applicants identifying as female.",
+  },
+  {
+    value: "OTHER",
+    label: "Other",
+    description:
+      "The opportunity is open to applicants identifying as non-binary, transgender, or any gender identity other than male or female.",
+  },
 ];
 
 export const DriveInvitationStatus = [
@@ -2195,31 +2417,31 @@ export const officeLocationData = [
 export const teamMembers = [
   {
     id: 1,
-    name: "Ritu Soni",
-    position: "CTO & Co-Founder",
-    imageSrc: Ritu,
-    linkedinprofile: "https://www.linkedin.com/in/ritu-soni1",
-  },
-  {
-    id: 2,
-    name: "Rishabh Tiwari",
-    position: "CEO & Co-Founder",
-    imageSrc: Rishabh,
-    linkedinprofile: "https://www.linkedin.com/in/devcoder/",
-  },
-  {
-    id: 3,
-    name: "Nirvika Sharma",
-    position: "Lead-Talent & People Operations",
-    imageSrc: Nirvika,
-    linkedinprofile: "https://www.linkedin.com/in/nirvika-sharma-08a755294",
-  },
-  {
-    id: 4,
     name: "Ajeet Singh",
     position: "Lead Software Engineer",
     imageSrc: Ajeet,
     linkedinprofile: "https://www.linkedin.com/in/ajeet-singh-6372631a1",
+  },
+  {
+    id: 2,
+    name: "Ritu Soni",
+    position: "Full Stack Engineer",
+    imageSrc: Ritu,
+    linkedinprofile: "https://www.linkedin.com/in/ritu-soni1",
+  },
+  {
+    id: 3,
+    name: "Rishabh Tiwari",
+    position: "Software Engineer Level III",
+    imageSrc: Rishabh,
+    linkedinprofile: "https://www.linkedin.com/in/devcoder/",
+  },
+  {
+    id: 4,
+    name: "Nirvika Sharma",
+    position: "Lead-Talent & People Operations",
+    imageSrc: Nirvika,
+    linkedinprofile: "https://www.linkedin.com/in/nirvika-sharma-08a755294",
   },
   {
     id: 5,
@@ -2275,11 +2497,10 @@ export const teamMembers = [
   },
   {
     id: 12,
-    name: "Lakshyaveer Singh",
-    position: "Digital Media Associate",
-    imageSrc: Lakshyaveer,
-    linkedinprofile:
-      "https://www.linkedin.com/in/lakshyaveer-singh-khinchi-02ba54211/",
+    name: "Himang Kalal",
+    position: "Product Marketing Associate",
+    imageSrc: "/images/imagehimang.png",
+    linkedinprofile: "https://www.linkedin.com/in/himang-kalal/",
   },
 ];
 
@@ -2415,12 +2636,12 @@ export const driveCollaboratorPermissions = [
 ];
 
 export const driveMenuOption = [
-  { value: "stages", label: "Stages" },
-  { value: "phases", label: "Employment Phases" },
   { value: "applicants", label: "Applicants" },
   { value: "collaborations", label: "Collaborations" },
-  { value: "job-details", label: "More Job Details" },
   { value: "discussion", label: "Discussion" },
+  { value: "stages", label: "Stages" },
+  { value: "phases", label: "Employment Phases" },
+  { value: "job-details", label: "More Job Details" },
 ];
 
 export const ResumeCompatibilityDetailHeaders = [
@@ -2433,6 +2654,11 @@ export const ResumeCompatibilityDetailHeaders = [
     value: "cultural_fit_and_adaptability",
     label: "Cultural Fit & Adaptability",
   },
+];
+
+export const ApplicationFilterOption = [
+  { value: "NEW", label: "New" },
+  { value: "OLD", label: "Old" },
 ];
 
 export const FeedbackFilterOption = [
@@ -2499,6 +2725,22 @@ export const darkToolTipTheme = {
     },
   },
 };
+
+export const InteractionType = [
+  {
+    label: "Interactive Model",
+    value: "MODEL",
+    description:
+      "In this interview type, a 3D animated model (like a virtual avatar) appears on the screen. The avatar has lip-syncing, hand movements, and facial expressions to make the interaction more engaging. Candidates respond to questions or tasks while interacting with this model.",
+  },
+
+  {
+    label: "Chat Based",
+    value: "TEXT",
+    description:
+      "In this interview type, candidates interact through a simple chat interface. All communication is text-based without any animated visuals or avatar.",
+  },
+];
 
 export const userFeedbackDataV2 = [
   {

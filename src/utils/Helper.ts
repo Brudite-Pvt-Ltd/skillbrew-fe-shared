@@ -11,7 +11,7 @@ import {
   SocialMediaAccount,
   UserExperience,
   UserEducation,
-  Filters,
+  JobFilters,
 } from "./Types";
 import html2canvas from "html2canvas";
 import confetti from "canvas-confetti";
@@ -310,7 +310,7 @@ export const changeTimeLocalMachineFormat = (utcDateTime: any) => {
 
 export const changeTimeIntoSeconds = (timeString: any) => {
   if (timeString) {
-    const [hours, minutes, seconds] = timeString.split(":").map(Number);
+    const [hours, minutes, seconds] = timeString?.split(":")?.map(Number);
     const totalSeconds = hours * 3600 + minutes * 60 + seconds;
     return totalSeconds;
   }
@@ -318,7 +318,7 @@ export const changeTimeIntoSeconds = (timeString: any) => {
 
 export const changeTimeIntoMinutes = (timeString: any) => {
   if (typeof timeString !== "string") return 0;
-  const parts = timeString.split(":").map(Number);
+  const parts = timeString?.split(":")?.map(Number);
   const hours = parts[0] || 0;
   const minutes = parts[1] || 0;
   return hours * 60 + minutes;
@@ -479,8 +479,8 @@ export const getWordWithinLimit = (
 export const editorConfiguration = {
   toolbar: {
     items: [
-      "heading",
-      "|",
+      // "heading",
+      // "|",
       "bold",
       "italic",
       "link",
@@ -511,7 +511,7 @@ export const makeFullScreen = () => {
 };
 
 export const exitFullScreen = () => {
-  if (document.exitFullscreen) {
+  if (document.fullscreenElement) {
     document.exitFullscreen();
   }
 };
@@ -974,9 +974,8 @@ export const startVoiceDetection = (
     return;
   }
 
-  const SpeechRecognitionConstructor =
-    window.SpeechRecognition || window.webkitSpeechRecognition;
-  const recognition = new SpeechRecognitionConstructor();
+  const recognition = new (window.SpeechRecognition ||
+    (window as any).webkitSpeechRecognition)();
   recognition.continuous = true;
   recognition.interimResults = true;
   recognition.lang = "en-US";
@@ -1111,7 +1110,7 @@ export const testTypeCheck = (
 export const convertTimeToUTC = (timeString: string) => {
   if (timeString) {
     // Split by ":" and handle cases where seconds might be missing
-    const timeParts = timeString.split(":");
+    const timeParts = timeString?.split(":");
 
     // If seconds are missing, assume 0 seconds
     if (timeParts.length === 2) {
@@ -1240,6 +1239,7 @@ export const uploadToS3 = async (
     return false;
   }
 };
+
 export const cleanPercentage = (percentage: number) => {
   const isNegativeOrNaN = !Number.isFinite(+percentage) || percentage < 0; // we can set non-numbers to 0 here
   const isTooHigh = percentage > 100;
@@ -1507,36 +1507,46 @@ export const daysPassed = (dateString: string): number => {
 };
 
 export const getAppliedFiltersCount = (
-  filters: Filters,
-  initial: Filters
-): Partial<Filters> => {
-  const applied: Partial<Record<keyof Filters, any>> = {};
-
+  filters: JobFilters,
+  initial: JobFilters
+): number => {
+  let count = 0;
+  let salaryFilterApplied = false;
   Object.entries(filters).forEach(([key, value]) => {
     if (key === "sort_by" || key === "page_view") return;
-    const defaultValue = initial[key as keyof Filters];
-
+    const defaultValue = initial[key as keyof JobFilters];
     const isArray = Array.isArray(value);
     const isMeaningfulArray = isArray && value.length > 0;
     const isEmptyString = typeof value === "string" && value.trim() === "";
     const isDefaultValue = value === defaultValue;
-
     if (
-      (key === "gender" && value === "EVERYONE") ||
-      (key === "jobs_posted_by" && value === "all")
-    )
+      (key === "jobs_posted_by" && value === "all") ||
+      key === "name" ||
+      key === "location" ||
+      key === "page"
+    ) {
       return;
-
+    }
+    if (key === "salary_min" || key === "salary_max") {
+      const min = filters.salary_min;
+      const max = filters.salary_max;
+      const minDefault = initial.salary_min;
+      const maxDefault = initial.salary_max;
+      if (!salaryFilterApplied && (min !== minDefault || max !== maxDefault)) {
+        count += 1;
+        salaryFilterApplied = true;
+      }
+      return;
+    }
     if (isArray) {
       if (isMeaningfulArray) {
-        applied[key as keyof Filters] = value;
+        count += 1;
       }
     } else if (!isEmptyString && !isDefaultValue) {
-      applied[key as keyof Filters] = value;
+      count += 1;
     }
   });
-
-  return applied;
+  return count;
 };
 
 export const renderStrings = (strings: string[]) => {
@@ -1647,27 +1657,42 @@ export const convertMonthsToYearsMonths = (
   return { years, months };
 };
 
-export const formatToLac = (num: number) => {
-  const lacValue = num / 1e5;
-  const formatted = lacValue.toLocaleString("en-IN", {
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2,
-  });
-  return `${formatted} Lac`;
+export const formatSalary = (num: number | null | undefined): string => {
+  if (typeof num !== "number" || isNaN(num)) return "";
+  if (num >= 100000) {
+    const lpa = num / 1e5;
+    const formatted = lpa.toLocaleString("en-IN", {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    });
+    return `₹${formatted} LPA`;
+  } else {
+    const formatted = num.toLocaleString("en-IN", {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    });
+    return `₹${formatted}`;
+  }
 };
 
 export const handleAmountInput =
   (fieldName: string, setValue: any) => (e: any) => {
     const raw = e.target.value?.replace(/,/g, "").replace(/\D/g, "");
     if (!raw) {
-      setValue(fieldName, "");
+      setValue(fieldName, null);
       e.target.value = "";
       return;
     }
     const formatted = Number(raw)?.toLocaleString("en-IN");
     e.target.value = formatted;
-    setValue(fieldName, raw);
+    setValue(fieldName, raw, { shouldValidate: true });
   };
+
+export const handleAmountHTMLInput = (input: string) => {
+  const raw = input.replace(/,/g, "").replace(/\D/g, "");
+  if (!raw) return "";
+  return Number(raw).toLocaleString("en-IN");
+};
 
 export const getLabelFromOptions = (
   value: string,
@@ -1700,6 +1725,39 @@ export const truncateFileName = (filename: string, maxLength = 30) => {
     const start = nameWithoutExt.slice(0, 10);
     const end = nameWithoutExt.slice(-10);
     return `${start}...${end}.${ext}`;
+  }
+};
+
+export const getSearchResultText = (
+  name: string,
+  location: string,
+  count: number
+) => {
+  if (!name && !location) return "";
+
+  let text = `${count} Search result for`;
+  if (name)
+    text += ` "${
+      name?.length > 40 ? name?.slice(0, 40).concat("....") : name
+    }"`;
+  if (name && location) text += " in";
+  if (location)
+    text += ` "${
+      location?.length > 40 ? location?.slice(0, 40).concat("....") : location
+    }"`;
+
+  return text;
+};
+
+export const getProgressColor = (value: number, total: number): string => {
+  if (total <= 0) return "#d3d3d3";
+  const percentage = (value / total) * 100;
+  if (percentage <= 40) {
+    return "#CD2929";
+  } else if (percentage <= 70) {
+    return "#CCCC00";
+  } else {
+    return "#54B763";
   }
 };
 

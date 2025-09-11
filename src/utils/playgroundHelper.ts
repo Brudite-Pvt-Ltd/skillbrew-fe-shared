@@ -12,67 +12,6 @@ import { java } from "@codemirror/lang-java";
 import { javascript } from "@codemirror/lang-javascript";
 import { go } from "@codemirror/lang-go";
 
-export const languageMap = {
-  cpp: {
-    id: 54,
-    defaultCode:
-      "#include <iostream>\n" +
-      "using namespace std;\n\n" +
-      "int main() {\n" +
-      '\tcout << "Hello World!";\n' +
-      "\treturn 0;\n" +
-      "}",
-    language: cpp,
-  },
-  java: {
-    id: 62,
-    defaultCode: `public class Main {
-      public static void main(String[] args) {
-        System.out.println("Hello World!");
-      }
-    }`,
-    language: java,
-  },
-  py: {
-    id: 71,
-    defaultCode: `print("Hello World!")`,
-    language: python,
-  },
-  js: {
-    id: 63,
-    defaultCode: `console.log("Hello World!");`,
-    language: javascript,
-  },
-  c: {
-    id: 50,
-    defaultCode:
-      "#include <stdio.h>\n\n" +
-      "int main() {\n" +
-      '\tprintf("Hello World!\\n");\n' +
-      "\treturn 0;\n" +
-      "}",
-    language: cpp,
-  },
-  go: {
-    id: 60,
-    defaultCode: `package main\n\nimport "fmt"\n\nfunc main() {\n\tfmt.Println("Hello World!")\n}`,
-    language: go,
-  },
-};
-
-type Language = "cpp" | "java" | "py" | "js" | "c" | "go";
-export type LanguageMap = {
-  [key in Language]: {
-    id: number;
-    defaultCode: string;
-  };
-};
-export type LanguageOption = {
-  id: number;
-  value: Language;
-  label: string;
-};
-
 export const languageOptions = [
   {
     id: 1,

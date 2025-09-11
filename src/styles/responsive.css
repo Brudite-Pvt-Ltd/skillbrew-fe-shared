@@ -2,12 +2,20 @@
   .navbar-light .navbar-nav .nav-link {
     margin: 13px;
     line-height: 0;
-    font-size: 13px;
-    margin-right: 10px;
+    margin: 0.5rem 1rem;
+  }
+
+  .ide-lang-theme-container {
+    padding: 0.5rem;
+    bottom: 60px;
   }
 
   .nav-item > .btn-primary-color {
-    padding: 25px;
+    padding: 1rem !important;
+  }
+
+  .nav-item > .btn-secondary-primary-usp {
+    padding: 14px !important;
   }
 
   .nav-bg {
@@ -92,7 +100,6 @@
   }
 
   .user-header-dropdown {
-    min-width: 180px !important;
     margin-inline: 15px !important;
   }
 
@@ -490,30 +497,26 @@
     padding: 0px 65px;
   }
 
-  .ai-interview-insight-header {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .attempted-at-img {
-    display: block;
-  }
-
-  .ai-interview-insight-container {
+  .ai-interview-insight-wrapper {
     padding: 1rem;
+
+    gap: 2rem;
   }
 
-  .interview-insight-card-bottom-container {
-    flex-direction: column;
-    gap: 20px;
+  .ai-interview-report-header-container {
+    padding: 1rem 1rem 0;
   }
 
-  .interview-insight-card-bottom-sub-container-1 {
-    width: 100%;
+  .ai-interview-report-body {
+    padding: 2rem 1rem 1rem;
   }
 
-  .interview-insight-card-bottom-sub-container-2 {
-    width: 100%;
+  .ai-interview-insight-card-container {
+    gap: 0.5rem;
+  }
+
+  .interview-insight-card-analytic-continer {
+    column-gap: 2.5rem;
   }
 
   .ai-interview-container {
@@ -642,12 +645,19 @@
   .interview-room-body {
     flex-wrap: nowrap;
     height: 100%;
+    flex-direction: column;
     justify-content: center;
     gap: 0.5rem;
   }
 
+  .interview-room-ai-window {
+    padding: 30px 130px;
+  }
+
   .interview-room-body > div {
-    width: 50%;
+    height: 525px;
+    width: 100%;
+    min-height: unset;
   }
 
   .interview-room-top-container {
@@ -678,11 +688,8 @@
     right: 28px;
   }
 
-  .interview-room-user-window,
-  .interview-room-ai-window {
-    padding: 30px 43px;
-    height: 175px;
-    width: 300px;
+  .interview-room-window {
+    flex-direction: column;
   }
 
   .interview-room-user-window-with-webcam {
@@ -730,18 +737,11 @@
   }
 
   .job-profile-form {
-    padding-left: 0;
-    padding-right: 0;
+    padding-inline: 0;
   }
 
   .progress-tabs {
-    margin-top: 1rem;
-    margin-left: 0;
-  }
-
-  .job-profile-content {
-    margin-top: 1rem;
-    margin-left: 0;
+    margin-block: 1rem;
   }
 
   .form-group-v2 {
@@ -756,7 +756,23 @@
   }
 
   .job-basics {
-    padding: 0.5rem 0.75rem;
+    padding: 0.5rem;
+  }
+
+  .user-result-tab-button {
+    padding: 0.75rem 1rem 1rem 1rem;
+  }
+
+  .my-orders-header-text {
+    top: -1px;
+  }
+
+  .interview-slot {
+    margin-top: 0.25rem;
+  }
+
+  .job-details-stages-status-container {
+    max-height: 50vh;
   }
 
   .progress-tab-label {
@@ -885,15 +901,6 @@
     margin-bottom: 0px;
   }
 
-  .view-report-container-desktop {
-    display: none;
-  }
-
-  .view-report-container-mob {
-    display: flex !important;
-    justify-content: center;
-  }
-
   .feedback-container {
     padding: 40px 5px;
   }
@@ -965,6 +972,10 @@
   .csv-popup {
     right: 5%;
     transform: translateY(20%);
+  }
+
+  .user-my-assesment-container {
+    padding: 2rem 0.65rem;
   }
 
   .my-assesment-analytics-graph {
@@ -2581,6 +2592,10 @@
     width: 230px;
   }
 
+  .org-sidebar-navigation ul li a {
+    column-gap: 4px;
+  }
+
   .org-sidebar-navigation {
     padding-top: 0;
     width: 54px;
@@ -2975,10 +2990,6 @@
     max-width: 338px;
   }
 
-  .cust-ide-select .css-13cymwt-control {
-    margin: 0 5px;
-  }
-
   .test-problem-box-submission {
     max-width: 270px;
   }
@@ -3003,14 +3014,36 @@
     width: fit-content;
   }
 
+  .ai-interview-insight-wrapper {
+    gap: 1.5rem;
+  }
+
+  .ai-interview-report-body {
+    padding-top: 1.5rem;
+  }
+
+  .interview-insight-card-left {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .interview-insight-card-analytic-continer {
+    width: 100%;
+    justify-content: space-between;
+    column-gap: 0.75rem;
+  }
+
   .star-mob-view {
     width: 25px;
     height: 25px;
   }
 
+  .interview-insight-level-value .star-mob-view {
+    width: 18px;
+  }
+
   .view-report {
-    width: 108px;
-    height: 28px;
+    padding: 0.25rem 0.5rem;
   }
 
   .share-csv-on-email-modal {
@@ -3035,11 +3068,17 @@
     flex-direction: column;
   }
 
+  .book-demo-bottom-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
   .book-demo-bottom-sub-container-wrapper {
     background-color: var(--primary-color);
     width: 100%;
     border-radius: 0px 0px 10px 10px;
     height: 400px;
+    position: static;
   }
 
   .book-demo-group-img {
@@ -3095,20 +3134,16 @@
   }
 
   .ai-interview-form {
-    padding: 2.25rem 3rem;
+    padding: 0;
   }
 
   .ai-interview-form-container {
+    padding: 3rem 1rem;
     width: 100%;
-    height: 100%;
-  }
-
-  .ai-interview-form-input-container {
-    padding: 1rem;
+    height: calc(100dvh - 75rem);
   }
 
   .ai-interview-form-btn {
-    margin: 1rem;
     justify-content: center;
   }
 
@@ -3248,23 +3283,41 @@
     padding-bottom: 2rem;
   }
 
-  .public-job-list-container-expanded {
-    div > .job-list-container {
-      flex: 1;
-    }
+  .list-details-container {
+    position: relative;
 
-    div > .public-job-details-container {
-      flex: 0;
-      padding: 0;
-    }
+    display: flex;
+
+    flex-direction: column;
+
+    height: auto;
+  }
+
+  .job-list-pagination-container.isDetails {
+    display: none;
+
+    flex: 0;
+  }
+
+  .job-list-container {
+    height: calc(100vh - 234px);
   }
 
   .public-job-list-details-container {
-    gap: 0;
+    padding: 0.5rem;
+  }
+
+  .job-card-container {
+    margin: 0.5rem 0rem;
   }
 
   .public-job-details-container {
-    margin-top: 2rem;
+    min-height: auto;
+    max-height: calc(100vh - 250px);
+  }
+
+  .public-job-details-container.isDetails {
+    margin-right: 0;
   }
 
   .job-details-cards-wrapper {
@@ -3302,6 +3355,7 @@
     position: absolute;
     z-index: 1;
     background-color: var(--background-color);
+    height: 75vh;
   }
 
   .payment-status-container {
@@ -3461,12 +3515,13 @@
 
   .interview-room-body > div {
     width: 100%;
-    height: 375px !important;
+    height: 393px;
+    min-height: unset;
   }
 
   .interview-room-user-window,
   .interview-room-ai-window {
-    height: 150px;
+    width: 100%;
   }
 
   .interview-room-window {
@@ -3574,8 +3629,11 @@
     flex: 1 !important;
     padding: 1rem;
     transition: none;
-    border: none;
-    margin: 1rem 0ren;
+    border: 2px solid var(--grey-color-shade-2);
+  }
+
+  .public-job-details-details-container {
+    height: calc(100vh - 340px);
   }
 
   .job-list-container.isDetails {
@@ -3692,6 +3750,147 @@
 
   .job-details-sub-container {
     height: 100vh;
+  }
+
+  .interview-room-skillbrew-name span {
+    width: calc(100vw - 190px);
+  }
+
+  .public-job-filter-wrapper {
+    gap: 1rem 0.5rem;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--grey-color-shade-1);
+  }
+
+  .public-job-filter-wrapper > form.public-job-filter {
+    display: none;
+  }
+
+  .public-job-filter-mobile {
+    display: flex;
+    align-items: center;
+    background-color: var(--background-color);
+    padding: 0.25rem 0.5rem;
+    border: 1px solid var(--grey-color-shade-2);
+    text-wrap: nowrap;
+    color: var(--grey-color-shade-5);
+    overflow: hidden;
+  }
+
+  .public-job-filter-mobile > div {
+    width: 100% !important;
+  }
+
+  .public-job-filter-mobile > input,
+  .public-job-filter-mobile > span > input,
+  .public-job-filter-mobile > select {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    appearance: none;
+  }
+
+  .public-job-filter-mobile input::placeholder {
+    font-size: var(--font-8);
+    font-weight: 400;
+  }
+
+  .public-job-filter-mobile > span {
+    padding: 0 !important;
+  }
+
+  .public-job-filter-mobile > span > div {
+    border: none !important;
+    padding: 0 !important;
+  }
+
+  .public-job-filter-search-bar {
+    width: 100%;
+  }
+
+  .public-job-filter-mobile > .search-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    color: var(--grey-color-shade-2) !important;
+    background-color: var(--primary-color-shade-8);
+    border-radius: 50em;
+    border: 2px solid var(--grey-color-shade-2);
+    font-weight: 600;
+  }
+
+  .public-job-filter-mobile:nth-child(1) {
+    width: 59%;
+  }
+
+  .public-job-filter-mobile:nth-child(2) {
+    width: 38%;
+  }
+
+  .public-job-filter-dropdown {
+    min-width: 125px;
+    background-color: var(--background-color);
+  }
+
+  .public-job-filter {
+    padding: 0.5rem;
+    gap: 0.25rem;
+    background-color: var(--background-color);
+  }
+
+  .public-job-filter-dropdown-with-icon {
+    min-width: 105px;
+    background-color: var(--background-color);
+  }
+
+  .filter-btn {
+    min-width: 102px;
+  }
+
+  .filter-btn > div:last-child {
+    display: none;
+  }
+
+  .job-details-job-card-heading {
+    max-width: 229px;
+  }
+
+  .list-details-search-text-container-no-result {
+    padding-inline: 0.5rem;
+  }
+
+  .job-card-skeleton {
+    margin: 0.5rem;
+  }
+
+  .interview-insight-card {
+    padding: 0.5rem 1rem;
+  }
+
+  .ai-interview-insight-header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .ai-interview-insight-header-title {
+    width: 100%;
+  }
+
+  .ai-interview-insight-header-action {
+    width: 100%;
+    justify-content: flex-end;
+    .table-search-container {
+      width: 100%;
+    }
+  }
+
+  .job-details-skeleton {
+    display: none;
   }
 
   .user-my-assesment-container {
@@ -4067,11 +4266,12 @@
   }
 
   .interview-room-body > div {
-    height: 300px !important;
+    height: 263px;
+    min-height: unset;
   }
 
   .interview-room-conversation {
-    height: 110px;
+    height: 60px;
   }
 
   .interview-room-user-window,
@@ -4095,6 +4295,37 @@
     button {
       padding: 0.25rem 0.5rem !important;
     }
+  }
+
+  .user-result-tab-button {
+    padding: 0.75rem 0.5rem 1rem 0.5rem;
+  }
+
+  .public-job-list-filter-container {
+    left: 0% !important;
+  }
+
+  .public-job-filter-wrapper {
+    justify-content: left;
+  }
+
+  .public-job-apply-button {
+    white-space: nowrap;
+    width: 100%;
+  }
+
+  .job-details-share-btn {
+    width: 100%;
+  }
+
+  .job-details-apply-btn-container {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .list-details-container {
+    height: calc(100vh - 200px);
+    margin-bottom: 2rem;
   }
 }
 
@@ -4331,11 +4562,17 @@
     flex-direction: column;
   }
 
+  .book-demo-bottom-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
   .book-demo-bottom-sub-container-wrapper {
     background-color: var(--primary-color);
     width: 100%;
     border-radius: 0px 0px 10px 10px;
     height: 400px;
+    position: static;
   }
 
   .book-demo-group-img {
@@ -4376,6 +4613,10 @@
 
   .drive-detials-header-left {
     width: 180px;
+  }
+
+  .user-my-assesment-container {
+    padding: 2rem 1.5rem;
   }
 
   .my-assesment-analytics-graph {
@@ -4427,18 +4668,8 @@
     width: 100%;
   }
 
-  .public-job-filter-wrapper {
-    form {
-      width: 50%;
-    }
-  }
-
   .test-third-row {
     gap: 0.5rem;
-  }
-
-  .pagination-style {
-    margin-bottom: 3rem;
   }
 }
 
@@ -4864,10 +5095,6 @@
     font-size: 12px;
   }
 
-  .navbar-nav {
-    width: 25%;
-  }
-
   .navbar-nav > .nav-item {
     width: 90%;
   }
@@ -4892,11 +5119,17 @@
     flex-direction: column;
   }
 
+  .book-demo-bottom-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
   .book-demo-bottom-sub-container-wrapper {
     background-color: var(--primary-color);
     width: 100%;
     border-radius: 0px 0px 10px 10px;
     height: 400px;
+    position: static;
   }
 
   .book-demo-group-img {
@@ -5007,7 +5240,6 @@
   }
 
   .user-profile-modal {
-    width: 70%;
     max-height: 600px;
     form {
       height: auto;
@@ -5053,16 +5285,16 @@
     width: 75% !important;
   }
 
-  .job-list-container {
-    transition: none;
+  .public-job-details-container {
+    height: 93%;
+    margin-right: 0;
   }
 
   .public-job-details-container.isDetails {
     flex: 1 !important;
     padding: 1rem;
     transition: none;
-    border: none;
-    margin: 1rem;
+    margin-right: 0;
   }
 
   .invitation-page-container {
@@ -5103,6 +5335,10 @@
     width: 90%;
   }
 
+  .user-my-assesment-container {
+    padding: 2rem 1.5rem;
+  }
+
   .my-assesment-analytics-graph {
     width: 100%;
     height: 330px;
@@ -5138,11 +5374,65 @@
     border: 1px solid var(--grey-color-shade-2, #e7e7e7);
     background: var(--grey-color-shade-1, #f6f6f6);
   }
+
+  .public-job-filter {
+    overflow: hidden;
+  }
+
+  .public-job-filter-wrapper > form > div > span > svg,
+  .public-job-filter-wrapper > form > div > svg {
+    display: none;
+  }
+
+  .public-job-filter-wrapper {
+    padding: 1rem;
+  }
+
+  .public-job-list-details-container {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+
+  .job-card-container {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  .job-list-pagination-container.isDetails {
+    display: none;
+    flex: 0;
+  }
+
+  .public-job-filter-dropdown {
+    min-width: 148px;
+  }
+
+  .list-details-search-text-container-no-result {
+    padding-inline: 1rem;
+  }
+
+  .job-card-skeleton {
+    margin: 0.5rem 1rem;
+  }
+
+  .filter-btn {
+    min-width: 120px;
+  }
+
+  .list-details-container {
+    height: calc(100vh - 175px);
+  }
+
+  .job-list-container {
+    height: calc(100vh - 180px);
+  }
+
+  .job-details-skeleton {
+    display: none;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .navbar-light .navbar-nav .nav-link {
-    font-size: 13px;
     margin-right: 10px;
   }
 
@@ -5303,6 +5593,10 @@
     padding: 0;
   }
 
+  .book-demo-background-container {
+    height: 100%;
+  }
+
   .book-demo-group-img {
     object-fit: cover;
     height: 100%;
@@ -5348,6 +5642,10 @@
     width: 100%;
   }
 
+  .user-my-assesment-container {
+    padding: 2rem 1.5rem;
+  }
+
   .my-assesment-analytics-graph {
     width: 100%;
     height: 330px;
@@ -5367,6 +5665,14 @@
     column-gap: 50px;
     margin-bottom: 0px;
     justify-content: start;
+  }
+
+  .public-job-filter-dropdown {
+    min-width: 180px;
+  }
+
+  .public-job-filter-dropdown-with-icon {
+    min-width: 128px;
   }
 }
 
@@ -5523,7 +5829,7 @@
 
   .public-job-list-filter-container {
     width: 20%;
-    padding: 1rem;
+    padding: 0px !important;
   }
 
   .public-job-list-details-container {
@@ -5782,27 +6088,34 @@
   .interview-room-body {
     flex-wrap: nowrap;
     height: 100%;
+    flex-direction: column;
     justify-content: center;
+    gap: 0.5rem;
   }
 
   .interview-room-body > div {
-    width: 50%;
-    height: 600px;
+    height: 583px;
+    width: 100%;
+    min-height: unset;
   }
 
-  .interview-room-user-window,
+  .interview-room-send-button {
+    bottom: 28px;
+    right: 28px;
+  }
+
+  .interview-room-window {
+    flex-direction: row;
+  }
+
+  .interview-room-user-window {
+    height: 385px;
+  }
+
   .interview-room-ai-window {
-    height: 200px;
-    width: 450px;
+    padding: 125px 0;
+    height: 385px;
   }
-
-  /* .interview-room-user-container {
-    height: 30% !important;
-  }
-
-  .interview-room-chat-container {
-    height: 60% !important;
-  } */
 
   .interview-room-send-button {
     bottom: 28px;
@@ -5816,18 +6129,11 @@
   }
 
   .job-profile-form {
-    padding-left: 0;
-    padding-right: 0;
+    padding-inline: 0;
   }
 
   .progress-tabs {
-    margin-top: 1rem;
-    margin-left: 0;
-  }
-
-  .job-profile-content {
-    margin-top: 1rem;
-    margin-left: 0;
+    margin-block: 1rem;
   }
 
   .discussion-forum-body-container-org-with-reply {
@@ -5835,6 +6141,37 @@
     border-radius: 5px;
     border: 1px solid var(--grey-color-shade-2, #e7e7e7);
     background: var(--grey-color-shade-1, #f6f6f6);
+  }
+
+  .public-job-filter-wrapper {
+    padding: 1rem 2rem;
+  }
+
+  .public-job-list-details-container {
+    padding-inline: 1rem;
+  }
+
+  .list-details-search-text-container-no-result {
+    padding-inline: 2rem;
+  }
+
+  .ai-interview-insight-wrapper {
+    padding: 1.5rem;
+  }
+
+  .ai-interview-report-header-container {
+    padding: 1.5rem 1.5rem 0;
+  }
+
+  .ai-interview-report-body {
+    padding: 2.5rem 1.5rem 1.5rem;
+  }
+  .job-card-skeleton {
+    margin-inline: 2rem;
+  }
+
+  .job-details-skeleton {
+    margin-right: 2rem;
   }
 }
 
@@ -5968,6 +6305,10 @@
   font-size: 28px;
 }
 
+.navbar-toggler .fa-gear {
+  font-size: 22px;
+}
+
 .nav-bg i {
   color: var(--text-light-color);
 }
@@ -5989,5 +6330,13 @@
 
   .my-assesment-analytics-graph {
     width: 64%;
+  }
+
+  .interview-room-user-window {
+    height: 290px;
+  }
+
+  .interview-room-ai-window {
+    padding: 70px 0;
   }
 }
