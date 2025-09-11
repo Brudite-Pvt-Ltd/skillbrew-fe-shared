@@ -24,7 +24,13 @@
     "./scripts": {
       "import": "./dist/scripts/index.js",
       "types": "./dist/scripts/index.d.ts"
-    }
+    },
+    "./styles/global.css": "./dist/styles/global.css",
+    "./styles/bootstrap.min.css": "./dist/styles/bootstrap.min.css",
+    "./styles/fontawesome.min.css": "./dist/styles/fontawesome.min.css",
+    "./styles/all.min.css": "./dist/styles/all.min.css",
+    "./styles/style.css": "./dist/styles/style.css",
+    "./styles/responsive.css": "./dist/styles/responsive.css"
   },
   "scripts": {
     "build": "tsc && npm run copy:styles && npm run copy:assets && npm run copy:scripts",
