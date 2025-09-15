@@ -1841,8 +1841,29 @@ body {
 }
 
 a {
+  color: var(--grey-color-shade-6);
+  text-decoration: none;
+  background-color: transparent;
   cursor: pointer;
   transition: all 200ms linear;
+}
+
+a:hover {
+  --tw-text-opacity: 1;
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+a:not([href]):not([tabindex]) {
+  color: inherit;
+  text-decoration: none;
+}
+a:not([href]):not([tabindex]):focus,
+a:not([href]):not([tabindex]):hover {
+  color: inherit;
+  text-decoration: none;
+}
+a:not([href]):not([tabindex]):focus {
+  outline: 0;
 }
 
 .link {
