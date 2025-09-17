@@ -14061,7 +14061,6 @@ div:where(.swal2-container) {
 }
 
 .applicants-status-dropdown {
-  display: flex;
   flex-direction: column;
   border-radius: 4px;
   border: 1px solid var(--grey-color-shade-2, #e7e7e7) !important;
@@ -17181,8 +17180,8 @@ gap: 1rem;
 
 .user-result-tab-container {
   display: flex;
-  position: absolute;
-  bottom: -1px;
+  position: relative;
+  bottom: -13px;
 }
 
 .user-result-tab-button {

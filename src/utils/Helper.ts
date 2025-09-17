@@ -192,10 +192,11 @@ export const setCookie = (
   name: string,
   value: string,
   path: string = "/",
-  days: number = 365
+  days: number = 365,
+  domain: string = ".skillbrew.ai"
 ) => {
-  let expires = new Date(Date.now() + days * 24 * 60 * 60 * 1000).toUTCString();
-  document.cookie = `${name}=${value}; expires=${expires}; Path=${path}; SameSite="Lax"; Secure:"True";`;
+  const expires = new Date(Date.now() + days * 24 * 60 * 60 * 1000).toUTCString();
+  document.cookie = `${name}=${value}; expires=${expires}; Path=${path}; Domain=${domain}; SameSite=Lax; Secure`;
 };
 
 export const getCookie = (name: any) => {
