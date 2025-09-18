@@ -1422,8 +1422,8 @@ export type JobFilters = {
   page_view: string;
   work_mode: string[];
   experience_min: number;
-  salary_min: number;
-  salary_max: number;
+  salary_min: number | string;
+  salary_max: number | string;
   name: string;
   location: string;
   page: number;
