@@ -1851,7 +1851,6 @@ a {
 a:hover {
   --tw-text-opacity: 1;
   color: var(--primary-color);
-  text-decoration: underline;
 }
 a:not([href]):not([tabindex]) {
   color: inherit;
