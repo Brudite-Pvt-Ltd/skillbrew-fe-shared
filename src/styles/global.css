@@ -21508,6 +21508,7 @@ gap: 1rem;
   gap: 1rem;
   width: 50%;
   padding: 1.6875rem 4.75rem;
+  background-color: var(--background-color);
 }
 
 .login-page-signup-section {
@@ -21912,6 +21913,10 @@ gap: 1rem;
     font-weight: 400;
     color: var(--grey-color-shade-5);
   }
+}
+
+.login-form-checkbox-container input[type="checkbox"] {
+  accent-color: var(--primary-color);
 }
 
 .login-form-input-date-field {
