@@ -1700,9 +1700,12 @@ export const handleAmountInput =
     setValue(fieldName, raw, { shouldValidate: true });
   };
 
-export const handleAmountHTMLInput = (input: string) => {
-  const raw = input.replace(/,/g, "").replace(/\D/g, "");
-  if (!raw) return "";
+export const handleAmountHTMLInput = (input: string | number) => {
+  let raw = "";
+  if (typeof input === "string") {
+    raw = input.replace(/,/g, "").replace(/\D/g, "");
+    if (!raw) return "";
+  }
   return Number(raw).toLocaleString("en-IN");
 };
 
