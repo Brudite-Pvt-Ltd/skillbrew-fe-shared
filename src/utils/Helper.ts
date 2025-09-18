@@ -216,13 +216,20 @@ export const getCookie = (name: any) => {
 export const deleteCookie = (
   name: string,
   path: string = "/",
-  domain: string = ""
+  domain?: string
 ) => {
   const expires = `expires=${new Date(0).toUTCString()}`;
-  const cookie = `${name}=; path=${path}; ${expires};`;
-  const domainCookie = domain ? `${cookie} domain=.${domain};` : cookie;
-  document.cookie = domainCookie;
-  document.cookie = cookie;
+  document.cookie = `${name}=; path=${path}; ${expires}`;
+  if (domain) {
+    document.cookie = `${name}=; path=${path}; domain=${domain}; ${expires}`;
+    if (domain.startsWith(".")) {
+      document.cookie = `${name}=; path=${path}; domain=${domain.slice(
+        1
+      )}; ${expires}`;
+    } else {
+      document.cookie = `${name}=; path=${path}; domain=.${domain}; ${expires}`;
+    }
+  }
 };
 
 export const getCurrentDateTime = () => {
