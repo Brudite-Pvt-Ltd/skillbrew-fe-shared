@@ -7388,7 +7388,7 @@ const Icons = {
       />
     </svg>
   ),
-  check: (
+  checkV3: (
     <svg
       width="15"
       height="16"
