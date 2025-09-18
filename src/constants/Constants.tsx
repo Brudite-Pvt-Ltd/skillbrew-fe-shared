@@ -222,7 +222,7 @@ export const VALIDATION_MESSAGE = {
   DATE_BEFORE_CURRENT_INVALID:
     "Date must not be greater than the current date.",
   END_DATE_BEFORE_START:
-    "Please ensure the end date is not before the start date.",
+    "Please ensure the end date is not before or same as the start date.",
 
   DESCRIPTION_REQUIRED: "Please Enter description.",
   DESCRIPTION_MAX: "Description must be at most 1000 characters.",

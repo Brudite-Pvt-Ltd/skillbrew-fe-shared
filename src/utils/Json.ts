@@ -1349,12 +1349,12 @@ export const countriesAndCurrencies: any = [
     currency_name: "Honduran Lempira (HNL)",
     value: "HN",
   },
-  {
-    label: "Hong Kong",
-    currency_code: "HKD",
-    currency_name: "Hong Kong Dollar (HKD)",
-    value: "HK",
-  },
+  // {
+  //   label: "Hong Kong",
+  //   currency_code: "HKD",
+  //   currency_name: "Hong Kong Dollar (HKD)",
+  //   value: "HK",
+  // },
   {
     label: "Hungary",
     currency_code: "HUF",

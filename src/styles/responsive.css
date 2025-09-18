@@ -4178,6 +4178,25 @@
   .login-page-form-container .login-form-input-section span {
     font-size: 13px;
   }
+
+  .onboarding-success-modal-container {
+    width: 380px;
+  }
+  .pricing-plan-main-container {
+    height: 100%;
+  }
+  .pricing-plan-main-subcontainer {
+    padding: 1rem;
+  }
+  .pricing-plan-subheading > br {
+    display: none;
+  }
+  .pricing-plan-price-container {
+    margin-bottom: 0.5rem;
+  }
+  .pricing-plan-feature {
+    margin-top: 4px;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -4638,6 +4657,16 @@
     column-gap: 50px;
     margin-bottom: 0px;
     justify-content: start;
+  }
+
+  .onboarding-success-modal-container {
+    width: 380px;
+  }
+  .pricing-plan-main-container {
+    height: 100%;
+  }
+  .pricing-plan-main-subcontainer {
+    padding: 1rem 1.5rem;
   }
 }
 
@@ -5674,6 +5703,16 @@
   .public-job-filter-dropdown-with-icon {
     min-width: 128px;
   }
+
+  .onboarding-success-modal-container {
+    width: 420px;
+  }
+  .pricing-plan-main-container {
+    height: 100%;
+  }
+  .pricing-plan-main-subcontainer {
+    padding: 1.5rem 2.25rem;
+  }
 }
 
 @media (min-width: 1199px) {
@@ -5877,6 +5916,16 @@
 
   .signup-account-type-container {
     padding: 28px;
+  }
+
+  .onboarding-success-modal-container {
+    width: 380px;
+  }
+  .pricing-plan-main-container {
+    height: 100%;
+  }
+  .pricing-plan-main-subcontainer {
+    padding: 1.5rem 2.25rem;
   }
 }
 
