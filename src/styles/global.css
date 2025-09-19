@@ -15215,7 +15215,8 @@ gap: 1rem;
 }
 
 .order-details-subwrapper {
-  width: 30%;
+  width: 100%;
+  max-width: 460px;
 }
 
 .order-details-heading {

@@ -3399,9 +3399,7 @@
   .billings-credits-single-card-container {
     width: 100%;
   }
-  .order-details-subwrapper {
-    width: 100%;
-  }
+
   .order-details-wrapper {
     justify-content: flex-start;
     padding: 1rem 0.5rem;
@@ -5254,10 +5252,6 @@
     padding: 1rem;
     justify-content: center;
     gap: 15px;
-  }
-
-  .order-details-subwrapper {
-    width: 60%;
   }
 
   .btn-secondary-primary-usp {
