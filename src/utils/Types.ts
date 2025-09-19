@@ -81,8 +81,8 @@ export interface QuestionSolveData {
 }
 
 export interface Tag {
-  tags__name: string;
-  tags__id: number;
+  tags_name: string;
+  tags_id: number;
   count: number;
 }
 
