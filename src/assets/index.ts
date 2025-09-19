@@ -117,6 +117,7 @@ export { default as EnragedFaceNoto } from "./svg/enraged-face-noto.svg";
 export { default as Error400 } from "./svg/error400.svg";
 export { default as Error500 } from "./svg/error500.svg";
 export { default as ExcellentEmoji } from "./svg/excellent-emoji.svg";
+export { default as Feedback3 } from "./svg/feedback3.svg";
 export { default as FluentMdl2Insights } from "./svg/fluent-mdl2-insights.svg";
 export { default as FormkitSubmit } from "./svg/formkit-submit.svg";
 export { default as FrameBg } from "./svg/frame-bg.svg";
