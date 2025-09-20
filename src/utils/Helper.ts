@@ -1844,6 +1844,12 @@ export const autocompleteStyles = {
   },
 };
 
+export const menuPaperStyles = {
+  "& .MuiList-root": {
+    maxHeight: "300px !important",
+  },
+};
+
 export const splitBySearch = (
   text: string,
   query: string
