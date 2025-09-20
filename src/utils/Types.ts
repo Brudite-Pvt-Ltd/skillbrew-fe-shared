@@ -217,9 +217,7 @@ export interface UserData {
   gender: string | null;
   description: string | null;
   contact_no: string | null;
-  city: string | null;
-  state: string | null;
-  country: Option;
+  location: Address;
   followers_count: 0;
   following_count: 0;
   job_title: null;
