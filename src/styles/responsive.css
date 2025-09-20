@@ -4195,6 +4195,28 @@
   .pricing-plan-feature {
     margin-top: 4px;
   }
+
+  .login-page-form-container .login-form-input-section,
+  .login-page-form-container .login-form-continue-btn,
+  .login-page-form-container .login-form-back-btn {
+    width: 88% !important;
+  }
+
+  .signup-account-type-container:has(.signup-account-type-card:hover) {
+    background: url("/assets/svg/org.svg") var(--grey-color-shade-1) no-repeat
+      left bottom;
+    background-size: 50%;
+  }
+
+  .signup-account-type-container:has(
+      .signup-account-type-card:nth-child(2):hover
+    ) {
+    background: url("/assets/svg/student.svg") var(--grey-color-shade-1)
+      no-repeat left bottom;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 50%;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -4343,6 +4365,10 @@
   .list-details-container {
     height: calc(100vh - 200px);
     margin-bottom: 2rem;
+  }
+
+  .onboarding-success-modal-container {
+    width: 300px !important;
   }
 }
 

@@ -21580,9 +21580,14 @@ gap: 1rem;
         font-size: 16px !important;
         background-clip: text;
         -webkit-background-clip: text;
+        font-weight: 500 !important;
+        color: var(--grey-color) !important;
+        padding: 0;
       }
       input::placeholder {
         color: var(--grey-color-shade-3) !important;
+        font-size: 16px !important;
+        font-weight: 500 !important;
       }
       i {
         color: var(--grey-color-shade-4);
@@ -21726,13 +21731,25 @@ gap: 1rem;
   background-position: center;
 }
 
-.signup-account-type-container-bg-org {
+.signup-account-type-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem 4.75rem;
+  background: var(--grey-color-shade-1);
+  background-size: contain;
+  background-position: center;
+}
+
+.signup-account-type-container:has(.signup-account-type-card:hover) {
   background: url("/assets/svg/org.svg") var(--grey-color-shade-1) no-repeat
     left bottom;
   background-size: 30%;
 }
 
-.signup-account-type-container-bg-student {
+.signup-account-type-container:has(
+    .signup-account-type-card:nth-child(2):hover
+  ) {
   background: url("/assets/svg/student.svg") var(--grey-color-shade-1) no-repeat
     left bottom;
   background-repeat: no-repeat;
@@ -22664,4 +22681,107 @@ button {
   outline: 1px solid var(--grey-color-shade-6);
   border-radius: 4px;
   padding: 0.25rem;
+}
+
+.login-form-input-section .MuiOutlinedInput-notchedOutline {
+  border-width: 1px !important;
+  border-radius: 8px !important;
+}
+
+.login-form-input-section:has(.Mui-focused) fieldset {
+  border-color: var(--primary-color) !important;
+}
+
+.login-form-tel-input input {
+  padding: 10.5px 0px;
+  margin-top: 2px;
+}
+
+.login-form-tel-input > input::placeholder {
+  margin-top: 2px !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+}
+
+.login-form-input-field-disabled {
+  background-color: var(--grey-color-shade-1) !important;
+}
+
+.login-form-input-field-disabled input {
+  color: var(--grey-color-shade-6) !important;
+}
+
+.login-form-tel-input .MuiTelInput-IconButton {
+  padding-left: 0 !important;
+}
+
+.login-form-tel-input .MuiTypography-root {
+  padding-right: 0.5rem !important;
+}
+
+.login-form-org-logo-upload-btn {
+  position: relative;
+  width: 150px;
+  padding: 2rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: 1px solid var(--grey-color-shade-3);
+  overflow: hidden;
+}
+
+.login-form-org-logo-upload-btn-title {
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  color: var(--grey-color-shade-6) !important;
+}
+
+.login-form-org-logo-upload-btn-text {
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  color: var(--grey-color-shade-4) !important;
+}
+
+.onboarding-form-org-type-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 50rem;
+  border: 1px solid var(--grey-color-shade-4);
+  p {
+    padding: 0;
+    font-size: var(--font-8);
+    font-weight: 400;
+    color: var(--grey-color-shade-6);
+  }
+}
+
+.onboarding-form-org-type-btn:focus {
+  border: 1px solid var(--primary-color-shade-7);
+}
+
+.onboarding-form-org-type-btn-active {
+  border: 1px solid var(--primary-color-shade-7) !important;
+  p {
+    color: var(--primary-color-shade-7) !important;
+  }
+  div > svg > path {
+    fill: var(--primary-color-shade-7) !important;
+  }
+}
+
+.org-logo-edit-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(-20%);
+}
+
+.org-logo-preview {
+  width: 100%;
+  height: 100%;
 }
