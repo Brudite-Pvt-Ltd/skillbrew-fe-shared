@@ -1309,6 +1309,7 @@ export interface SocialMediaAccount {
 }
 
 export interface EducationData {
+  id: number;
   score: { value: string; type: string };
   degree: string;
   end_at: string;
