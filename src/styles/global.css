@@ -21529,6 +21529,13 @@ gap: 1rem;
   font-weight: 600;
 }
 
+.login-page-form-main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
 .login-page-form-container {
   width: 461px;
   display: flex;
@@ -21907,6 +21914,7 @@ gap: 1rem;
   -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 3px), #000 0);
   animation: loaderV2 1s infinite linear;
 }
+
 @keyframes loaderV2 {
   100% {
     transform: rotate(1turn);
