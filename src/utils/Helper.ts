@@ -1800,6 +1800,10 @@ export const selectStyles = {
     borderColor: "#D1D1D1",
   },
 
+  "&.MuiMenu-list": {
+    maxHeight: "300px",
+  },
+
   "& .MuiSelect-icon": {
     position: "relative",
     right: "20px",
